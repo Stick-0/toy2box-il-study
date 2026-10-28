@@ -1,0 +1,217 @@
+{
+  "created_at": "2026-10-28T18:22:19.423431+09:00",
+  "sample_rule": "Predefined first five evaluation trials (0–4) for each training seed 101 and 111, selected before viewing; 10 videos total.",
+  "method": "Manual visual review of 8 equally spaced full-scene frames per video, plus 8 enlarged intermediate frames for each of the six failed videos. This is a qualitative subset diagnosis, not official evaluation labels or an estimate of full-evaluation success rate.",
+  "contact_sheet_method": {
+    "full_scene": "Eight indices round(i*(n_frames-1)/7), i=0..7; resized480x270 with captions; 4 columns ×2 rows.",
+    "detail": "Crop x=[0.22,0.58] and y=[0.30,0.86] of video size. Times 2,4,6,8,10,12,14,16s for trials0/2; 4,8,12,16,20,24,28,32s for trial1.",
+    "first_frame_note": "First frame of trial0 is black in each original video. Other frames were used for diagnosis."
+  },
+  "summary": {
+    "reviewed": 10,
+    "visually_completed": 4,
+    "visually_failed": 6,
+    "failed_before_stable_acquisition": 6,
+    "failure_stage_counts": {
+      "approach": 0,
+      "grasp": 2,
+      "transport": 0,
+      "place": 0,
+      "uncertain_approach_or_grasp": 4
+    }
+  },
+  "interpretation": "The observed failure region is acquisition: near-object alignment/approach and grasp, before stable lift. These videos do not justify classifying all failures specifically as grasp, nor do they prove that limited source-demonstration coverage is the cause. Increased coverage via Mimic is a testable hypothesis, not an established diagnosis.",
+  "limitations": [
+    "Only first5trial perseed were manually reviewed; not the entire100trial sets.",
+    "Only RGB video sampled frames are available; exact contacts, commanded gripper state, and official success predicate outputs are absent.",
+    "Trials3/4 are visually completed but remain separate from official success counters until stdout or definitive result evidence is supplied.",
+    "Do not infer success from video duration."
+  ],
+  "trials": [
+    {
+      "training_seed": 101,
+      "trial": 0,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-0.mp4",
+      "contact_sheet": "seed101_trial0_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "failure",
+      "failure_stage": "uncertain",
+      "candidate_stages": [
+        "approach",
+        "grasp"
+      ],
+      "failure_region": "before stable object acquisition",
+      "confidence": "high for no acquisition; limited for approach-versus-grasp split",
+      "detail_sheet": "seed101_trial0_detail.png",
+      "observed_evidence": [
+        "The gripper approaches the toy vicinity but remains visibly offset during the near-object motion.",
+        "The hand subsequently rises and moves away without the toy; the toy remains on the tabletop in later and final frames.",
+        "No stable lift or loaded transport is visible. Sparse RGB frames do not establish the exact gripper-close action or 3D clearance."
+      ]
+    },
+    {
+      "training_seed": 101,
+      "trial": 1,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-1.mp4",
+      "contact_sheet": "seed101_trial1_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "failure",
+      "failure_stage": "grasp",
+      "candidate_stages": [
+        "grasp"
+      ],
+      "failure_region": "before stable object acquisition",
+      "confidence": "medium",
+      "detail_sheet": "seed101_trial1_detail.png",
+      "observed_evidence": [
+        "The gripper reaches the toy and repeatedly works at tabletop height near it (about 8–24 s).",
+        "The toy is left on the table while the hand rises away empty (about 28–40 s).",
+        "No sustained lifted transport of the toy to the box is visible."
+      ]
+    },
+    {
+      "training_seed": 101,
+      "trial": 2,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-2.mp4",
+      "contact_sheet": "seed101_trial2_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "failure",
+      "failure_stage": "uncertain",
+      "candidate_stages": [
+        "approach",
+        "grasp"
+      ],
+      "failure_region": "before stable object acquisition",
+      "confidence": "high for no acquisition; limited for approach-versus-grasp split",
+      "detail_sheet": "seed101_trial2_detail.png",
+      "observed_evidence": [
+        "The gripper approaches the toy vicinity but remains visibly offset during the near-object motion.",
+        "The hand subsequently rises and moves away without the toy; the toy remains on the tabletop in later and final frames.",
+        "No stable lift or loaded transport is visible. Sparse RGB frames do not establish the exact gripper-close action or 3D clearance.",
+        "Later empty-hand contact shifts/tilts the box (34.25–39.95 s); this is subsequent to the acquisition failure, not evidence of loaded placement failure."
+      ]
+    },
+    {
+      "training_seed": 101,
+      "trial": 3,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-3.mp4",
+      "contact_sheet": "seed101_trial3_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "visible_success",
+      "failure_stage": null,
+      "candidate_stages": [],
+      "confidence": "high for visual task completion; official predicate output unavailable",
+      "observed_evidence": [
+        "The toy is visibly acquired and lifted from the tabletop.",
+        "The gripper carries the toy toward the box; the final frame shows the toy inside the box after release."
+      ]
+    },
+    {
+      "training_seed": 101,
+      "trial": 4,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-4.mp4",
+      "contact_sheet": "seed101_trial4_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "visible_success",
+      "failure_stage": null,
+      "candidate_stages": [],
+      "confidence": "high for visual task completion; official predicate output unavailable",
+      "observed_evidence": [
+        "The toy is visibly acquired and lifted from the tabletop.",
+        "The gripper carries the toy toward the box; the final frame shows the toy inside the box after release."
+      ]
+    },
+    {
+      "training_seed": 111,
+      "trial": 0,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-0.mp4",
+      "contact_sheet": "seed111_trial0_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "failure",
+      "failure_stage": "uncertain",
+      "candidate_stages": [
+        "approach",
+        "grasp"
+      ],
+      "failure_region": "before stable object acquisition",
+      "confidence": "high for no acquisition; limited for approach-versus-grasp split",
+      "detail_sheet": "seed111_trial0_detail.png",
+      "observed_evidence": [
+        "The gripper approaches the toy vicinity but remains visibly offset during the near-object motion.",
+        "The hand subsequently rises and moves away without the toy; the toy remains on the tabletop in later and final frames.",
+        "No stable lift or loaded transport is visible. Sparse RGB frames do not establish the exact gripper-close action or 3D clearance."
+      ]
+    },
+    {
+      "training_seed": 111,
+      "trial": 1,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-1.mp4",
+      "contact_sheet": "seed111_trial1_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "failure",
+      "failure_stage": "grasp",
+      "candidate_stages": [
+        "grasp"
+      ],
+      "failure_region": "before stable object acquisition",
+      "confidence": "medium",
+      "detail_sheet": "seed111_trial1_detail.png",
+      "observed_evidence": [
+        "The gripper reaches the toy and repeatedly works at tabletop height near it (about 8–24 s).",
+        "The toy is left on the table while the hand rises away empty (about 28–40 s).",
+        "No sustained lifted transport of the toy to the box is visible."
+      ]
+    },
+    {
+      "training_seed": 111,
+      "trial": 2,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-2.mp4",
+      "contact_sheet": "seed111_trial2_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "failure",
+      "failure_stage": "uncertain",
+      "candidate_stages": [
+        "approach",
+        "grasp"
+      ],
+      "failure_region": "before stable object acquisition",
+      "confidence": "high for no acquisition; limited for approach-versus-grasp split",
+      "detail_sheet": "seed111_trial2_detail.png",
+      "observed_evidence": [
+        "The gripper approaches the toy vicinity but remains visibly offset during the near-object motion.",
+        "The hand subsequently rises and moves away without the toy; the toy remains on the tabletop in later and final frames.",
+        "No stable lift or loaded transport is visible. Sparse RGB frames do not establish the exact gripper-close action or 3D clearance."
+      ]
+    },
+    {
+      "training_seed": 111,
+      "trial": 3,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-3.mp4",
+      "contact_sheet": "seed111_trial3_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "visible_success",
+      "failure_stage": null,
+      "candidate_stages": [],
+      "confidence": "high for visual task completion; official predicate output unavailable",
+      "observed_evidence": [
+        "The toy is visibly acquired and lifted from the tabletop.",
+        "The gripper carries the toy toward the box; the final frame shows the toy inside the box after release."
+      ]
+    },
+    {
+      "training_seed": 111,
+      "trial": 4,
+      "video": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-4.mp4",
+      "contact_sheet": "seed111_trial4_contact.png",
+      "official_success_label": null,
+      "observed_outcome": "visible_success",
+      "failure_stage": null,
+      "candidate_stages": [],
+      "confidence": "high for visual task completion; official predicate output unavailable",
+      "observed_evidence": [
+        "The toy is visibly acquired and lifted from the tabletop.",
+        "The gripper carries the toy toward the box; the final frame shows the toy inside the box after release."
+      ]
+    }
+  ]
+}

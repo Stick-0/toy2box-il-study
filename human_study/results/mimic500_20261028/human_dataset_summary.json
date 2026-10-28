@@ -1,0 +1,240 @@
+{
+  "source": "human_study/data/human_20261028_112300.hdf5",
+  "sha256": "4aaf12dba9ffb1e9833ade4b4e75e597f2059a745390a37a625c5c47775354ce",
+  "env_args": {
+    "env_name": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+    "type": 2,
+    "sim_args": {
+      "dt": 0.016666666666666666,
+      "decimation": 3,
+      "render_interval": 6,
+      "num_envs": 1
+    }
+  },
+  "count": 30,
+  "total_steps": 11769,
+  "steps": {
+    "min": 251,
+    "mean": 392.3,
+    "max": 610
+  },
+  "stored_successes": 30,
+  "gripper_switches": {
+    "min": 2,
+    "max": 2
+  },
+  "mean_zero_motion_fraction_per_demo": 0.26416093046015515,
+  "zero_motion_definition": "All first6 action dimensions equalzero; followsWeek08p35. This is not a complete demonstration-quality score.",
+  "episodes": [
+    {
+      "demo": "demo_0",
+      "num_steps": 448,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.27232142857142855
+    },
+    {
+      "demo": "demo_1",
+      "num_steps": 382,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.28534031413612565
+    },
+    {
+      "demo": "demo_2",
+      "num_steps": 433,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.22632794457274827
+    },
+    {
+      "demo": "demo_3",
+      "num_steps": 471,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.24416135881104034
+    },
+    {
+      "demo": "demo_4",
+      "num_steps": 477,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.24528301886792453
+    },
+    {
+      "demo": "demo_5",
+      "num_steps": 439,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.28018223234624146
+    },
+    {
+      "demo": "demo_6",
+      "num_steps": 610,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.2
+    },
+    {
+      "demo": "demo_7",
+      "num_steps": 440,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.22045454545454546
+    },
+    {
+      "demo": "demo_8",
+      "num_steps": 425,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.31058823529411766
+    },
+    {
+      "demo": "demo_9",
+      "num_steps": 438,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.2785388127853881
+    },
+    {
+      "demo": "demo_10",
+      "num_steps": 396,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.25
+    },
+    {
+      "demo": "demo_11",
+      "num_steps": 357,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.24089635854341737
+    },
+    {
+      "demo": "demo_12",
+      "num_steps": 465,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.2021505376344086
+    },
+    {
+      "demo": "demo_13",
+      "num_steps": 408,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.2696078431372549
+    },
+    {
+      "demo": "demo_14",
+      "num_steps": 342,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.20175438596491227
+    },
+    {
+      "demo": "demo_15",
+      "num_steps": 402,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.21144278606965175
+    },
+    {
+      "demo": "demo_16",
+      "num_steps": 362,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.3812154696132597
+    },
+    {
+      "demo": "demo_17",
+      "num_steps": 367,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.32697547683923706
+    },
+    {
+      "demo": "demo_18",
+      "num_steps": 427,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.2529274004683841
+    },
+    {
+      "demo": "demo_19",
+      "num_steps": 386,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.24870466321243523
+    },
+    {
+      "demo": "demo_20",
+      "num_steps": 407,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.25552825552825553
+    },
+    {
+      "demo": "demo_21",
+      "num_steps": 338,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.3224852071005917
+    },
+    {
+      "demo": "demo_22",
+      "num_steps": 292,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.3116438356164384
+    },
+    {
+      "demo": "demo_23",
+      "num_steps": 285,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.28421052631578947
+    },
+    {
+      "demo": "demo_24",
+      "num_steps": 307,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.2736156351791531
+    },
+    {
+      "demo": "demo_25",
+      "num_steps": 349,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.2693409742120344
+    },
+    {
+      "demo": "demo_26",
+      "num_steps": 431,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.21345707656612528
+    },
+    {
+      "demo": "demo_27",
+      "num_steps": 318,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.24213836477987422
+    },
+    {
+      "demo": "demo_28",
+      "num_steps": 251,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.3187250996015936
+    },
+    {
+      "demo": "demo_29",
+      "num_steps": 316,
+      "stored_success": true,
+      "gripper_switches": 2,
+      "zero_motion_fraction": 0.2848101265822785
+    }
+  ]
+}

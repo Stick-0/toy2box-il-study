@@ -1,0 +1,29 @@
+{
+  "schema": "toy2box.submission_datasets.v1",
+  "human": {
+    "path": "human_study/data/human_20261028_112300.hdf5",
+    "demonstrations": 30,
+    "steps": 11769,
+    "sha256": "4aaf12dba9ffb1e9833ade4b4e75e597f2059a745390a37a625c5c47775354ce",
+    "bytes": 9637877
+  },
+  "mimic_success": {
+    "path_after_decompression": "human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+    "demonstrations": 500,
+    "steps": 210707,
+    "sha256": "03addfc4e3b7c18c337f97836889d6368bcadd804df44d841fca077879368a3e",
+    "bytes": 186743994,
+    "archive_name": "human30_mimic500_success.hdf5.gz",
+    "archive_sha256": "0b62cc6a3a173ef31eeedc2e9b6ecd6e3cb6f7101fb2692f8e2bb60bd90ee4fa",
+    "archive_bytes": 140430009,
+    "release_tag": "human30-mimic500-20261028",
+    "download_url": "https://github.com/Stick-0/toy2box-il-study/releases/download/human30-mimic500-20261028/human30_mimic500_success.hdf5.gz"
+  },
+  "combined": {
+    "demonstrations": 530,
+    "steps": 222476,
+    "construction": "scripts/prepare_mimic_training.py: all 30 human demonstrations plus 500 successful Mimic demonstrations",
+    "original_file_sha256": "ff326a1bd45f4abf94ed576865bce2fd5beea4f36c0aa4bc7aed2c975a70d101",
+    "note": "Rebuilt HDF5 byte hashes may depend on HDF5 library metadata; validate selected records and source hashes."
+  }
+}

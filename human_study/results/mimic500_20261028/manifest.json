@@ -1,0 +1,155 @@
+{
+  "started_at": "2026-10-28T09:18:06.382712+00:00",
+  "human_dataset": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+  "human_dataset_sha256": "4aaf12dba9ffb1e9833ade4b4e75e597f2059a745390a37a625c5c47775354ce",
+  "source_sha256": {
+    "scripts/imitation_learning/robomimic/train.py": "7d38483469b7655f87435dea2ea82ac8b4229fce3d1cae937fb938f9280debfe",
+    "scripts/imitation_learning/robomimic/play.py": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+    "scripts/imitation_learning/isaaclab_mimic/annotate_demos.py": "ee3010b0fc753f56ea28cd7e2480d4e6f4d123423efa73603d1e2724554c2e23",
+    "scripts/imitation_learning/isaaclab_mimic/generate_dataset.py": "c61fb43a1be160d6fe08414cb31e457b442d8aa770bb89f1fd81ad73c23e328f",
+    "source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/place_upright_mug_rmp_rel_env_cfg.py": "d4dc41bd32a0245d6396decdab5d125a61fa25c58321ff8d2c87c9e55d4a9941",
+    "source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/place_toy2box_rmp_rel_env_cfg.py": "bc01d693edd412e84f675713991de930004e3edf7e661a4e8749aafd2940d19e",
+    "source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/__init__.py": "23e4bdd154bf7a733d2663cca2c6de3b46db182b90c704633eb913a1e8cbf6f3",
+    "source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/agents/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source/isaaclab_mimic/isaaclab_mimic/envs/agibot_place_toy2box_mimic_env_cfg.py": "b56ff68dd3200843f9470fb901c9a489a8c9b8043d8707c2215f6f7d019b9e27"
+  },
+  "target_successful_mimic_used": 500,
+  "training_seeds": [
+    101,
+    111
+  ],
+  "evaluation_seed": 42,
+  "rollouts": 100,
+  "horizon": 800,
+  "status": "completed",
+  "generation": {
+    "active_output": "human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+    "log": "logs/generation_env8.log",
+    "num_envs": 8,
+    "target_successes": 500,
+    "generation_seed": 1,
+    "action_noise": 0.01,
+    "annotated_source_count": 28,
+    "tool_session_id": 53152,
+    "runtime_thread_limits": {
+      "OMP_NUM_THREADS": 4,
+      "MKL_NUM_THREADS": 4,
+      "OPENBLAS_NUM_THREADS": 4
+    },
+    "status": "completed",
+    "returncode": 0,
+    "successful_demos": 500,
+    "completed_attempts": 1389,
+    "success_rate": 0.3599712023038157
+  },
+  "baseline_re_evaluation": {
+    "video": false,
+    "seed101_session_id": 65638,
+    "seed111_session_id": 43402,
+    "output_dirs": [
+      "evaluation/baseline_seed101",
+      "evaluation/baseline_seed111"
+    ],
+    "status": "completed",
+    "successful_trials": {
+      "101": 16,
+      "111": 19
+    },
+    "mean_success_percent": 17.5,
+    "sample_sd_percent": 2.1213203435596424
+  },
+  "updated_at": "2026-10-28T13:08:20.279188+00:00",
+  "remaining_pipeline": {
+    "tool_session_id": 72729,
+    "status_file": "pipeline_status.json",
+    "log": "pipeline.log",
+    "driver_pid": 824118,
+    "status": "completed",
+    "returncode": 0
+  },
+  "training_dataset": {
+    "manifest": "dataset_manifest.json",
+    "path": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_plus_mimic500_20261028.hdf5",
+    "sha256": "ff326a1bd45f4abf94ed576865bce2fd5beea4f36c0aa4bc7aed2c975a70d101",
+    "human_count": 30,
+    "mimic_count": 500,
+    "demo_count": 530,
+    "total_steps": 222476,
+    "env_name": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0"
+  },
+  "training": {
+    "101": {
+      "status": "completed",
+      "checkpoint": "/home/jm/robot_sim/IsaacLab_RS/logs/human_study/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/mimic500_seed101/20261028203356/models/model_epoch_2000.pth",
+      "checkpoint_sha256": "5609d8e2d1c19e44a6f28f3012badcb42356fb1860f6f241f05182648f1d9737",
+      "configuration_matches_baseline": true,
+      "registered_config_restored": true,
+      "started_at": "2026-10-28T11:33:45.794413+00:00",
+      "finished_at": "2026-10-28T11:54:26.344638+00:00"
+    },
+    "111": {
+      "status": "completed",
+      "checkpoint": "/home/jm/robot_sim/IsaacLab_RS/logs/human_study/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/mimic500_seed111/20261028205437/models/model_epoch_2000.pth",
+      "checkpoint_sha256": "ea1882e7b7b7a1e3a27ff6acf8ba12926c6222ba9d6fbe9cd5ef5494c8fe9f1c",
+      "configuration_matches_baseline": true,
+      "registered_config_restored": true,
+      "started_at": "2026-10-28T11:54:26.915737+00:00",
+      "finished_at": "2026-10-28T12:14:56.457041+00:00"
+    }
+  },
+  "comparison": {
+    "file": "comparison.json",
+    "conditions": {
+      "baseline": {
+        "training_seeds": [
+          101,
+          111
+        ],
+        "mean_success_percent": 17.5,
+        "sample_sd_percentage_points": 2.1213203435596424,
+        "sd_ddof": 1
+      },
+      "mimic500": {
+        "training_seeds": [
+          101,
+          111
+        ],
+        "mean_success_percent": 62.0,
+        "sample_sd_percentage_points": 2.8284271247461903,
+        "sd_ddof": 1
+      }
+    },
+    "mean_delta_percentage_points": 44.5,
+    "hypothesis_support": "consistent_improvement"
+  },
+  "evaluation_records": {
+    "baseline_seed101": {
+      "summary": "evaluation/baseline_seed101/summary.json",
+      "successful_trials": 16,
+      "num_rollouts": 100
+    },
+    "baseline_seed111": {
+      "summary": "evaluation/baseline_seed111/summary.json",
+      "successful_trials": 19,
+      "num_rollouts": 100
+    },
+    "mimic500_seed101": {
+      "summary": "evaluation/mimic500_seed101/summary.json",
+      "successful_trials": 64,
+      "num_rollouts": 100
+    },
+    "mimic500_seed111": {
+      "summary": "evaluation/mimic500_seed111/summary.json",
+      "successful_trials": 60,
+      "num_rollouts": 100
+    }
+  },
+  "additional_experiments_planned": false,
+  "submission": {
+    "models_manifest": "models/manifest.json",
+    "evaluation_commands": "submission/evaluation_commands.txt",
+    "checkpoint_retention": "Only the two submitted final Mimic models are retained; original absolute paths identify the recorded run.",
+    "result_verification_mode": "submission: retained logs/configs plus actual submitted models",
+    "dataset_manifest": "human_study/data/manifest.json"
+  }
+}

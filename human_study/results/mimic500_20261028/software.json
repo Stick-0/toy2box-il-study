@@ -1,0 +1,18 @@
+{
+  "python": "3.11.16",
+  "packages": {
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "h5py": "3.16.0",
+    "robomimic": "0.4.0",
+    "isaacsim": "5.1.0.0",
+    "isaaclab": "0.47.2",
+    "isaaclab-mimic": "1.0.15",
+    "gymnasium": "1.2.0",
+    "matplotlib": "3.10.3"
+  },
+  "gpu": "NVIDIA GeForce RTX4090 24GB",
+  "driver": "580.178.04",
+  "cuda_driver_capability": "13.0",
+  "concurrent_execution": "Generation and repeat baseline evaluations use separate processes; all fixed simulation steps remain native. No shared random generator or environment state."
+}

@@ -1,0 +1,30 @@
+{
+  "status": "running",
+  "label": "mimic500_seed101",
+  "seed": 101,
+  "task": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+  "started_at": "2026-10-28T11:33:45.794413+00:00",
+  "command": [
+    "/home/jm/robot_sim/IsaacLab_RS/isaaclab.sh",
+    "-p",
+    "-u",
+    "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/train.py",
+    "--task",
+    "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+    "--algo",
+    "bc",
+    "--dataset",
+    "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_plus_mimic500_20261028.hdf5",
+    "--name",
+    "mimic500_seed101",
+    "--log_dir",
+    "human_study"
+  ],
+  "cwd": "/home/jm/robot_sim/IsaacLab_RS",
+  "dataset": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_plus_mimic500_20261028.hdf5",
+  "dataset_sha256": "ff326a1bd45f4abf94ed576865bce2fd5beea4f36c0aa4bc7aed2c975a70d101",
+  "baseline_config": "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/configs/baseline_seed101.json",
+  "baseline_config_sha256": "bf1acfb97ea6e5224547c2dfcc5fedfe45128c80b340dfbb0ad2c97f079a998c",
+  "native_train_sha256": "7d38483469b7655f87435dea2ea82ac8b4229fce3d1cae937fb938f9280debfe",
+  "registered_config_original_sha256": "d9b4f2b629f67e2f5e5db1b18bcae928adf8dc4cadaa469b013c063f78340752"
+}

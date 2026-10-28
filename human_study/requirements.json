@@ -1,0 +1,71 @@
+{
+  "schema": "toy2box.submission_requirements.v2",
+  "task": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+  "status": "completed",
+  "research_question": "사람 시범으로 학습한 BC 정책은 Toy2Box에서 왜 성공률이 저조한가? 원인 하나를 진단하고, 그 원인을 겨냥해 성공률을 높여라.",
+  "human_demonstrations": {
+    "method": "direct_keyboard",
+    "collection_protocol": "approach, align and rotate gripper, descend and grasp, lift and transport, place",
+    "minimum": 20,
+    "maximum": 100,
+    "used": 30,
+    "dataset": "human_study/data/human_20261028_112300.hdf5"
+  },
+  "mimic": {
+    "maximum_successful_used": 1000,
+    "successful_used": 500,
+    "annotated_sources": 28,
+    "combined_count": 530
+  },
+  "immutable_conditions": [
+    "environment and initial object position distributions",
+    "success criterion",
+    "termination conditions"
+  ],
+  "training": {
+    "seeds": [
+      101,
+      111
+    ],
+    "seed_field": "train.seed",
+    "epochs": 2000,
+    "updates_per_epoch": 100,
+    "batch_size": 100,
+    "other_settings_matched": true
+  },
+  "evaluation": {
+    "seed": 42,
+    "rollouts_per_model": 100,
+    "horizon": 800,
+    "mean_and_sd_over_training_seeds": true,
+    "sd_ddof": 1,
+    "n": 2
+  },
+  "results": {
+    "baseline_successes": [
+      16,
+      19
+    ],
+    "mimic_successes": [
+      64,
+      60
+    ],
+    "baseline_mean_percent": 17.5,
+    "mimic_mean_percent": 62.0,
+    "mean_delta_percentage_points": 44.5,
+    "hypothesis_support": "augmentation_prediction_supported",
+    "causal_limit": "relative-position coverage is a prioritized explanation, not a uniquely established cause"
+  },
+  "submission": {
+    "repository": "https://github.com/Stick-0/toy2box-il-study",
+    "project": "IsaacLab",
+    "model_count": 2,
+    "models_manifest": "models/manifest.json",
+    "evaluation_commands": "submission/evaluation_commands.txt",
+    "deadline": "2026-11-03T23:59:00+09:00",
+    "presentation_date": "2026-11-05",
+    "presentation_minutes": 5,
+    "final_evaluation_by": "teaching_assistant",
+    "final_evaluation_seed": "undisclosed"
+  }
+}

@@ -1,0 +1,3754 @@
+{
+  "schema": "toy2box.mimic_training_dataset.v1",
+  "selection": "All human demos, then the first successful Mimic demos in numeric demo order",
+  "human_provenance": "User-reported direct keyboard collection; this utility validates stored data only",
+  "limit": 500,
+  "sources": {
+    "human": {
+      "path": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "sha256": "4aaf12dba9ffb1e9833ade4b4e75e597f2059a745390a37a625c5c47775354ce",
+      "demo_count": 30
+    },
+    "mimic": {
+      "path": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "sha256": "03addfc4e3b7c18c337f97836889d6368bcadd804df44d841fca077879368a3e",
+      "demo_count": 500,
+      "successful_count": 500
+    }
+  },
+  "output": {
+    "path": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_plus_mimic500_20261028.hdf5",
+    "sha256": "ff326a1bd45f4abf94ed576865bce2fd5beea4f36c0aa4bc7aed2c975a70d101",
+    "human_count": 30,
+    "mimic_count": 500,
+    "demo_count": 530,
+    "total_steps": 222476,
+    "env_name": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0"
+  },
+  "validation": {
+    "all_selected_successful": true,
+    "actions_dim": 7,
+    "observation_dims": {
+      "eef_pos": 3,
+      "eef_quat": 4,
+      "gripper_pos": 2,
+      "toy_truck_positions": 3,
+      "toy_truck_orientations": 4,
+      "box_positions": 3,
+      "box_orientations": 4
+    },
+    "lengths_and_finite_values_checked": true
+  },
+  "episodes": [
+    {
+      "output_demo": "demo_0",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_0",
+      "num_samples": 448
+    },
+    {
+      "output_demo": "demo_1",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_1",
+      "num_samples": 382
+    },
+    {
+      "output_demo": "demo_2",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_2",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_3",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_3",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_4",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_4",
+      "num_samples": 477
+    },
+    {
+      "output_demo": "demo_5",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_5",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_6",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_6",
+      "num_samples": 610
+    },
+    {
+      "output_demo": "demo_7",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_7",
+      "num_samples": 440
+    },
+    {
+      "output_demo": "demo_8",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_8",
+      "num_samples": 425
+    },
+    {
+      "output_demo": "demo_9",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_9",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_10",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_10",
+      "num_samples": 396
+    },
+    {
+      "output_demo": "demo_11",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_11",
+      "num_samples": 357
+    },
+    {
+      "output_demo": "demo_12",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_12",
+      "num_samples": 465
+    },
+    {
+      "output_demo": "demo_13",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_13",
+      "num_samples": 408
+    },
+    {
+      "output_demo": "demo_14",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_14",
+      "num_samples": 342
+    },
+    {
+      "output_demo": "demo_15",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_15",
+      "num_samples": 402
+    },
+    {
+      "output_demo": "demo_16",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_16",
+      "num_samples": 362
+    },
+    {
+      "output_demo": "demo_17",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_17",
+      "num_samples": 367
+    },
+    {
+      "output_demo": "demo_18",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_18",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_19",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_19",
+      "num_samples": 386
+    },
+    {
+      "output_demo": "demo_20",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_20",
+      "num_samples": 407
+    },
+    {
+      "output_demo": "demo_21",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_21",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_22",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_22",
+      "num_samples": 292
+    },
+    {
+      "output_demo": "demo_23",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_23",
+      "num_samples": 285
+    },
+    {
+      "output_demo": "demo_24",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_24",
+      "num_samples": 307
+    },
+    {
+      "output_demo": "demo_25",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_25",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_26",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_26",
+      "num_samples": 431
+    },
+    {
+      "output_demo": "demo_27",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_27",
+      "num_samples": 318
+    },
+    {
+      "output_demo": "demo_28",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_28",
+      "num_samples": 251
+    },
+    {
+      "output_demo": "demo_29",
+      "source": "human",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+      "source_demo": "demo_29",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_30",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_0",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_31",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_1",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_32",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_2",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_33",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_3",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_34",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_4",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_35",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_5",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_36",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_6",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_37",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_7",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_38",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_8",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_39",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_9",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_40",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_10",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_41",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_11",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_42",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_12",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_43",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_13",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_44",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_14",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_45",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_15",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_46",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_16",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_47",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_17",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_48",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_18",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_49",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_19",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_50",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_20",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_51",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_21",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_52",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_22",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_53",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_23",
+      "num_samples": 380
+    },
+    {
+      "output_demo": "demo_54",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_24",
+      "num_samples": 458
+    },
+    {
+      "output_demo": "demo_55",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_25",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_56",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_26",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_57",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_27",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_58",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_28",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_59",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_29",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_60",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_30",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_61",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_31",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_62",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_32",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_63",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_33",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_64",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_34",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_65",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_35",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_66",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_36",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_67",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_37",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_68",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_38",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_69",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_39",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_70",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_40",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_71",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_41",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_72",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_42",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_73",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_43",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_74",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_44",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_75",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_45",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_76",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_46",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_77",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_47",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_78",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_48",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_79",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_49",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_80",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_50",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_81",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_51",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_82",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_52",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_83",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_53",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_84",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_54",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_85",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_55",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_86",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_56",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_87",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_57",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_88",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_58",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_89",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_59",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_90",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_60",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_91",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_61",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_92",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_62",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_93",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_63",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_94",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_64",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_95",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_65",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_96",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_66",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_97",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_67",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_98",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_68",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_99",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_69",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_100",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_70",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_101",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_71",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_102",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_72",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_103",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_73",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_104",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_74",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_105",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_75",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_106",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_76",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_107",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_77",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_108",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_78",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_109",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_79",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_110",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_80",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_111",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_81",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_112",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_82",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_113",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_83",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_114",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_84",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_115",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_85",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_116",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_86",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_117",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_87",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_118",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_88",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_119",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_89",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_120",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_90",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_121",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_91",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_122",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_92",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_123",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_93",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_124",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_94",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_125",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_95",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_126",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_96",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_127",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_97",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_128",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_98",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_129",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_99",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_130",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_100",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_131",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_101",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_132",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_102",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_133",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_103",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_134",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_104",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_135",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_105",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_136",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_106",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_137",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_107",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_138",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_108",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_139",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_109",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_140",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_110",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_141",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_111",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_142",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_112",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_143",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_113",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_144",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_114",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_145",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_115",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_146",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_116",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_147",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_117",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_148",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_118",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_149",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_119",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_150",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_120",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_151",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_121",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_152",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_122",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_153",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_123",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_154",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_124",
+      "num_samples": 380
+    },
+    {
+      "output_demo": "demo_155",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_125",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_156",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_126",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_157",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_127",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_158",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_128",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_159",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_129",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_160",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_130",
+      "num_samples": 282
+    },
+    {
+      "output_demo": "demo_161",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_131",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_162",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_132",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_163",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_133",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_164",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_134",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_165",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_135",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_166",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_136",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_167",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_137",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_168",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_138",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_169",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_139",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_170",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_140",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_171",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_141",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_172",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_142",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_173",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_143",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_174",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_144",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_175",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_145",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_176",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_146",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_177",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_147",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_178",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_148",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_179",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_149",
+      "num_samples": 380
+    },
+    {
+      "output_demo": "demo_180",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_150",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_181",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_151",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_182",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_152",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_183",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_153",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_184",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_154",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_185",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_155",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_186",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_156",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_187",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_157",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_188",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_158",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_189",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_159",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_190",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_160",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_191",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_161",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_192",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_162",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_193",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_163",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_194",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_164",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_195",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_165",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_196",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_166",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_197",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_167",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_198",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_168",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_199",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_169",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_200",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_170",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_201",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_171",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_202",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_172",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_203",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_173",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_204",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_174",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_205",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_175",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_206",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_176",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_207",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_177",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_208",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_178",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_209",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_179",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_210",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_180",
+      "num_samples": 458
+    },
+    {
+      "output_demo": "demo_211",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_181",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_212",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_182",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_213",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_183",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_214",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_184",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_215",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_185",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_216",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_186",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_217",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_187",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_218",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_188",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_219",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_189",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_220",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_190",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_221",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_191",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_222",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_192",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_223",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_193",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_224",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_194",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_225",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_195",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_226",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_196",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_227",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_197",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_228",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_198",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_229",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_199",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_230",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_200",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_231",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_201",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_232",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_202",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_233",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_203",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_234",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_204",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_235",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_205",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_236",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_206",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_237",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_207",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_238",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_208",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_239",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_209",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_240",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_210",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_241",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_211",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_242",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_212",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_243",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_213",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_244",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_214",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_245",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_215",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_246",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_216",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_247",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_217",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_248",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_218",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_249",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_219",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_250",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_220",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_251",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_221",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_252",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_222",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_253",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_223",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_254",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_224",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_255",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_225",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_256",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_226",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_257",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_227",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_258",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_228",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_259",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_229",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_260",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_230",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_261",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_231",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_262",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_232",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_263",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_233",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_264",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_234",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_265",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_235",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_266",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_236",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_267",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_237",
+      "num_samples": 380
+    },
+    {
+      "output_demo": "demo_268",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_238",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_269",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_239",
+      "num_samples": 458
+    },
+    {
+      "output_demo": "demo_270",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_240",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_271",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_241",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_272",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_242",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_273",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_243",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_274",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_244",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_275",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_245",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_276",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_246",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_277",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_247",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_278",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_248",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_279",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_249",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_280",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_250",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_281",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_251",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_282",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_252",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_283",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_253",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_284",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_254",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_285",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_255",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_286",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_256",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_287",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_257",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_288",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_258",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_289",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_259",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_290",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_260",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_291",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_261",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_292",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_262",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_293",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_263",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_294",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_264",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_295",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_265",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_296",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_266",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_297",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_267",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_298",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_268",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_299",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_269",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_300",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_270",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_301",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_271",
+      "num_samples": 458
+    },
+    {
+      "output_demo": "demo_302",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_272",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_303",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_273",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_304",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_274",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_305",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_275",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_306",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_276",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_307",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_277",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_308",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_278",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_309",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_279",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_310",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_280",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_311",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_281",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_312",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_282",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_313",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_283",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_314",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_284",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_315",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_285",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_316",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_286",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_317",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_287",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_318",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_288",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_319",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_289",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_320",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_290",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_321",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_291",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_322",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_292",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_323",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_293",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_324",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_294",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_325",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_295",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_326",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_296",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_327",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_297",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_328",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_298",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_329",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_299",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_330",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_300",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_331",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_301",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_332",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_302",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_333",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_303",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_334",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_304",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_335",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_305",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_336",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_306",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_337",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_307",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_338",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_308",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_339",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_309",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_340",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_310",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_341",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_311",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_342",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_312",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_343",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_313",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_344",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_314",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_345",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_315",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_346",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_316",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_347",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_317",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_348",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_318",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_349",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_319",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_350",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_320",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_351",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_321",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_352",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_322",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_353",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_323",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_354",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_324",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_355",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_325",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_356",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_326",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_357",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_327",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_358",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_328",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_359",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_329",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_360",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_330",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_361",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_331",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_362",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_332",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_363",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_333",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_364",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_334",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_365",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_335",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_366",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_336",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_367",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_337",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_368",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_338",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_369",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_339",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_370",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_340",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_371",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_341",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_372",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_342",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_373",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_343",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_374",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_344",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_375",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_345",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_376",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_346",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_377",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_347",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_378",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_348",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_379",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_349",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_380",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_350",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_381",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_351",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_382",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_352",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_383",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_353",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_384",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_354",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_385",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_355",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_386",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_356",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_387",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_357",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_388",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_358",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_389",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_359",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_390",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_360",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_391",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_361",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_392",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_362",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_393",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_363",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_394",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_364",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_395",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_365",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_396",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_366",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_397",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_367",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_398",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_368",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_399",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_369",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_400",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_370",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_401",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_371",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_402",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_372",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_403",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_373",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_404",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_374",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_405",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_375",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_406",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_376",
+      "num_samples": 380
+    },
+    {
+      "output_demo": "demo_407",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_377",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_408",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_378",
+      "num_samples": 462
+    },
+    {
+      "output_demo": "demo_409",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_379",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_410",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_380",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_411",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_381",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_412",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_382",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_413",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_383",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_414",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_384",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_415",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_385",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_416",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_386",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_417",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_387",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_418",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_388",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_419",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_389",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_420",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_390",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_421",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_391",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_422",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_392",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_423",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_393",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_424",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_394",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_425",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_395",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_426",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_396",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_427",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_397",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_428",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_398",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_429",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_399",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_430",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_400",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_431",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_401",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_432",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_402",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_433",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_403",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_434",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_404",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_435",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_405",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_436",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_406",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_437",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_407",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_438",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_408",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_439",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_409",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_440",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_410",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_441",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_411",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_442",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_412",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_443",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_413",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_444",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_414",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_445",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_415",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_446",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_416",
+      "num_samples": 458
+    },
+    {
+      "output_demo": "demo_447",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_417",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_448",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_418",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_449",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_419",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_450",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_420",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_451",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_421",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_452",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_422",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_453",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_423",
+      "num_samples": 502
+    },
+    {
+      "output_demo": "demo_454",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_424",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_455",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_425",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_456",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_426",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_457",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_427",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_458",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_428",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_459",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_429",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_460",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_430",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_461",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_431",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_462",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_432",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_463",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_433",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_464",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_434",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_465",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_435",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_466",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_436",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_467",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_437",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_468",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_438",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_469",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_439",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_470",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_440",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_471",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_441",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_472",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_442",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_473",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_443",
+      "num_samples": 398
+    },
+    {
+      "output_demo": "demo_474",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_444",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_475",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_445",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_476",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_446",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_477",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_447",
+      "num_samples": 458
+    },
+    {
+      "output_demo": "demo_478",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_448",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_479",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_449",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_480",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_450",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_481",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_451",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_482",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_452",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_483",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_453",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_484",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_454",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_485",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_455",
+      "num_samples": 369
+    },
+    {
+      "output_demo": "demo_486",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_456",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_487",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_457",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_488",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_458",
+      "num_samples": 458
+    },
+    {
+      "output_demo": "demo_489",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_459",
+      "num_samples": 471
+    },
+    {
+      "output_demo": "demo_490",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_460",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_491",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_461",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_492",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_462",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_493",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_463",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_494",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_464",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_495",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_465",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_496",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_466",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_497",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_467",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_498",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_468",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_499",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_469",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_500",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_470",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_501",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_471",
+      "num_samples": 316
+    },
+    {
+      "output_demo": "demo_502",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_472",
+      "num_samples": 417
+    },
+    {
+      "output_demo": "demo_503",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_473",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_504",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_474",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_505",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_475",
+      "num_samples": 470
+    },
+    {
+      "output_demo": "demo_506",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_476",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_507",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_477",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_508",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_478",
+      "num_samples": 508
+    },
+    {
+      "output_demo": "demo_509",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_479",
+      "num_samples": 323
+    },
+    {
+      "output_demo": "demo_510",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_480",
+      "num_samples": 469
+    },
+    {
+      "output_demo": "demo_511",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_481",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_512",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_482",
+      "num_samples": 433
+    },
+    {
+      "output_demo": "demo_513",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_483",
+      "num_samples": 349
+    },
+    {
+      "output_demo": "demo_514",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_484",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_515",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_485",
+      "num_samples": 427
+    },
+    {
+      "output_demo": "demo_516",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_486",
+      "num_samples": 456
+    },
+    {
+      "output_demo": "demo_517",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_487",
+      "num_samples": 347
+    },
+    {
+      "output_demo": "demo_518",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_488",
+      "num_samples": 438
+    },
+    {
+      "output_demo": "demo_519",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_489",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_520",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_490",
+      "num_samples": 641
+    },
+    {
+      "output_demo": "demo_521",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_491",
+      "num_samples": 373
+    },
+    {
+      "output_demo": "demo_522",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_492",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_523",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_493",
+      "num_samples": 496
+    },
+    {
+      "output_demo": "demo_524",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_494",
+      "num_samples": 464
+    },
+    {
+      "output_demo": "demo_525",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_495",
+      "num_samples": 439
+    },
+    {
+      "output_demo": "demo_526",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_496",
+      "num_samples": 393
+    },
+    {
+      "output_demo": "demo_527",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_497",
+      "num_samples": 338
+    },
+    {
+      "output_demo": "demo_528",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_498",
+      "num_samples": 388
+    },
+    {
+      "output_demo": "demo_529",
+      "source": "mimic",
+      "source_file": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "source_demo": "demo_499",
+      "num_samples": 388
+    }
+  ]
+}

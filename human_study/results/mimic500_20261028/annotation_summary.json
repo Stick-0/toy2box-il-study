@@ -1,0 +1,41 @@
+{
+  "input_count": 30,
+  "annotated_count": 28,
+  "accepted_source_demos_in_export_order": [
+    "demo_10",
+    "demo_11",
+    "demo_12",
+    "demo_13",
+    "demo_14",
+    "demo_15",
+    "demo_16",
+    "demo_17",
+    "demo_18",
+    "demo_19",
+    "demo_2",
+    "demo_20",
+    "demo_21",
+    "demo_22",
+    "demo_23",
+    "demo_24",
+    "demo_25",
+    "demo_26",
+    "demo_27",
+    "demo_28",
+    "demo_29",
+    "demo_3",
+    "demo_4",
+    "demo_5",
+    "demo_6",
+    "demo_7",
+    "demo_8",
+    "demo_9"
+  ],
+  "rejected_source_demos": [
+    "demo_0",
+    "demo_1"
+  ],
+  "sha256": "afbc6a9680a2b9ba2e60f52b61f55956c906365d6444d3a7db73816f72a675a5",
+  "reason": "Native auto annotation requires grasp completion and replay task completion",
+  "annotation_script_unchanged": true
+}

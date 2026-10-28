@@ -1,0 +1,162 @@
+{
+  "protocol": {
+    "task": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+    "evaluation_seed": 42,
+    "rollouts_per_model": 100,
+    "horizon": 800,
+    "native_play_sha256": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+    "video": false
+  },
+  "models": [
+    {
+      "condition": "baseline",
+      "training_seed": 101,
+      "label": "baseline_seed101",
+      "successful_trials": 16,
+      "num_rollouts": 100,
+      "success_rate": 0.16,
+      "success_percent": 16.0,
+      "checkpoint": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed101/20261028154854/models/model_epoch_2000.pth",
+      "recorded_checkpoint_path": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed101/20261028154854/models/model_epoch_2000.pth",
+      "checkpoint_sha256": "07b80e320363925b49bc42709f1c5e8172a2e0376b6ecd2340ae27cfdaf465bb",
+      "checkpoint_file_verified": false,
+      "embedded_config_verified": false,
+      "config_sha256": "bf1acfb97ea6e5224547c2dfcc5fedfe45128c80b340dfbb0ad2c97f079a998c",
+      "training_record_sha256": "eb0611a394e664ef467cf4e3d9f9bd82e4652ff9db0e0ef2d9014c1f5845651b",
+      "training_dataset_sha256": "4aaf12dba9ffb1e9833ade4b4e75e597f2059a745390a37a625c5c47775354ce",
+      "training_dataset_file_verified": false,
+      "training_provenance_verified": false,
+      "native_log_sha256": "10175c1f7f137d2dcb961b034d4567abd098ba85b1b3868c2e77a12f0b24a80f",
+      "native_log_verified": true,
+      "training_records_verified": true,
+      "summary_sha256": "b1a8b65310f319dbc618766418c54262fdebf3717c919aa04c1f529cf1fd2759",
+      "trials_sha256": "0253b2ff53278243259a92f54bec8337bf462ccae1a960bfd43657279e2dbe30"
+    },
+    {
+      "condition": "baseline",
+      "training_seed": 111,
+      "label": "baseline_seed111",
+      "successful_trials": 19,
+      "num_rollouts": 100,
+      "success_rate": 0.19,
+      "success_percent": 19.0,
+      "checkpoint": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/models/model_epoch_2000.pth",
+      "recorded_checkpoint_path": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/models/model_epoch_2000.pth",
+      "checkpoint_sha256": "8bb79fbf3e2478b3a64d97877c44a141104ab032209ed73a038617141c13b17a",
+      "checkpoint_file_verified": false,
+      "embedded_config_verified": false,
+      "config_sha256": "f39d4aecc733a326efa47e5a6e5e55b47042a366766fd5dd1ef107cc721ee975",
+      "training_record_sha256": "eb0611a394e664ef467cf4e3d9f9bd82e4652ff9db0e0ef2d9014c1f5845651b",
+      "training_dataset_sha256": "4aaf12dba9ffb1e9833ade4b4e75e597f2059a745390a37a625c5c47775354ce",
+      "training_dataset_file_verified": false,
+      "training_provenance_verified": false,
+      "native_log_sha256": "f84a8cc89c592919975a05e618d4bf388acbde11cea73fe58c30194bdf6100d1",
+      "native_log_verified": true,
+      "training_records_verified": true,
+      "summary_sha256": "57d93fa0bf90bb3cdc5a12fd6796a66e2225c8ded6f384dca78bd20f064acef0",
+      "trials_sha256": "5783f78aa0eb5e2fb787e4d3d56b9089246c1473a6efdb3de88b9c404f919d48"
+    },
+    {
+      "condition": "mimic500",
+      "training_seed": 101,
+      "label": "mimic500_seed101",
+      "successful_trials": 64,
+      "num_rollouts": 100,
+      "success_rate": 0.64,
+      "success_percent": 64.0,
+      "checkpoint": "models/mimic500_seed101.pth",
+      "recorded_checkpoint_path": "/home/jm/robot_sim/IsaacLab_RS/logs/human_study/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/mimic500_seed101/20261028203356/models/model_epoch_2000.pth",
+      "checkpoint_sha256": "5609d8e2d1c19e44a6f28f3012badcb42356fb1860f6f241f05182648f1d9737",
+      "checkpoint_file_verified": true,
+      "embedded_config_verified": true,
+      "config_sha256": "b07bad68bafbc5915fcbfff32e0b153ab275d90b5aef3dab7ce7b51ea1922061",
+      "training_record_sha256": "9ec004a1671e3a1e475dcc043d47c103abb50dad2d1d5f319ab1105700ca889e",
+      "training_dataset_sha256": "ff326a1bd45f4abf94ed576865bce2fd5beea4f36c0aa4bc7aed2c975a70d101",
+      "training_dataset_file_verified": false,
+      "dataset_manifest_sha256": "c5e3f5bd7e81a7f30f90f38ce4b9d771be0648e956419803f1a3c026198e18ff",
+      "training_provenance_verified": false,
+      "native_log_sha256": "f1afdbd35d57dc0ba20f59febc451ef5d6a6808299db41125c5d5fbce569c027",
+      "native_log_verified": true,
+      "training_records_verified": true,
+      "summary_sha256": "cc68d22984a3a494b30b0720d034219325e7ad6562f7a6d2002178754df2ff9f",
+      "trials_sha256": "ad9736623fb360b36e490f46e1fa336d64120d121c6e54c927e651bdadddebb6"
+    },
+    {
+      "condition": "mimic500",
+      "training_seed": 111,
+      "label": "mimic500_seed111",
+      "successful_trials": 60,
+      "num_rollouts": 100,
+      "success_rate": 0.6,
+      "success_percent": 60.0,
+      "checkpoint": "models/mimic500_seed111.pth",
+      "recorded_checkpoint_path": "/home/jm/robot_sim/IsaacLab_RS/logs/human_study/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/mimic500_seed111/20261028205437/models/model_epoch_2000.pth",
+      "checkpoint_sha256": "ea1882e7b7b7a1e3a27ff6acf8ba12926c6222ba9d6fbe9cd5ef5494c8fe9f1c",
+      "checkpoint_file_verified": true,
+      "embedded_config_verified": true,
+      "config_sha256": "faf67142cb2ced1acd50935d8c9ae20ed0a4c81fca30ec014853e93386af4304",
+      "training_record_sha256": "247904bdcaf8f36aa298bcad33530fe09cd76f84f20b3c0ef0206568f7a759f6",
+      "training_dataset_sha256": "ff326a1bd45f4abf94ed576865bce2fd5beea4f36c0aa4bc7aed2c975a70d101",
+      "training_dataset_file_verified": false,
+      "dataset_manifest_sha256": "c5e3f5bd7e81a7f30f90f38ce4b9d771be0648e956419803f1a3c026198e18ff",
+      "training_provenance_verified": false,
+      "native_log_sha256": "d420247f76fbf1da65f862801d1d4ce7a725d4590ea440f9f3641f087b773fb8",
+      "native_log_verified": true,
+      "training_records_verified": true,
+      "summary_sha256": "08bd9a0eb767e2897e7a84b948629ae0da7311f37bd114de9aa6f766b9f05c76",
+      "trials_sha256": "ba6cfa2337245420cae8a2050e88ecb1385e63630bcabac8288bf79c5941ec7a"
+    }
+  ],
+  "conditions": {
+    "baseline": {
+      "training_seeds": [
+        101,
+        111
+      ],
+      "mean_success_percent": 17.5,
+      "sample_sd_percentage_points": 2.1213203435596424,
+      "sd_ddof": 1
+    },
+    "mimic500": {
+      "training_seeds": [
+        101,
+        111
+      ],
+      "mean_success_percent": 62.0,
+      "sample_sd_percentage_points": 2.8284271247461903,
+      "sd_ddof": 1
+    }
+  },
+  "paired_by_training_seed": [
+    {
+      "training_seed": 101,
+      "delta_percentage_points": 48.0
+    },
+    {
+      "training_seed": 111,
+      "delta_percentage_points": 41.0
+    }
+  ],
+  "mean_delta_percentage_points": 44.5,
+  "pattern_verdict": "both_improve",
+  "interpretation": "Mimic improves success for both training seeds in this evaluation.",
+  "hypothesis_support": "consistent_improvement",
+  "hypothesis_support_interpretation": "Both seeds improve, consistently supporting the augmentation prediction in this evaluation.",
+  "limitations": [
+    "Mean and sample SD (ddof=1) summarize only two training seeds; this is not a confidence interval.",
+    "Deltas pair models by training seed, not individual rollout trajectories.",
+    "Only evaluation seed 42 was tested; improvement on the undisclosed final seed is unknown.",
+    "These descriptive results alone do not establish statistical significance or diagnose failure causes.",
+    "Submission validation uses preserved baseline configs, audit, evaluation summaries, 100 trial records per model, and native logs. Removed baseline weights and their embedded configs are not re-verified.",
+    "HDF5 datasets are not opened or re-hashed in submission mode; their original counts and hashes are cross-checked as historical records. This does not establish current dataset file integrity."
+  ],
+  "validation": {
+    "mode": "submission",
+    "evaluation_json_and_native_logs_verified": true,
+    "submitted_native_evaluator_verified": true,
+    "final_model_files_and_embedded_configs_verified": true,
+    "baseline_checkpoint_files_verified": false,
+    "dataset_files_verified": false,
+    "dataset_evidence": "Cross-checked preserved manifest paths, counts, and SHA256 records only."
+  }
+}

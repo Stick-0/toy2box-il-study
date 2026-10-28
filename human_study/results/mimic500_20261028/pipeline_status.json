@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "stage": "finished",
+  "driver_pid": 824118,
+  "generation_pid": 820606,
+  "generated": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+  "human": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+  "started_at": "2026-10-28T09:49:43.436378+00:00",
+  "updated_at": "2026-10-28T13:05:12.267366+00:00",
+  "child_pids": [],
+  "pending_baselines": []
+}

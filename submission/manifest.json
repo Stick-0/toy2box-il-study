@@ -1,0 +1,44 @@
+{
+  "schema": "toy2box.submission_integrity.v1",
+  "project": "IsaacLab",
+  "upstream_repository": "https://github.com/cailab-hy/IsaacLab_RS",
+  "upstream_commit": "e83a5d2f11ca1b5f03b690e1978479e620c500e2",
+  "source_matches_recorded_experiment": true,
+  "source_sha256": {
+    "scripts/imitation_learning/robomimic/train.py": "7d38483469b7655f87435dea2ea82ac8b4229fce3d1cae937fb938f9280debfe",
+    "scripts/imitation_learning/robomimic/play.py": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+    "scripts/imitation_learning/isaaclab_mimic/annotate_demos.py": "ee3010b0fc753f56ea28cd7e2480d4e6f4d123423efa73603d1e2724554c2e23",
+    "scripts/imitation_learning/isaaclab_mimic/generate_dataset.py": "c61fb43a1be160d6fe08414cb31e457b442d8aa770bb89f1fd81ad73c23e328f",
+    "source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/place_upright_mug_rmp_rel_env_cfg.py": "d4dc41bd32a0245d6396decdab5d125a61fa25c58321ff8d2c87c9e55d4a9941",
+    "source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/place_toy2box_rmp_rel_env_cfg.py": "bc01d693edd412e84f675713991de930004e3edf7e661a4e8749aafd2940d19e",
+    "source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/__init__.py": "23e4bdd154bf7a733d2663cca2c6de3b46db182b90c704633eb913a1e8cbf6f3",
+    "source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/agents/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source/isaaclab_mimic/isaaclab_mimic/envs/agibot_place_toy2box_mimic_env_cfg.py": "b56ff68dd3200843f9470fb901c9a489a8c9b8043d8707c2215f6f7d019b9e27"
+  },
+  "final_models": [
+    {
+      "training_seed": 101,
+      "path": "models/mimic500_seed101.pth",
+      "sha256": "5609d8e2d1c19e44a6f28f3012badcb42356fb1860f6f241f05182648f1d9737",
+      "bytes": 7985734,
+      "epoch": 2000,
+      "dataset": "human30_plus_mimic500",
+      "training_record": "human_study/results/mimic500_20261028/training/mimic500_seed101/summary.json",
+      "evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed101/summary.json"
+    },
+    {
+      "training_seed": 111,
+      "path": "models/mimic500_seed111.pth",
+      "sha256": "ea1882e7b7b7a1e3a27ff6acf8ba12926c6222ba9d6fbe9cd5ef5494c8fe9f1c",
+      "bytes": 7985734,
+      "epoch": 2000,
+      "dataset": "human30_plus_mimic500",
+      "training_record": "human_study/results/mimic500_20261028/training/mimic500_seed111/summary.json",
+      "evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed111/summary.json"
+    }
+  ],
+  "only_two_checkpoint_files": true,
+  "evaluation_commands": "submission/evaluation_commands.txt",
+  "commands_reference_submitted_checkpoints": true,
+  "validation": "File hashes, recorded metrics, command paths, syntax and document links; no new training or simulation rollout was performed during packaging."
+}

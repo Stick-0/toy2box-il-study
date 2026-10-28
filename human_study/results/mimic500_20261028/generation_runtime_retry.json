@@ -1,0 +1,31 @@
+{
+  "time": "2026-10-28T09:33:29.046765+00:00",
+  "first_attempt": "logs/generation.log",
+  "first_attempt_pid": 778784,
+  "duration_minutes_approx": 9,
+  "completed_demos": 0,
+  "observations": [
+    "No completed attempts logged; both output files remained96bytes",
+    "Main thread sampled in futex wait, later CPUtime continued increasing",
+    "Cannot establish deadlock; slow serialized processing remains plausible",
+    "SIGTERM did not exit promptly, so own initial generator was terminated with SIGKILL"
+  ],
+  "retry": "logs/generation_retry01.log",
+  "retry_output": "human_study/data/human30_mimic500_raw_20261028_retry01.hdf5",
+  "runtime_changes": {
+    "OMP_NUM_THREADS": 4,
+    "MKL_NUM_THREADS": 4,
+    "OPENBLAS_NUM_THREADS": 4,
+    "faulthandler": "SIGUSR1 stack dump registered; native script run unchanged via runpy"
+  },
+  "mimic_parameters_changed": false,
+  "first_attempt_used_for_training": false,
+  "retry01_stopped_by_SIGINT": true,
+  "retry01_completed_demos": 0,
+  "diagnostic_stack": "logs/generation_retry01.log: Current thread -> generation.env_loop:93 -> env.reset -> action.reset:189 -> RmpFlowController.initialize:97 -> SingleArticulation",
+  "confirmed_code_path": "Individual environment reset reinitializes every controller; 100queuedresets x100controllers causes10000initializations",
+  "active_num_envs": 8,
+  "active_log": "logs/generation_env8.log",
+  "active_output": "human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+  "first_completed_attempt_observed_at": "2026-10-28T18:37:45+09:00"
+}

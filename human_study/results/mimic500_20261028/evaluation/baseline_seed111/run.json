@@ -1,0 +1,32 @@
+{
+  "label": "baseline_seed111",
+  "status": "running",
+  "started_at": "2026-10-28T09:27:40.455360+00:00",
+  "task": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+  "evaluation_seed": 42,
+  "num_rollouts": 100,
+  "horizon": 800,
+  "video": false,
+  "checkpoint": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/models/model_epoch_2000.pth",
+  "checkpoint_sha256": "8bb79fbf3e2478b3a64d97877c44a141104ab032209ed73a038617141c13b17a",
+  "native_play": "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/play.py",
+  "native_play_sha256": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+  "command": [
+    "/home/jm/robot_sim/IsaacLab_RS/isaaclab.sh",
+    "-p",
+    "-u",
+    "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/play.py",
+    "--task",
+    "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+    "--checkpoint",
+    "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/models/model_epoch_2000.pth",
+    "--seed",
+    "42",
+    "--num_rollouts",
+    "100",
+    "--horizon",
+    "800",
+    "--headless"
+  ],
+  "cwd": "/home/jm/robot_sim/IsaacLab_RS"
+}

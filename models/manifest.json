@@ -1,0 +1,26 @@
+{
+  "schema": "toy2box.submission_models.v1",
+  "task": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+  "models": [
+    {
+      "training_seed": 101,
+      "path": "models/mimic500_seed101.pth",
+      "sha256": "5609d8e2d1c19e44a6f28f3012badcb42356fb1860f6f241f05182648f1d9737",
+      "bytes": 7985734,
+      "epoch": 2000,
+      "dataset": "human30_plus_mimic500",
+      "training_record": "human_study/results/mimic500_20261028/training/mimic500_seed101/summary.json",
+      "evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed101/summary.json"
+    },
+    {
+      "training_seed": 111,
+      "path": "models/mimic500_seed111.pth",
+      "sha256": "ea1882e7b7b7a1e3a27ff6acf8ba12926c6222ba9d6fbe9cd5ef5494c8fe9f1c",
+      "bytes": 7985734,
+      "epoch": 2000,
+      "dataset": "human30_plus_mimic500",
+      "training_record": "human_study/results/mimic500_20261028/training/mimic500_seed111/summary.json",
+      "evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed111/summary.json"
+    }
+  ]
+}

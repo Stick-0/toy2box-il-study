@@ -1,0 +1,354 @@
+{
+  "schema": "toy2box.mimic_generation_summary.v1",
+  "audited_at": "2026-10-28T11:38:00.098196+00:00",
+  "status": "completed_and_audited",
+  "audit_scope": "Read-only audit of the closed successful/failed env8 datasets, generation_env8.log, and dataset_manifest.json; native generation source read to verify RNG order. No experiments rerun.",
+  "generation": {
+    "task": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-Rel-Mimic-v0",
+    "generation_num_trials": 500,
+    "generation_guarantee": true,
+    "successful_demos": 500,
+    "failed_demos": 889,
+    "completed_attempts": 1389,
+    "success_fraction": 0.3599712023038157,
+    "success_percentage": 35.99712023038157,
+    "success_rate_scope": "Mimic generation acceptance rate, not a learned policy evaluation success rate",
+    "annotated_source_count": 28,
+    "parallel_environments": 8,
+    "settings": {
+      "datagen_seed": 1,
+      "action_noise_each_subtask": 0.01,
+      "num_interpolation_steps_each_subtask": 15,
+      "settings_evidence": "Unmodified native Toy2Box Mimic defaults previously audited; num_envs=8 also verified in both generated dataset env_args"
+    },
+    "seed_details": {
+      "environment_creation_seed_logged": null,
+      "datagen_seed": 1,
+      "native_rng_calls": [
+        "random.seed(env.cfg.datagen_config.seed)",
+        "np.random.seed(env.cfg.datagen_config.seed)",
+        "torch.manual_seed(env.cfg.datagen_config.seed)"
+      ],
+      "execution_order": [
+        "create environment with gym.make",
+        "set Python random, NumPy and Torch RNG seeds from datagen_config.seed",
+        "env.reset()",
+        "set up source pool and asynchronous generation",
+        "execute generation loop"
+      ],
+      "interpretation": "The seed=None startup message refers to environment creation. Native generation explicitly seeds Python random, NumPy and Torch with 1 before the reset and generation loop; this is not an unseeded generation run. Startup creation is not claimed to be seeded."
+    },
+    "runtime_parallelism_change": {
+      "pdf_example_num_envs": 100,
+      "completed_run_num_envs": 8,
+      "reason": "Reduce native reset/controller initialization overhead observed by the runner; task and generation hyperparameters retained",
+      "earlier_100env_attempts_used_for_training": false,
+      "earlier_100env_demos_in_manifest": 0
+    },
+    "completion_evidence": {
+      "last_progress": {
+        "successes": 500,
+        "attempts": 1389,
+        "printed_percent": 36.0
+      },
+      "target_reached_message_present": true,
+      "async_cleanup_message_present": true,
+      "success_plus_failure_files_match_attempt_count": true
+    }
+  },
+  "datasets": {
+    "successful": {
+      "path": "human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "bytes": 186743994,
+      "sha256": "03addfc4e3b7c18c337f97836889d6368bcadd804df44d841fca077879368a3e",
+      "demo_count": 500,
+      "success_labels_true": 500,
+      "success_labels_false": 0,
+      "steps": {
+        "total": 210707,
+        "min": 282,
+        "max": 641,
+        "mean": 421.414,
+        "standard_deviation_ddof0": 65.46918820330676,
+        "median": 433.0,
+        "percentile25": 373.0,
+        "percentile75": 464.0
+      },
+      "env_args": {
+        "env_name": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-Rel-Mimic-v0",
+        "type": 2,
+        "sim_args": {
+          "dt": 0.016666666666666666,
+          "decimation": 3,
+          "render_interval": 6,
+          "num_envs": 8
+        }
+      },
+      "actions_shape_N_by_7_verified": true,
+      "num_samples_and_total_consistent": true
+    },
+    "failed": {
+      "path": "human_study/data/human30_mimic500_raw_20261028_env8_failed.hdf5",
+      "bytes": 323521540,
+      "sha256": "a7e478e87cf66db26b77377d0f56d44ac902bf50ea5c3e7a82295cf7cce06e56",
+      "demo_count": 889,
+      "success_labels_true": 0,
+      "success_labels_false": 889,
+      "steps": {
+        "total": 362963,
+        "min": 282,
+        "max": 641,
+        "mean": 408.28233970753655,
+        "standard_deviation_ddof0": 70.7004337356482,
+        "median": 393.0,
+        "percentile25": 349.0,
+        "percentile75": 462.0
+      },
+      "env_args": {
+        "env_name": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-Rel-Mimic-v0",
+        "type": 2,
+        "sim_args": {
+          "dt": 0.016666666666666666,
+          "decimation": 3,
+          "render_interval": 6,
+          "num_envs": 8
+        }
+      },
+      "actions_shape_N_by_7_verified": true,
+      "num_samples_and_total_consistent": true
+    }
+  },
+  "training_selection": {
+    "human_used": 30,
+    "successful_mimic_used": 500,
+    "failed_mimic_used": 0,
+    "total_demonstrations": 530,
+    "human_steps_from_manifest": 11769,
+    "mimic_steps": 210707,
+    "total_steps": 222476,
+    "all_500_generated_successes_used": true,
+    "all_mimic_provenance_matches_env8_file": true,
+    "merged_output": {
+      "path": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_plus_mimic500_20261028.hdf5",
+      "sha256": "ff326a1bd45f4abf94ed576865bce2fd5beea4f36c0aa4bc7aed2c975a70d101",
+      "human_count": 30,
+      "mimic_count": 500,
+      "demo_count": 530,
+      "total_steps": 222476,
+      "env_name": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0"
+    },
+    "merged_file_audit_scope": "Counts, provenance, hash and finite validation taken from the verified preparation manifest; merged HDF5 was not reopened in this audit.",
+    "limits": {
+      "human_minimum": 20,
+      "human_maximum": 100,
+      "mimic_success_maximum": 1000,
+      "satisfied": true
+    }
+  },
+  "validation": {
+    "generation_counts_labels_action_shapes_step_counts": true,
+    "success_file_sha256_matches_training_manifest": true,
+    "selected_mimic_demo_ids_and_lengths_match_manifest": true,
+    "selected_training_values_finite": true,
+    "finite_validation_evidence": "Preparation manifest validates selected actions and all seven training observation keys; exact source SHA256 and all selected demo IDs/lengths match this audit.",
+    "training_observation_dimensions": {
+      "eef_pos": 3,
+      "eef_quat": 4,
+      "gripper_pos": 2,
+      "toy_truck_positions": 3,
+      "toy_truck_orientations": 4,
+      "box_positions": 3,
+      "box_orientations": 4
+    },
+    "failed_dataset_finite_values_checked": false,
+    "failed_dataset_not_used_for_training": true
+  },
+  "log_observations": {
+    "startup_error_lines": [
+      "2026-10-28T09:36:18Z [12,748ms] [Error] [omni.physx.tensors.plugin] Filter pattern '/World/envs/env_*/ToyTruck' did not match the correct number of entries (expected 16, found 8)"
+    ],
+    "interpretation": "The startup error is associated with filtered contact reporting for the two-finger sensor configuration. Source inspection identifies no direct use of the filtered force matrix by the task success test or the seven training observations. The grasp predicate does use net contact forces from the same sensor, whose update reads both net forces and the filtered matrix; this audit therefore does not certify complete absence of runtime effects. The run completed normally and its saved counts match the completion log.",
+    "technical_audit_at": "2026-10-28T11:41:22.742702+00:00",
+    "configuration_evidence": {
+      "source": "IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/place_toy2box_rmp_rel_env_cfg.py",
+      "lines": [
+        318,
+        319,
+        323
+      ],
+      "sensor_name": "contact_grasp",
+      "sensor_prim_path": "{ENV_REGEX_NS}/Robot/right_.*_Pad_Link",
+      "filter_prim_paths_expr": [
+        "{ENV_REGEX_NS}/ToyTruck"
+      ],
+      "observation": "One configured sensor matches both finger pads in every environment. With eight environments, the error reports 16 expected sensor matches and eight matched ToyTruck filter objects."
+    },
+    "sensor_supported_scope": {
+      "evidence": [
+        {
+          "source": "IsaacLab_RS/source/isaaclab/isaaclab/sensors/contact_sensor/contact_sensor.py",
+          "lines": [
+            43,
+            49,
+            50,
+            51,
+            56,
+            57
+          ]
+        },
+        {
+          "source": "IsaacLab_RS/source/isaaclab/isaaclab/sensors/contact_sensor/contact_sensor_cfg.py",
+          "lines": [
+            63,
+            64,
+            65,
+            66
+          ]
+        }
+      ],
+      "documented_rule": "Filtered contact reporting supports one sensor body per environment; multiple sensor bodies require separate sensors for filtering to work as expected.",
+      "view_creation": {
+        "source": "IsaacLab_RS/source/isaaclab/isaaclab/sensors/contact_sensor/contact_sensor.py",
+        "lines": [
+          280,
+          283,
+          284,
+          286
+        ],
+        "call": "create_rigid_contact_view(body_names_glob, filter_patterns=filter_prim_paths_glob)"
+      },
+      "single_filter_prim_exception": {
+        "source": "/home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/extscache/omni.physics.tensors-107.3.26+107.3.3.lx64.r.cp311.u353/omni/physics/tensors/impl/api.py",
+        "line": 408,
+        "description": "The API documents a special case allowing a filter pattern matching one prim to apply to all sensors. This is consistent with, but does not independently prove the cause of, the absence of the mismatch error in one-environment baseline evaluations."
+      },
+      "classification": "Contact-reporting view/filter mismatch; the inspected configuration path does not change rigid-body collision configuration. The C++ backend failure behavior was not instrumented."
+    },
+    "predicate_and_observation_consumers": {
+      "mimic_grasp_annotation": {
+        "source": "IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/mdp/observations.py",
+        "lines": [
+          68,
+          70,
+          71,
+          75,
+          78,
+          103,
+          107,
+          112
+        ],
+        "consumes": "contact_grasp.data.net_forces_w plus object/end-effector distance and gripper joint closure",
+        "consumes_filtered_force_matrix": false,
+        "mimic_signal_forwarding": {
+          "source": "IsaacLab_RS/source/isaaclab_mimic/isaaclab_mimic/envs/pick_place_mimic_env.py",
+          "lines": [
+            85,
+            86,
+            87
+          ]
+        }
+      },
+      "net_force_definition": {
+        "source": "/home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/extscache/omni.physics.tensors-107.3.26+107.3.3.lx64.r.cp311.u353/omni/physics/tensors/impl/api.py",
+        "lines": [
+          5809,
+          5812
+        ],
+        "description": "get_net_contact_forces includes all contacting prims, not only filter prims."
+      },
+      "release_and_success": {
+        "source": "IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/mdp/terminations.py",
+        "lines": [
+          90,
+          91,
+          92,
+          93,
+          95,
+          105,
+          109,
+          111,
+          114,
+          116
+        ],
+        "consumes": "ToyTruck/box positions and gripper joint opening; no contact-force matrix or net force read",
+        "consumes_filtered_force_matrix": false,
+        "consumes_net_contact_force": false
+      },
+      "final_mimic_subtask": {
+        "source": "IsaacLab_RS/source/isaaclab_mimic/isaaclab_mimic/envs/agibot_place_toy2box_mimic_env_cfg.py",
+        "lines": [
+          65,
+          67
+        ],
+        "description": "The box-referenced final subtask has subtask_term_signal=None; no separate force-based release signal is configured."
+      },
+      "seven_training_observations": {
+        "source": "IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/place_toy2box_rmp_rel_env_cfg.py",
+        "lines": [
+          94,
+          98,
+          102,
+          105,
+          109,
+          110,
+          111
+        ],
+        "keys": [
+          "eef_pos",
+          "eef_quat",
+          "gripper_pos",
+          "toy_truck_positions",
+          "toy_truck_orientations",
+          "box_positions",
+          "box_orientations"
+        ],
+        "consumes_filtered_force_matrix": false,
+        "consumes_net_contact_force": false
+      },
+      "sensor_update_coupling": {
+        "source": "IsaacLab_RS/source/isaaclab/isaaclab/sensors/contact_sensor/contact_sensor.py",
+        "lines": [
+          355,
+          356,
+          363,
+          367,
+          368,
+          369
+        ],
+        "description": "The same sensor update obtains net_forces_w and, because filtering is configured, also calls get_contact_force_matrix. Thus an indirect sensor-update relationship remains even though the filtered matrix is not directly consumed by the task/policy inputs."
+      }
+    },
+    "baseline_log_comparison": {
+      "101": {
+        "path": "human_study/results/mimic500_20261028/evaluation/baseline_seed101/evaluation.log",
+        "literal_search": "[Error]",
+        "matching_line_count": 0,
+        "matching_lines": []
+      },
+      "111": {
+        "path": "human_study/results/mimic500_20261028/evaluation/baseline_seed111/evaluation.log",
+        "literal_search": "[Error]",
+        "matching_line_count": 0,
+        "matching_lines": []
+      }
+    },
+    "limits": [
+      "No new simulation, sensor-force trace, or controlled comparison was run.",
+      "Finite selected training arrays and matching completion counts do not by themselves verify filtered-force accuracy.",
+      "The audit establishes direct source-code consumers and documented sensor limits; it does not prove that the backend filter error had no indirect effect."
+    ],
+    "changes_to_environment_or_sensor_configuration": false
+  },
+  "evidence_files": {
+    "generation_log": {
+      "path": "human_study/results/mimic500_20261028/logs/generation_env8.log",
+      "bytes": 241942,
+      "sha256": "886d361dd58ecce9d0d064ae244553ea56fda408fdf12074d1b05e6648e9f305"
+    },
+    "dataset_manifest": {
+      "path": "human_study/results/mimic500_20261028/dataset_manifest.json",
+      "bytes": 131251,
+      "sha256": "c5e3f5bd7e81a7f30f90f38ce4b9d771be0648e956419803f1a3c026198e18ff"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+Toy2Box 최종 모델 평가 명령
+
+실행 기준: 저장소를 복제한 뒤 저장소 루트에서 시작한다.
+Isaac Sim 5.1 / Python 3.11과 제출된 IsaacLab 패키지 설치가 필요하다.
+두 명령은 강의 play.py 형식을 사용하며, checkpoint는 저장소에 포함된 모델이다.
+
+conda activate lerobot-arena
+export TERM=xterm
+cd IsaacLab
+
+# 학습 seed 101 모델: 자체 검증 64/100
+./isaaclab.sh -p scripts/imitation_learning/robomimic/play.py \
+  --task Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0 \
+  --checkpoint ../models/mimic500_seed101.pth \
+  --seed 42 --num_rollouts 100 --horizon 800 --headless
+
+# 학습 seed 111 모델: 자체 검증 60/100
+./isaaclab.sh -p scripts/imitation_learning/robomimic/play.py \
+  --task Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0 \
+  --checkpoint ../models/mimic500_seed111.pth \
+  --seed 42 --num_rollouts 100 --horizon 800 --headless
+
+--seed 42는 자체 검증용 평가 seed이며 모델의 학습 seed와 다르다.
+조교 최종 평가에서는 조교가 지정한 비공개 평가 seed로 --seed만 변경한다.
+화면을 보며 실행하려면 --headless를 생략한다.
+conda 환경 이름이 다르면 설치된 Isaac Sim 환경 이름으로 변경한다.

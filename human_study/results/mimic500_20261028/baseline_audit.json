@@ -1,0 +1,1654 @@
+{
+  "created_at": "2026-10-28T18:20:04.361337+09:00",
+  "purpose": "New human30 baseline provenance only; no retired datasets or models included.",
+  "evaluation_success_counts": null,
+  "missing_evidence": "Native play.py prints success results to stdout without saving a result file; official success counts were not found in local saved logs. Short videos can result from success or toy_truck_dropping and are not treated as success labels.",
+  "training_config_differences": [
+    {
+      "field": ".experiment.name",
+      "seed101": "human30_seed101",
+      "seed111": "human30_seed111"
+    },
+    {
+      "field": ".train.seed",
+      "seed101": 101,
+      "seed111": 111
+    }
+  ],
+  "runs": [
+    {
+      "training_seed": 101,
+      "config_path": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed101/20261028154854/config.json",
+      "checkpoint_path": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed101/20261028154854/models/model_epoch_2000.pth",
+      "checkpoint_sha256": "07b80e320363925b49bc42709f1c5e8172a2e0376b6ecd2340ae27cfdaf465bb",
+      "training_log_path": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed101/20261028154854/logs/log.txt",
+      "training_finished_successfully": true,
+      "eval_kit_log": "/home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261028_163454.log",
+      "eval_command_log_line": 4,
+      "eval_command_provenance": "2026-10-28T07:34:54Z [0ms] [Info] [omni.kit.app.plugin] Cmd: /home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py /home/jm/robot_sim/IsaacLab_RS/apps/isaaclab.python.headless.rendering.kit --/app/tokens/exe-path=/home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/kit --/persistent/app/viewport/displayOptions=3094 --/rtx/materialDb/syncLoads=True --/rtx/hydra/materialSyncLoads=True --/omni.kit.plugin/syncUsdLoads=True --/app/renderer/resolution/width=1280 --/app/renderer/resolution/height=720 --/app/window/width=1440 --/app/window/height=900 --/renderer/multiGpu/enabled=True --/app/fastShutdown=True --/app/installSignalHandlers=0 --ext-folder /home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/exts --ext-folder /home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/apps --/renderer/activeGpu=0 --/physics/cudaDevice=0 --/plugins/carb.tasking.plugin/threadCount=32 --/plugins/omni.tbb.globalcontrol/maxThreadCount=32 --portable --no-window --/app/window/hideUi=True --task Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0 --checkpoint ./logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed101/20261028154854/models/model_epoch_2000.pth --num_rollouts 100 --horizon 800 --seed 42 --video --video_length 1000 --video_folder ./videos/human30_seed101_eval42 --headless",
+      "eval_seed": 42,
+      "rollouts": 100,
+      "horizon": 800,
+      "video_length_limit": 1000,
+      "videos": [
+        {
+          "episode": 0,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-0.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:35:44.195909+09:00",
+          "bytes": 1278667
+        },
+        {
+          "episode": 1,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-1.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:36:15.794267+09:00",
+          "bytes": 1357984
+        },
+        {
+          "episode": 2,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-2.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:36:47.469577+09:00",
+          "bytes": 1363066
+        },
+        {
+          "episode": 3,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-3.mp4",
+          "frames": 422,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:37:04.511261+09:00",
+          "bytes": 728013
+        },
+        {
+          "episode": 4,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-4.mp4",
+          "frames": 344,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:37:18.537814+09:00",
+          "bytes": 654133
+        },
+        {
+          "episode": 5,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-5.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:37:51.808089+09:00",
+          "bytes": 1374754
+        },
+        {
+          "episode": 6,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-6.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:38:23.860272+09:00",
+          "bytes": 1235826
+        },
+        {
+          "episode": 7,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-7.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:38:55.045384+09:00",
+          "bytes": 1339198
+        },
+        {
+          "episode": 8,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-8.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:39:26.263459+09:00",
+          "bytes": 1191087
+        },
+        {
+          "episode": 9,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-9.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:39:57.422498+09:00",
+          "bytes": 1207113
+        },
+        {
+          "episode": 10,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-10.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:40:28.767510+09:00",
+          "bytes": 1414434
+        },
+        {
+          "episode": 11,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-11.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:41:01.080520+09:00",
+          "bytes": 1317774
+        },
+        {
+          "episode": 12,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-12.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:41:32.097461+09:00",
+          "bytes": 1254198
+        },
+        {
+          "episode": 13,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-13.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:42:03.419384+09:00",
+          "bytes": 1247065
+        },
+        {
+          "episode": 14,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-14.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:42:34.961287+09:00",
+          "bytes": 1335678
+        },
+        {
+          "episode": 15,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-15.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:43:07.961205+09:00",
+          "bytes": 1276614
+        },
+        {
+          "episode": 16,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-16.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:43:39.532060+09:00",
+          "bytes": 1233085
+        },
+        {
+          "episode": 17,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-17.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:44:11.909914+09:00",
+          "bytes": 1385458
+        },
+        {
+          "episode": 18,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-18.mp4",
+          "frames": 268,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:44:23.523215+09:00",
+          "bytes": 562164
+        },
+        {
+          "episode": 19,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-19.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:44:55.015018+09:00",
+          "bytes": 1347051
+        },
+        {
+          "episode": 20,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-20.mp4",
+          "frames": 367,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:45:10.183398+09:00",
+          "bytes": 684435
+        },
+        {
+          "episode": 21,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-21.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:45:41.178161+09:00",
+          "bytes": 1209164
+        },
+        {
+          "episode": 22,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-22.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:46:12.288911+09:00",
+          "bytes": 1298498
+        },
+        {
+          "episode": 23,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-23.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:46:44.117662+09:00",
+          "bytes": 1254518
+        },
+        {
+          "episode": 24,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-24.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:47:16.030399+09:00",
+          "bytes": 1357987
+        },
+        {
+          "episode": 25,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-25.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:47:47.051102+09:00",
+          "bytes": 1203686
+        },
+        {
+          "episode": 26,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-26.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:48:18.268796+09:00",
+          "bytes": 1279207
+        },
+        {
+          "episode": 27,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-27.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:48:49.389476+09:00",
+          "bytes": 1387732
+        },
+        {
+          "episode": 28,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-28.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:49:21.174158+09:00",
+          "bytes": 1356546
+        },
+        {
+          "episode": 29,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-29.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:49:52.568821+09:00",
+          "bytes": 1319352
+        },
+        {
+          "episode": 30,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-30.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:50:24.196478+09:00",
+          "bytes": 1347502
+        },
+        {
+          "episode": 31,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-31.mp4",
+          "frames": 373,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:50:39.526793+09:00",
+          "bytes": 703565
+        },
+        {
+          "episode": 32,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-32.mp4",
+          "frames": 480,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:50:58.784185+09:00",
+          "bytes": 813511
+        },
+        {
+          "episode": 33,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-33.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:51:29.887812+09:00",
+          "bytes": 1195869
+        },
+        {
+          "episode": 34,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-34.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:52:01.310436+09:00",
+          "bytes": 1191329
+        },
+        {
+          "episode": 35,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-35.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:52:32.848055+09:00",
+          "bytes": 1332731
+        },
+        {
+          "episode": 36,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-36.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:53:04.071660+09:00",
+          "bytes": 1255321
+        },
+        {
+          "episode": 37,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-37.mp4",
+          "frames": 175,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:53:11.271799+09:00",
+          "bytes": 349693
+        },
+        {
+          "episode": 38,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-38.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:53:43.422413+09:00",
+          "bytes": 1419892
+        },
+        {
+          "episode": 39,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-39.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:54:14.653002+09:00",
+          "bytes": 1439826
+        },
+        {
+          "episode": 40,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-40.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:54:46.283593+09:00",
+          "bytes": 1329276
+        },
+        {
+          "episode": 41,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-41.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:55:17.452170+09:00",
+          "bytes": 1248627
+        },
+        {
+          "episode": 42,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-42.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:55:48.857745+09:00",
+          "bytes": 1366032
+        },
+        {
+          "episode": 43,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-43.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:56:20.732324+09:00",
+          "bytes": 1258699
+        },
+        {
+          "episode": 44,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-44.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:56:52.475896+09:00",
+          "bytes": 1322974
+        },
+        {
+          "episode": 45,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-45.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:57:23.751454+09:00",
+          "bytes": 1334108
+        },
+        {
+          "episode": 46,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-46.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:57:55.095009+09:00",
+          "bytes": 1251621
+        },
+        {
+          "episode": 47,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-47.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:58:26.740566+09:00",
+          "bytes": 1203275
+        },
+        {
+          "episode": 48,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-48.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:58:57.869110+09:00",
+          "bytes": 1272409
+        },
+        {
+          "episode": 49,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-49.mp4",
+          "frames": 476,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:59:17.306448+09:00",
+          "bytes": 834340
+        },
+        {
+          "episode": 50,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-50.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T16:59:48.927994+09:00",
+          "bytes": 1229084
+        },
+        {
+          "episode": 51,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-51.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:00:20.168531+09:00",
+          "bytes": 1286797
+        },
+        {
+          "episode": 52,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-52.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:00:51.559067+09:00",
+          "bytes": 1354776
+        },
+        {
+          "episode": 53,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-53.mp4",
+          "frames": 455,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:01:10.002381+09:00",
+          "bytes": 769840
+        },
+        {
+          "episode": 54,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-54.mp4",
+          "frames": 294,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:01:22.265589+09:00",
+          "bytes": 591849
+        },
+        {
+          "episode": 55,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-55.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:01:53.714121+09:00",
+          "bytes": 1273427
+        },
+        {
+          "episode": 56,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-56.mp4",
+          "frames": 438,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:02:11.717424+09:00",
+          "bytes": 811975
+        },
+        {
+          "episode": 57,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-57.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:02:43.108952+09:00",
+          "bytes": 1190380
+        },
+        {
+          "episode": 58,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-58.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:03:14.439475+09:00",
+          "bytes": 1350512
+        },
+        {
+          "episode": 59,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-59.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:03:45.923778+09:00",
+          "bytes": 1354393
+        },
+        {
+          "episode": 60,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-60.mp4",
+          "frames": 297,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:03:58.606318+09:00",
+          "bytes": 586249
+        },
+        {
+          "episode": 61,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-61.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:04:31.585689+09:00",
+          "bytes": 1294482
+        },
+        {
+          "episode": 62,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-62.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:05:04.313006+09:00",
+          "bytes": 1309737
+        },
+        {
+          "episode": 63,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-63.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:05:36.113246+09:00",
+          "bytes": 1318528
+        },
+        {
+          "episode": 64,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-64.mp4",
+          "frames": 430,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:05:53.926925+09:00",
+          "bytes": 809504
+        },
+        {
+          "episode": 65,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-65.mp4",
+          "frames": 695,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:06:22.106976+09:00",
+          "bytes": 1112131
+        },
+        {
+          "episode": 66,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-66.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:06:53.705124+09:00",
+          "bytes": 1257391
+        },
+        {
+          "episode": 67,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-67.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:07:26.838295+09:00",
+          "bytes": 1417297
+        },
+        {
+          "episode": 68,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-68.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:07:59.516419+09:00",
+          "bytes": 1404216
+        },
+        {
+          "episode": 69,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-69.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:08:30.786467+09:00",
+          "bytes": 1306312
+        },
+        {
+          "episode": 70,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-70.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:09:02.739512+09:00",
+          "bytes": 1292942
+        },
+        {
+          "episode": 71,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-71.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:09:34.083513+09:00",
+          "bytes": 1307843
+        },
+        {
+          "episode": 72,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-72.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:10:05.351490+09:00",
+          "bytes": 1241587
+        },
+        {
+          "episode": 73,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-73.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:10:38.965518+09:00",
+          "bytes": 1271535
+        },
+        {
+          "episode": 74,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-74.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:11:11.273484+09:00",
+          "bytes": 1474011
+        },
+        {
+          "episode": 75,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-75.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:11:44.249450+09:00",
+          "bytes": 1242931
+        },
+        {
+          "episode": 76,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-76.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:12:15.674353+09:00",
+          "bytes": 1428480
+        },
+        {
+          "episode": 77,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-77.mp4",
+          "frames": 436,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:12:33.219850+09:00",
+          "bytes": 762025
+        },
+        {
+          "episode": 78,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-78.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:13:04.605727+09:00",
+          "bytes": 1278844
+        },
+        {
+          "episode": 79,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-79.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:13:35.910587+09:00",
+          "bytes": 1214320
+        },
+        {
+          "episode": 80,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-80.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:14:07.197433+09:00",
+          "bytes": 1239096
+        },
+        {
+          "episode": 81,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-81.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:14:38.476266+09:00",
+          "bytes": 1175273
+        },
+        {
+          "episode": 82,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-82.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:15:09.867089+09:00",
+          "bytes": 1369593
+        },
+        {
+          "episode": 83,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-83.mp4",
+          "frames": 340,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:15:23.889453+09:00",
+          "bytes": 638504
+        },
+        {
+          "episode": 84,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-84.mp4",
+          "frames": 357,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:15:38.397827+09:00",
+          "bytes": 660259
+        },
+        {
+          "episode": 85,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-85.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:16:09.576624+09:00",
+          "bytes": 1464282
+        },
+        {
+          "episode": 86,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-86.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:16:41.651433+09:00",
+          "bytes": 1329751
+        },
+        {
+          "episode": 87,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-87.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:17:13.105217+09:00",
+          "bytes": 1240083
+        },
+        {
+          "episode": 88,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-88.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:17:44.525990+09:00",
+          "bytes": 1239373
+        },
+        {
+          "episode": 89,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-89.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:18:15.958756+09:00",
+          "bytes": 1276638
+        },
+        {
+          "episode": 90,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-90.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:18:48.314535+09:00",
+          "bytes": 1382423
+        },
+        {
+          "episode": 91,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-91.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:19:20.002291+09:00",
+          "bytes": 1337072
+        },
+        {
+          "episode": 92,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-92.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:19:51.394033+09:00",
+          "bytes": 1319017
+        },
+        {
+          "episode": 93,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-93.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:20:22.762767+09:00",
+          "bytes": 1331564
+        },
+        {
+          "episode": 94,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-94.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:20:54.262498+09:00",
+          "bytes": 1287651
+        },
+        {
+          "episode": 95,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-95.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:21:25.680222+09:00",
+          "bytes": 1251308
+        },
+        {
+          "episode": 96,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-96.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:21:58.370968+09:00",
+          "bytes": 1358261
+        },
+        {
+          "episode": 97,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-97.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:22:29.559676+09:00",
+          "bytes": 1344974
+        },
+        {
+          "episode": 98,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-98.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:23:00.766379+09:00",
+          "bytes": 1356207
+        },
+        {
+          "episode": 99,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed101_eval42/rollout-episode-99.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:23:32.223083+09:00",
+          "bytes": 1396011
+        }
+      ]
+    },
+    {
+      "training_seed": 111,
+      "config_path": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/config.json",
+      "checkpoint_path": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/models/model_epoch_2000.pth",
+      "checkpoint_sha256": "8bb79fbf3e2478b3a64d97877c44a141104ab032209ed73a038617141c13b17a",
+      "training_log_path": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/logs/log.txt",
+      "training_finished_successfully": true,
+      "eval_kit_log": "/home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261028_172702.log",
+      "eval_command_log_line": 4,
+      "eval_command_provenance": "2026-10-28T08:27:02Z [0ms] [Info] [omni.kit.app.plugin] Cmd: /home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py /home/jm/robot_sim/IsaacLab_RS/apps/isaaclab.python.headless.rendering.kit --/app/tokens/exe-path=/home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/kit --/persistent/app/viewport/displayOptions=3094 --/rtx/materialDb/syncLoads=True --/rtx/hydra/materialSyncLoads=True --/omni.kit.plugin/syncUsdLoads=True --/app/renderer/resolution/width=1280 --/app/renderer/resolution/height=720 --/app/window/width=1440 --/app/window/height=900 --/renderer/multiGpu/enabled=True --/app/fastShutdown=True --/app/installSignalHandlers=0 --ext-folder /home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/exts --ext-folder /home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/apps --/renderer/activeGpu=0 --/physics/cudaDevice=0 --/plugins/carb.tasking.plugin/threadCount=32 --/plugins/omni.tbb.globalcontrol/maxThreadCount=32 --portable --no-window --/app/window/hideUi=True --task Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0 --checkpoint ./logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/models/model_epoch_2000.pth --num_rollouts 100 --horizon 800 --seed 42 --video --video_length 1000 --video_folder ./videos/human30_seed111_eval42 --headless",
+      "eval_seed": 42,
+      "rollouts": 100,
+      "horizon": 800,
+      "video_length_limit": 1000,
+      "videos": [
+        {
+          "episode": 0,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-0.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:27:52.540763+09:00",
+          "bytes": 1381081
+        },
+        {
+          "episode": 1,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-1.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:28:26.639492+09:00",
+          "bytes": 1362843
+        },
+        {
+          "episode": 2,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-2.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:28:59.768197+09:00",
+          "bytes": 1259421
+        },
+        {
+          "episode": 3,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-3.mp4",
+          "frames": 294,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:29:12.309463+09:00",
+          "bytes": 591135
+        },
+        {
+          "episode": 4,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-4.mp4",
+          "frames": 381,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:29:28.293802+09:00",
+          "bytes": 704059
+        },
+        {
+          "episode": 5,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-5.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:30:01.773510+09:00",
+          "bytes": 1364738
+        },
+        {
+          "episode": 6,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-6.mp4",
+          "frames": 207,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:30:10.411692+09:00",
+          "bytes": 407460
+        },
+        {
+          "episode": 7,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-7.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:30:41.945357+09:00",
+          "bytes": 1172802
+        },
+        {
+          "episode": 8,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-8.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:31:14.094032+09:00",
+          "bytes": 1214046
+        },
+        {
+          "episode": 9,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-9.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:31:46.639714+09:00",
+          "bytes": 1337960
+        },
+        {
+          "episode": 10,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-10.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:32:18.770385+09:00",
+          "bytes": 1358762
+        },
+        {
+          "episode": 11,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-11.mp4",
+          "frames": 435,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:32:37.463775+09:00",
+          "bytes": 757004
+        },
+        {
+          "episode": 12,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-12.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:33:10.876470+09:00",
+          "bytes": 1109912
+        },
+        {
+          "episode": 13,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-13.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:33:42.403125+09:00",
+          "bytes": 1323451
+        },
+        {
+          "episode": 14,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-14.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:34:15.257806+09:00",
+          "bytes": 1236044
+        },
+        {
+          "episode": 15,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-15.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:34:46.723457+09:00",
+          "bytes": 1244057
+        },
+        {
+          "episode": 16,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-16.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:35:18.380110+09:00",
+          "bytes": 1302060
+        },
+        {
+          "episode": 17,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-17.mp4",
+          "frames": 278,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:35:29.934349+09:00",
+          "bytes": 573362
+        },
+        {
+          "episode": 18,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-18.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:36:01.346996+09:00",
+          "bytes": 1387663
+        },
+        {
+          "episode": 19,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-19.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:36:34.538678+09:00",
+          "bytes": 1413181
+        },
+        {
+          "episode": 20,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-20.mp4",
+          "frames": 572,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:36:58.154163+09:00",
+          "bytes": 965130
+        },
+        {
+          "episode": 21,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-21.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:37:29.893595+09:00",
+          "bytes": 1218990
+        },
+        {
+          "episode": 22,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-22.mp4",
+          "frames": 485,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:37:50.731107+09:00",
+          "bytes": 832824
+        },
+        {
+          "episode": 23,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-23.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:38:22.584422+09:00",
+          "bytes": 1318653
+        },
+        {
+          "episode": 24,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-24.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:38:55.446790+09:00",
+          "bytes": 1317138
+        },
+        {
+          "episode": 25,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-25.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:39:29.783204+09:00",
+          "bytes": 1313708
+        },
+        {
+          "episode": 26,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-26.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:40:01.735724+09:00",
+          "bytes": 1317895
+        },
+        {
+          "episode": 27,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-27.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:40:34.285294+09:00",
+          "bytes": 1219799
+        },
+        {
+          "episode": 28,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-28.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:41:05.859932+09:00",
+          "bytes": 1271979
+        },
+        {
+          "episode": 29,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-29.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:41:37.501619+09:00",
+          "bytes": 1303432
+        },
+        {
+          "episode": 30,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-30.mp4",
+          "frames": 394,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:41:53.746477+09:00",
+          "bytes": 718039
+        },
+        {
+          "episode": 31,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-31.mp4",
+          "frames": 665,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:42:21.100266+09:00",
+          "bytes": 1109025
+        },
+        {
+          "episode": 32,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-32.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:42:53.334058+09:00",
+          "bytes": 1317520
+        },
+        {
+          "episode": 33,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-33.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:43:25.393893+09:00",
+          "bytes": 1206824
+        },
+        {
+          "episode": 34,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-34.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:43:57.202769+09:00",
+          "bytes": 1245399
+        },
+        {
+          "episode": 35,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-35.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:44:28.707681+09:00",
+          "bytes": 1181086
+        },
+        {
+          "episode": 36,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-36.mp4",
+          "frames": 277,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:44:40.477658+09:00",
+          "bytes": 569883
+        },
+        {
+          "episode": 37,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-37.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:45:12.372616+09:00",
+          "bytes": 1254217
+        },
+        {
+          "episode": 38,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-38.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:45:44.174605+09:00",
+          "bytes": 1269092
+        },
+        {
+          "episode": 39,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-39.mp4",
+          "frames": 377,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:45:59.748611+09:00",
+          "bytes": 702202
+        },
+        {
+          "episode": 40,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-40.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:46:31.671645+09:00",
+          "bytes": 1332538
+        },
+        {
+          "episode": 41,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-41.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:47:03.208704+09:00",
+          "bytes": 1348623
+        },
+        {
+          "episode": 42,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-42.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:47:34.623789+09:00",
+          "bytes": 1289152
+        },
+        {
+          "episode": 43,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-43.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:48:08.160904+09:00",
+          "bytes": 1398938
+        },
+        {
+          "episode": 44,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-44.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:48:39.670035+09:00",
+          "bytes": 1256914
+        },
+        {
+          "episode": 45,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-45.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:49:11.283188+09:00",
+          "bytes": 1412783
+        },
+        {
+          "episode": 46,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-46.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:49:44.178367+09:00",
+          "bytes": 1245848
+        },
+        {
+          "episode": 47,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-47.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:50:15.715557+09:00",
+          "bytes": 1300105
+        },
+        {
+          "episode": 48,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-48.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:50:47.452766+09:00",
+          "bytes": 1197729
+        },
+        {
+          "episode": 49,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-49.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:51:19.069990+09:00",
+          "bytes": 1313201
+        },
+        {
+          "episode": 50,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-50.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:51:52.521244+09:00",
+          "bytes": 1252669
+        },
+        {
+          "episode": 51,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-51.mp4",
+          "frames": 533,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:52:14.288418+09:00",
+          "bytes": 928926
+        },
+        {
+          "episode": 52,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-52.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:52:46.238685+09:00",
+          "bytes": 1348515
+        },
+        {
+          "episode": 53,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-53.mp4",
+          "frames": 463,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:53:05.198849+09:00",
+          "bytes": 792574
+        },
+        {
+          "episode": 54,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-54.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:53:39.132154+09:00",
+          "bytes": 1251398
+        },
+        {
+          "episode": 55,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-55.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:54:10.919453+09:00",
+          "bytes": 1238157
+        },
+        {
+          "episode": 56,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-56.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:54:42.362758+09:00",
+          "bytes": 1409219
+        },
+        {
+          "episode": 57,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-57.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:55:14.097077+09:00",
+          "bytes": 1164410
+        },
+        {
+          "episode": 58,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-58.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:55:46.448412+09:00",
+          "bytes": 1320558
+        },
+        {
+          "episode": 59,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-59.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:56:17.948747+09:00",
+          "bytes": 1346971
+        },
+        {
+          "episode": 60,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-60.mp4",
+          "frames": 284,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:56:29.833876+09:00",
+          "bytes": 569572
+        },
+        {
+          "episode": 61,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-61.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:57:01.807228+09:00",
+          "bytes": 1134925
+        },
+        {
+          "episode": 62,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-62.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:57:34.168592+09:00",
+          "bytes": 1365387
+        },
+        {
+          "episode": 63,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-63.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:58:06.019958+09:00",
+          "bytes": 1349014
+        },
+        {
+          "episode": 64,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-64.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:58:37.620328+09:00",
+          "bytes": 1328906
+        },
+        {
+          "episode": 65,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-65.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:59:09.163704+09:00",
+          "bytes": 1183604
+        },
+        {
+          "episode": 66,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-66.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T17:59:40.943089+09:00",
+          "bytes": 1274174
+        },
+        {
+          "episode": 67,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-67.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:00:12.782480+09:00",
+          "bytes": 1282975
+        },
+        {
+          "episode": 68,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-68.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:00:44.954881+09:00",
+          "bytes": 1156717
+        },
+        {
+          "episode": 69,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-69.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:01:16.640281+09:00",
+          "bytes": 1349819
+        },
+        {
+          "episode": 70,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-70.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:01:48.828692+09:00",
+          "bytes": 1270542
+        },
+        {
+          "episode": 71,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-71.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:02:20.579102+09:00",
+          "bytes": 1386776
+        },
+        {
+          "episode": 72,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-72.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:02:52.285515+09:00",
+          "bytes": 1278403
+        },
+        {
+          "episode": 73,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-73.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:03:23.834931+09:00",
+          "bytes": 1302917
+        },
+        {
+          "episode": 74,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-74.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:03:55.464351+09:00",
+          "bytes": 1277475
+        },
+        {
+          "episode": 75,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-75.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:04:27.207776+09:00",
+          "bytes": 1325692
+        },
+        {
+          "episode": 76,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-76.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:04:59.813216+09:00",
+          "bytes": 1252023
+        },
+        {
+          "episode": 77,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-77.mp4",
+          "frames": 455,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:05:18.321467+09:00",
+          "bytes": 784234
+        },
+        {
+          "episode": 78,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-78.mp4",
+          "frames": 557,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:05:40.802774+09:00",
+          "bytes": 971073
+        },
+        {
+          "episode": 79,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-79.mp4",
+          "frames": 436,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:05:58.866021+09:00",
+          "bytes": 762947
+        },
+        {
+          "episode": 80,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-80.mp4",
+          "frames": 375,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:06:14.343234+09:00",
+          "bytes": 694607
+        },
+        {
+          "episode": 81,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-81.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:06:45.928670+09:00",
+          "bytes": 1225124
+        },
+        {
+          "episode": 82,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-82.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:07:17.461107+09:00",
+          "bytes": 1303395
+        },
+        {
+          "episode": 83,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-83.mp4",
+          "frames": 383,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:07:33.203327+09:00",
+          "bytes": 704768
+        },
+        {
+          "episode": 84,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-84.mp4",
+          "frames": 415,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:07:50.310566+09:00",
+          "bytes": 749257
+        },
+        {
+          "episode": 85,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-85.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:08:21.641005+09:00",
+          "bytes": 1335799
+        },
+        {
+          "episode": 86,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-86.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:08:55.796487+09:00",
+          "bytes": 1444814
+        },
+        {
+          "episode": 87,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-87.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:09:27.350933+09:00",
+          "bytes": 1195702
+        },
+        {
+          "episode": 88,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-88.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:09:58.758380+09:00",
+          "bytes": 1219066
+        },
+        {
+          "episode": 89,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-89.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:10:30.353831+09:00",
+          "bytes": 1205051
+        },
+        {
+          "episode": 90,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-90.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:11:01.901282+09:00",
+          "bytes": 1300116
+        },
+        {
+          "episode": 91,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-91.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:11:34.944753+09:00",
+          "bytes": 1184939
+        },
+        {
+          "episode": 92,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-92.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:12:06.487093+09:00",
+          "bytes": 1197707
+        },
+        {
+          "episode": 93,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-93.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:12:38.165441+09:00",
+          "bytes": 1223219
+        },
+        {
+          "episode": 94,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-94.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:13:09.660794+09:00",
+          "bytes": 1158300
+        },
+        {
+          "episode": 95,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-95.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:13:41.376155+09:00",
+          "bytes": 1339659
+        },
+        {
+          "episode": 96,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-96.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:14:13.197524+09:00",
+          "bytes": 1273348
+        },
+        {
+          "episode": 97,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-97.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:14:44.783895+09:00",
+          "bytes": 1091131
+        },
+        {
+          "episode": 98,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-98.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:15:16.392271+09:00",
+          "bytes": 1196917
+        },
+        {
+          "episode": 99,
+          "path": "/home/jm/robot_sim/IsaacLab_RS/videos/human30_seed111_eval42/rollout-episode-99.mp4",
+          "frames": 800,
+          "fps": 20.0,
+          "mtime": "2026-10-28T18:15:48.051653+09:00",
+          "bytes": 1268303
+        }
+      ]
+    }
+  ]
+}
