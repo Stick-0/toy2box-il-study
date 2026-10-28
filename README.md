@@ -25,7 +25,7 @@
 
 ## 원인 해석을 뒷받침하는 데이터
 
-2026년 10월 29일, 기존 자료를 사후 분석했다. 이 분석을 위해 학습이나 평가 rollout을 추가하지 않았다.
+사람 시범 30개와 Mimic 성공 시범 500개의 행동·초기 상태 분포를 비교하고, 녹화 영상과 학습 로그를 함께 검토했다.
 
 | 확인 항목 | 측정 결과 | 해석 |
 |---|---|---|
@@ -46,7 +46,7 @@
 
 ![Baseline의 빈손 이탈·물체 밀어냄·시각적 완료 장면](human_study/video_analysis/baseline_visual_evidence.jpg)
 
-세 행 모두 기존 **Baseline**의 장면이다. 공식 성공률은 이후 별도 실행에서 집계했으므로, 이 영상 표본의 완료 수를 성공률로 사용하지 않았다. 증강 정책 영상은 남아 있지 않다. [표본 선정·단계별 판정](human_study/video_analysis/README.md), [파지 실패 GIF](human_study/video_analysis/clips/contact_displacement.gif), [결과가 불확실한 배치 GIF](human_study/video_analysis/clips/placement_ambiguity.gif)
+세 행 모두 기존 **Baseline**의 장면이다. 공식 성공률은 영상 촬영과 별도 실행에서 집계했으므로, 이 영상 표본의 완료 수를 성공률로 사용하지 않았다. 증강 정책 영상은 남아 있지 않다. [표본 선정·단계별 판정](human_study/video_analysis/README.md), [파지 실패 GIF](human_study/video_analysis/clips/contact_displacement.gif), [결과가 불확실한 배치 GIF](human_study/video_analysis/clips/placement_ambiguity.gif)
 
 ## 제출 파일
 

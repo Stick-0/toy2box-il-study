@@ -51,7 +51,7 @@ python human_study/scripts/summarize_comparison.py \
 
 실행 당시 기록 JSON의 절대 경로는 당시 실험 파일의 식별 정보다. 실제 배포 모델 경로는 `models/manifest.json`과 평가 명령어를 기준으로 한다.
 
-### 기존 자료의 사후 분석
+### 데이터·영상 분석 재현
 
 원본 HDF5와 Release의 Mimic 성공 데이터를 준비한 뒤 다음 명령으로 530개 시범의 행동·초기 상태 분포, 동수 부분집합 비교, 분석 기준의 민감도와 그림을 재생성할 수 있다. NumPy, SciPy, h5py, Matplotlib이 필요하다.
 

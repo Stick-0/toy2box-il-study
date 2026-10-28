@@ -266,7 +266,7 @@ def main():
         ax.plot(values,np.arange(1,len(values)+1)/len(values)*100,color=color,label=label,lw=2)
     ax.set(xlabel="Distance to closest sampled initial XY (cm)", ylabel="Geometric probes covered (%)", title="D  Initial-position spacing (fixed domain probes)")
     ax.legend(fontsize=9)
-    fig.suptitle("Recorded training data: initial-state coverage\nPost-hoc analysis, 2026-10-29; geometric probes are not evaluation rollouts", fontsize=13)
+    fig.suptitle("Training data: initial-state coverage\nGeometric probes describe sample spacing, not policy success", fontsize=13)
     fig.savefig(out/"initial_pose_coverage.png",dpi=180)
     plt.close(fig)
 
