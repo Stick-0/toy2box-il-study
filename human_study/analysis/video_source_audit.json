@@ -1,0 +1,1446 @@
+{
+  "audit_date": "2026-10-29",
+  "timezone": "Asia/Seoul",
+  "post_hoc": true,
+  "source_root": "IsaacLab_RS (external local project)",
+  "path_basis": "video paths are relative to the source root",
+  "source_audit": {
+    "path": "human_study/results/mimic500_20261028/baseline_audit.json",
+    "scope": "repository",
+    "sha256": "eb0611a394e664ef467cf4e3d9f9bd82e4652ff9db0e0ef2d9014c1f5845651b"
+  },
+  "video_count": 200,
+  "unique_file_sha256_count": 200,
+  "duplicate_sha256": [],
+  "recorded_runs": [
+    {
+      "training_seed": 101,
+      "started_at_utc": "2026-10-28T07:34:54Z",
+      "checkpoint_path": "logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed101/20261028154854/models/model_epoch_2000.pth",
+      "evaluation_seed": 42,
+      "rollouts": 100,
+      "horizon": 800,
+      "video_length_limit": 1000,
+      "video_folder": "videos/human30_seed101_eval42",
+      "provenance": "baseline_audit.json / runs / eval_command_provenance"
+    },
+    {
+      "training_seed": 111,
+      "started_at_utc": "2026-10-28T08:27:02Z",
+      "checkpoint_path": "logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/models/model_epoch_2000.pth",
+      "evaluation_seed": 42,
+      "rollouts": 100,
+      "horizon": 800,
+      "video_length_limit": 1000,
+      "video_folder": "videos/human30_seed111_eval42",
+      "provenance": "baseline_audit.json / runs / eval_command_provenance"
+    }
+  ],
+  "videos": [
+    {
+      "training_seed": 101,
+      "episode": 0,
+      "path": "videos/human30_seed101_eval42/rollout-episode-0.mp4",
+      "bytes": 1278667,
+      "sha256": "3e4d7c71536e4d8200770d8bec17d2734a615d32620a6441792d942d8ce12f9b"
+    },
+    {
+      "training_seed": 101,
+      "episode": 1,
+      "path": "videos/human30_seed101_eval42/rollout-episode-1.mp4",
+      "bytes": 1357984,
+      "sha256": "3d0a03b625b642b3e7b1a452dc912e6cc7478a32926c3f8651cb08245ea0a35c"
+    },
+    {
+      "training_seed": 101,
+      "episode": 2,
+      "path": "videos/human30_seed101_eval42/rollout-episode-2.mp4",
+      "bytes": 1363066,
+      "sha256": "ea7943a2fe4f61d23a8f89c9d7a422f4a15bb0067415e1732fb0efcc60705a4b"
+    },
+    {
+      "training_seed": 101,
+      "episode": 3,
+      "path": "videos/human30_seed101_eval42/rollout-episode-3.mp4",
+      "bytes": 728013,
+      "sha256": "3d524c46eaf101bc6aa0ad6291312b0e070d1b956241f35360db57f649bbe0e7"
+    },
+    {
+      "training_seed": 101,
+      "episode": 4,
+      "path": "videos/human30_seed101_eval42/rollout-episode-4.mp4",
+      "bytes": 654133,
+      "sha256": "d7bffd588806895fa60e33d0ac5931f80767b3bd4ac64e7972cf687d8c646a48"
+    },
+    {
+      "training_seed": 101,
+      "episode": 5,
+      "path": "videos/human30_seed101_eval42/rollout-episode-5.mp4",
+      "bytes": 1374754,
+      "sha256": "24bb1993616318e90f7424908b74b22adf26e431fa2e71758288744d30ed7bf7"
+    },
+    {
+      "training_seed": 101,
+      "episode": 6,
+      "path": "videos/human30_seed101_eval42/rollout-episode-6.mp4",
+      "bytes": 1235826,
+      "sha256": "931e4a31051157d50bb696276442478fcadf33e94143da099e91f9e79476cb0a"
+    },
+    {
+      "training_seed": 101,
+      "episode": 7,
+      "path": "videos/human30_seed101_eval42/rollout-episode-7.mp4",
+      "bytes": 1339198,
+      "sha256": "d64040cc6b8ff8a81a147f6e27008b2218f158af6fa40f7b7d5006a425044324"
+    },
+    {
+      "training_seed": 101,
+      "episode": 8,
+      "path": "videos/human30_seed101_eval42/rollout-episode-8.mp4",
+      "bytes": 1191087,
+      "sha256": "9e279d4a1d76e3c0b636dd6a6cf0e3e499057b8e4c2d9ea5c48b402c55ec3745"
+    },
+    {
+      "training_seed": 101,
+      "episode": 9,
+      "path": "videos/human30_seed101_eval42/rollout-episode-9.mp4",
+      "bytes": 1207113,
+      "sha256": "bfa85bbc2b343c8c6aaf82778d51644df1861792b145df9b9dee93741a28c186"
+    },
+    {
+      "training_seed": 101,
+      "episode": 10,
+      "path": "videos/human30_seed101_eval42/rollout-episode-10.mp4",
+      "bytes": 1414434,
+      "sha256": "a9b6a3f8b34f546d250cf8d00d6a683bfe1680f542feeca75b85b2b2ce139aeb"
+    },
+    {
+      "training_seed": 101,
+      "episode": 11,
+      "path": "videos/human30_seed101_eval42/rollout-episode-11.mp4",
+      "bytes": 1317774,
+      "sha256": "8aa0df1cefa17a27344686320d229b343c051a2bbb04d775ac4f5f09c300a7a0"
+    },
+    {
+      "training_seed": 101,
+      "episode": 12,
+      "path": "videos/human30_seed101_eval42/rollout-episode-12.mp4",
+      "bytes": 1254198,
+      "sha256": "038611c4a2420ff9371080667babf344e67aeec60295e15aa82f6904bd04148b"
+    },
+    {
+      "training_seed": 101,
+      "episode": 13,
+      "path": "videos/human30_seed101_eval42/rollout-episode-13.mp4",
+      "bytes": 1247065,
+      "sha256": "558cb498db946dcbf35e0e78d85fd000d8630a78b3d8a35160d8b09c4917e233"
+    },
+    {
+      "training_seed": 101,
+      "episode": 14,
+      "path": "videos/human30_seed101_eval42/rollout-episode-14.mp4",
+      "bytes": 1335678,
+      "sha256": "35b1b149c44fe045c71ccce930f31f5fb4083c6d8d054d8c92bb648ff4bf0b30"
+    },
+    {
+      "training_seed": 101,
+      "episode": 15,
+      "path": "videos/human30_seed101_eval42/rollout-episode-15.mp4",
+      "bytes": 1276614,
+      "sha256": "227c3d7339bf6659170c93486dcbcc784b39ed518911d04abc52f950141d90c9"
+    },
+    {
+      "training_seed": 101,
+      "episode": 16,
+      "path": "videos/human30_seed101_eval42/rollout-episode-16.mp4",
+      "bytes": 1233085,
+      "sha256": "72701f59a90c3b466a94d32709a873d5861f80df3098f0b72df61a4cd3fb4974"
+    },
+    {
+      "training_seed": 101,
+      "episode": 17,
+      "path": "videos/human30_seed101_eval42/rollout-episode-17.mp4",
+      "bytes": 1385458,
+      "sha256": "eefa55ac006601c5b20d9af852f7ae523d9ae24e417f34059b6e5bef9827c44e"
+    },
+    {
+      "training_seed": 101,
+      "episode": 18,
+      "path": "videos/human30_seed101_eval42/rollout-episode-18.mp4",
+      "bytes": 562164,
+      "sha256": "5a4eabd15e5073162987d31ab0dfa62879406a321d17a3e6a82303e648454b90"
+    },
+    {
+      "training_seed": 101,
+      "episode": 19,
+      "path": "videos/human30_seed101_eval42/rollout-episode-19.mp4",
+      "bytes": 1347051,
+      "sha256": "17ccb0d9b7fd7bb39cb49401740aa175dc2124da6998bb6eab607c132c4cabba"
+    },
+    {
+      "training_seed": 101,
+      "episode": 20,
+      "path": "videos/human30_seed101_eval42/rollout-episode-20.mp4",
+      "bytes": 684435,
+      "sha256": "f501676f5d8940e168883fcd4ce0bce1092c527c321b3442264bd5c10f1b6597"
+    },
+    {
+      "training_seed": 101,
+      "episode": 21,
+      "path": "videos/human30_seed101_eval42/rollout-episode-21.mp4",
+      "bytes": 1209164,
+      "sha256": "acc8923017241aacc6cccfde006a11db357ae7e35f7ec43ee5d96953cca1567d"
+    },
+    {
+      "training_seed": 101,
+      "episode": 22,
+      "path": "videos/human30_seed101_eval42/rollout-episode-22.mp4",
+      "bytes": 1298498,
+      "sha256": "4794467c68e7708e5f2144ad24a9411b8759dd1c662f1b53b036c0e90f219130"
+    },
+    {
+      "training_seed": 101,
+      "episode": 23,
+      "path": "videos/human30_seed101_eval42/rollout-episode-23.mp4",
+      "bytes": 1254518,
+      "sha256": "1f8c3f4f2f446ea51c8db8e2237dd6c06b101f0b92c38441f79de7e1752614c9"
+    },
+    {
+      "training_seed": 101,
+      "episode": 24,
+      "path": "videos/human30_seed101_eval42/rollout-episode-24.mp4",
+      "bytes": 1357987,
+      "sha256": "554dd7595cc1df2b2e523102bae34f4ee7dd91358c2f1758b08e39be93c1e762"
+    },
+    {
+      "training_seed": 101,
+      "episode": 25,
+      "path": "videos/human30_seed101_eval42/rollout-episode-25.mp4",
+      "bytes": 1203686,
+      "sha256": "484984330737a86c9163396f33fe8d6e727306862b07aed959d5df5c225269a0"
+    },
+    {
+      "training_seed": 101,
+      "episode": 26,
+      "path": "videos/human30_seed101_eval42/rollout-episode-26.mp4",
+      "bytes": 1279207,
+      "sha256": "5e63d00d89e912eca4208d95ebc485c196b98b2a36894ce6ec388fa2933fbdf0"
+    },
+    {
+      "training_seed": 101,
+      "episode": 27,
+      "path": "videos/human30_seed101_eval42/rollout-episode-27.mp4",
+      "bytes": 1387732,
+      "sha256": "e58f6cc24f3574b47e26b502d0a4ccced4cb618af51509d30b9f45de7a3bd356"
+    },
+    {
+      "training_seed": 101,
+      "episode": 28,
+      "path": "videos/human30_seed101_eval42/rollout-episode-28.mp4",
+      "bytes": 1356546,
+      "sha256": "b9759112f4244fb1aef4f9fb6cbd38b1089465548265676635354d8423ba6145"
+    },
+    {
+      "training_seed": 101,
+      "episode": 29,
+      "path": "videos/human30_seed101_eval42/rollout-episode-29.mp4",
+      "bytes": 1319352,
+      "sha256": "6622fcb580e0dad5aeb0a84ac5489559350d000584391b191180c1d52d3ac2a7"
+    },
+    {
+      "training_seed": 101,
+      "episode": 30,
+      "path": "videos/human30_seed101_eval42/rollout-episode-30.mp4",
+      "bytes": 1347502,
+      "sha256": "913380aae22b3982f9afb542e3bc49c865095aa205616ff3df85441cb14e2350"
+    },
+    {
+      "training_seed": 101,
+      "episode": 31,
+      "path": "videos/human30_seed101_eval42/rollout-episode-31.mp4",
+      "bytes": 703565,
+      "sha256": "224b150b154a5b4b58f80f81ca228cbb87f7de82f1f8f5fdaa2eed1d462ffa9f"
+    },
+    {
+      "training_seed": 101,
+      "episode": 32,
+      "path": "videos/human30_seed101_eval42/rollout-episode-32.mp4",
+      "bytes": 813511,
+      "sha256": "4c2ee2a74a83e31ed84c213d760768b9255a3da920b7b59ebd5398ce3ad5452f"
+    },
+    {
+      "training_seed": 101,
+      "episode": 33,
+      "path": "videos/human30_seed101_eval42/rollout-episode-33.mp4",
+      "bytes": 1195869,
+      "sha256": "d87672b778d07c55ee969622152cac693c7fc28722aae5fde0ebeee28148edfd"
+    },
+    {
+      "training_seed": 101,
+      "episode": 34,
+      "path": "videos/human30_seed101_eval42/rollout-episode-34.mp4",
+      "bytes": 1191329,
+      "sha256": "ce5b2f1ec4db3cbd5638fe1923395c3eb486417cad2fb35080e80e918d7ac417"
+    },
+    {
+      "training_seed": 101,
+      "episode": 35,
+      "path": "videos/human30_seed101_eval42/rollout-episode-35.mp4",
+      "bytes": 1332731,
+      "sha256": "123210e305573f1312992c8115a6bb804d81122c034358bd1bee5e4d2a3b1de3"
+    },
+    {
+      "training_seed": 101,
+      "episode": 36,
+      "path": "videos/human30_seed101_eval42/rollout-episode-36.mp4",
+      "bytes": 1255321,
+      "sha256": "64656340dce5ca2e4de78bd62212507876771f367bfca422dbefd870d254185d"
+    },
+    {
+      "training_seed": 101,
+      "episode": 37,
+      "path": "videos/human30_seed101_eval42/rollout-episode-37.mp4",
+      "bytes": 349693,
+      "sha256": "46a68dd4cdb42472fa19f82d40078e4628e27f0d1bf5083a31b7a780fb4e140b"
+    },
+    {
+      "training_seed": 101,
+      "episode": 38,
+      "path": "videos/human30_seed101_eval42/rollout-episode-38.mp4",
+      "bytes": 1419892,
+      "sha256": "9f7831d5e7a9310dd8847e380425f0c32a050ccdcd15739e11ea7e6546e71a5d"
+    },
+    {
+      "training_seed": 101,
+      "episode": 39,
+      "path": "videos/human30_seed101_eval42/rollout-episode-39.mp4",
+      "bytes": 1439826,
+      "sha256": "17926befcd56adc39f0a19d3a1e19df8946090dfc0fa2d23ed7cf118f50e5c06"
+    },
+    {
+      "training_seed": 101,
+      "episode": 40,
+      "path": "videos/human30_seed101_eval42/rollout-episode-40.mp4",
+      "bytes": 1329276,
+      "sha256": "65cdb7b1842e3737cb4c5933c79339cf1f276e4ecf886a90b070ab8128efb28c"
+    },
+    {
+      "training_seed": 101,
+      "episode": 41,
+      "path": "videos/human30_seed101_eval42/rollout-episode-41.mp4",
+      "bytes": 1248627,
+      "sha256": "e194b6c46901545f8cfdfcd38dd332ac45880f328f7a28571fbbaa3320a85de5"
+    },
+    {
+      "training_seed": 101,
+      "episode": 42,
+      "path": "videos/human30_seed101_eval42/rollout-episode-42.mp4",
+      "bytes": 1366032,
+      "sha256": "e1dd7a50370ba02a30a2443c2fea25d1e0b4a0cb900113ab51002abe16757b21"
+    },
+    {
+      "training_seed": 101,
+      "episode": 43,
+      "path": "videos/human30_seed101_eval42/rollout-episode-43.mp4",
+      "bytes": 1258699,
+      "sha256": "2daf0969644aa905170f1984d5f55224761be992f4341f50bd70d5ece288caed"
+    },
+    {
+      "training_seed": 101,
+      "episode": 44,
+      "path": "videos/human30_seed101_eval42/rollout-episode-44.mp4",
+      "bytes": 1322974,
+      "sha256": "6e9a06b1f9d2a8dc02e780b95936c165bf3063ff35de46436ecd72c1930f0c5e"
+    },
+    {
+      "training_seed": 101,
+      "episode": 45,
+      "path": "videos/human30_seed101_eval42/rollout-episode-45.mp4",
+      "bytes": 1334108,
+      "sha256": "1336642fe2178a913c2d2f053a1378e8a7a7911b7ca21fa685e4318fc3b070a8"
+    },
+    {
+      "training_seed": 101,
+      "episode": 46,
+      "path": "videos/human30_seed101_eval42/rollout-episode-46.mp4",
+      "bytes": 1251621,
+      "sha256": "158cda86e74f653009edef271cb8f1fa88c28b62ff56410080fc72dafdac3283"
+    },
+    {
+      "training_seed": 101,
+      "episode": 47,
+      "path": "videos/human30_seed101_eval42/rollout-episode-47.mp4",
+      "bytes": 1203275,
+      "sha256": "3a71b9eff24d01b00585604620be0dc09ad635a715c0b882622e77069f45adc0"
+    },
+    {
+      "training_seed": 101,
+      "episode": 48,
+      "path": "videos/human30_seed101_eval42/rollout-episode-48.mp4",
+      "bytes": 1272409,
+      "sha256": "aac2d78545b75a0356e604a7c19ee872ff9121b9607cb252c84020e65546163d"
+    },
+    {
+      "training_seed": 101,
+      "episode": 49,
+      "path": "videos/human30_seed101_eval42/rollout-episode-49.mp4",
+      "bytes": 834340,
+      "sha256": "50e4df2cbf91c73741b60d22309980bd334602116b96d759260520d046009a40"
+    },
+    {
+      "training_seed": 101,
+      "episode": 50,
+      "path": "videos/human30_seed101_eval42/rollout-episode-50.mp4",
+      "bytes": 1229084,
+      "sha256": "26cec99ec3e130e0f44b032623dce10da10ea4640236a05185ad346d761e4a70"
+    },
+    {
+      "training_seed": 101,
+      "episode": 51,
+      "path": "videos/human30_seed101_eval42/rollout-episode-51.mp4",
+      "bytes": 1286797,
+      "sha256": "d3aa937349c850c7f0a4f43f25d40dc4bfabcc45a023702bb5ee289c38b532ca"
+    },
+    {
+      "training_seed": 101,
+      "episode": 52,
+      "path": "videos/human30_seed101_eval42/rollout-episode-52.mp4",
+      "bytes": 1354776,
+      "sha256": "86120805e634fd370f203caec3a689da46200a1507d2583264f9a65a05586311"
+    },
+    {
+      "training_seed": 101,
+      "episode": 53,
+      "path": "videos/human30_seed101_eval42/rollout-episode-53.mp4",
+      "bytes": 769840,
+      "sha256": "bf0fc4554f5727fafa90d70001ebddeff7045abf6b003a70d2d6d97ff9d1c1c3"
+    },
+    {
+      "training_seed": 101,
+      "episode": 54,
+      "path": "videos/human30_seed101_eval42/rollout-episode-54.mp4",
+      "bytes": 591849,
+      "sha256": "6d0bd1a871343602523d03845314d722e9f9d2650f113c6308c5894bedfe431c"
+    },
+    {
+      "training_seed": 101,
+      "episode": 55,
+      "path": "videos/human30_seed101_eval42/rollout-episode-55.mp4",
+      "bytes": 1273427,
+      "sha256": "5826ab78d3d8e00c100a1e2c91a31443355b43c4106c0632450ddf5aeaf625df"
+    },
+    {
+      "training_seed": 101,
+      "episode": 56,
+      "path": "videos/human30_seed101_eval42/rollout-episode-56.mp4",
+      "bytes": 811975,
+      "sha256": "b9d8ac8848a71342a604ea6b6ba825694e58046ac778bbd3674c9c6a96bdc47c"
+    },
+    {
+      "training_seed": 101,
+      "episode": 57,
+      "path": "videos/human30_seed101_eval42/rollout-episode-57.mp4",
+      "bytes": 1190380,
+      "sha256": "5bd08a27594f58235c7d5d8b074ee075e8cf4307342491edc765462bf7fba677"
+    },
+    {
+      "training_seed": 101,
+      "episode": 58,
+      "path": "videos/human30_seed101_eval42/rollout-episode-58.mp4",
+      "bytes": 1350512,
+      "sha256": "12273b8494a56fcb00c713a35d5b1f7a4c4a5166a76d99226766004ccdfac327"
+    },
+    {
+      "training_seed": 101,
+      "episode": 59,
+      "path": "videos/human30_seed101_eval42/rollout-episode-59.mp4",
+      "bytes": 1354393,
+      "sha256": "95d6452dc951e749d9a3745968e1e08166caa5168b0be17bfbfdd47ef27bffb9"
+    },
+    {
+      "training_seed": 101,
+      "episode": 60,
+      "path": "videos/human30_seed101_eval42/rollout-episode-60.mp4",
+      "bytes": 586249,
+      "sha256": "95c67478d9d805dc48e00b32e767fbdfb56c3fc0f1b7c5f6ef692b3761c65ac1"
+    },
+    {
+      "training_seed": 101,
+      "episode": 61,
+      "path": "videos/human30_seed101_eval42/rollout-episode-61.mp4",
+      "bytes": 1294482,
+      "sha256": "913b1aa4764fed266714757dd8d292d92144f50fabc5667f33a47c37fd05f886"
+    },
+    {
+      "training_seed": 101,
+      "episode": 62,
+      "path": "videos/human30_seed101_eval42/rollout-episode-62.mp4",
+      "bytes": 1309737,
+      "sha256": "072fed7bb193797059207b509a0b73641ebab51dafeb2d54aeef15b43f67e436"
+    },
+    {
+      "training_seed": 101,
+      "episode": 63,
+      "path": "videos/human30_seed101_eval42/rollout-episode-63.mp4",
+      "bytes": 1318528,
+      "sha256": "9751939d5ca5a0208366bead72cb099fcf82427305f979b5ff3a1b995bbe0333"
+    },
+    {
+      "training_seed": 101,
+      "episode": 64,
+      "path": "videos/human30_seed101_eval42/rollout-episode-64.mp4",
+      "bytes": 809504,
+      "sha256": "f823aababc6c922aee02f0f3432847fbcb80a0e9e1a4a64acb57573c426bdddb"
+    },
+    {
+      "training_seed": 101,
+      "episode": 65,
+      "path": "videos/human30_seed101_eval42/rollout-episode-65.mp4",
+      "bytes": 1112131,
+      "sha256": "3fda92a6d3d7f6ea9eba089b18984cebe5422056597d18526e78593d4de49580"
+    },
+    {
+      "training_seed": 101,
+      "episode": 66,
+      "path": "videos/human30_seed101_eval42/rollout-episode-66.mp4",
+      "bytes": 1257391,
+      "sha256": "46f27d6f2ece457c2199497ccb487fd0538e3fef335d19a2c6052358200874cf"
+    },
+    {
+      "training_seed": 101,
+      "episode": 67,
+      "path": "videos/human30_seed101_eval42/rollout-episode-67.mp4",
+      "bytes": 1417297,
+      "sha256": "31134f75638859d720fe8a5637421adb7b813c77123804d65950208d0a89c445"
+    },
+    {
+      "training_seed": 101,
+      "episode": 68,
+      "path": "videos/human30_seed101_eval42/rollout-episode-68.mp4",
+      "bytes": 1404216,
+      "sha256": "570d5d3e5a7dbd268e691fcd3a93a6debe63c120f638ee1513d35b1c53a431bc"
+    },
+    {
+      "training_seed": 101,
+      "episode": 69,
+      "path": "videos/human30_seed101_eval42/rollout-episode-69.mp4",
+      "bytes": 1306312,
+      "sha256": "3985e266a629f3c35744542e6fc359efd5704748666b88c353c795ee8106c2d4"
+    },
+    {
+      "training_seed": 101,
+      "episode": 70,
+      "path": "videos/human30_seed101_eval42/rollout-episode-70.mp4",
+      "bytes": 1292942,
+      "sha256": "3925843288122c2a1c09fa7348cdffb5eed0d7d3fe323518edea62b775caea19"
+    },
+    {
+      "training_seed": 101,
+      "episode": 71,
+      "path": "videos/human30_seed101_eval42/rollout-episode-71.mp4",
+      "bytes": 1307843,
+      "sha256": "b64f92d56ad0a31e1db499bd12575f05c4a8087c7ffec43cc65dedd1d823a90a"
+    },
+    {
+      "training_seed": 101,
+      "episode": 72,
+      "path": "videos/human30_seed101_eval42/rollout-episode-72.mp4",
+      "bytes": 1241587,
+      "sha256": "722a4c6d3ffab07d49ed0db176b11cb59504be76d9445c6031a5ab05979a5b47"
+    },
+    {
+      "training_seed": 101,
+      "episode": 73,
+      "path": "videos/human30_seed101_eval42/rollout-episode-73.mp4",
+      "bytes": 1271535,
+      "sha256": "7bea06793af5555a5fb16d667332e2fd39a456650fe9a7897aed92b3ac0c9ff2"
+    },
+    {
+      "training_seed": 101,
+      "episode": 74,
+      "path": "videos/human30_seed101_eval42/rollout-episode-74.mp4",
+      "bytes": 1474011,
+      "sha256": "04be3ed08f6c08b07b7b159b01bb27b2864db97f0ed5d2748f6804b6fdc1c30f"
+    },
+    {
+      "training_seed": 101,
+      "episode": 75,
+      "path": "videos/human30_seed101_eval42/rollout-episode-75.mp4",
+      "bytes": 1242931,
+      "sha256": "7fa6a2a1db2803c7afc00cb37e60a53750759a97267152da05abbffda3f2fd1e"
+    },
+    {
+      "training_seed": 101,
+      "episode": 76,
+      "path": "videos/human30_seed101_eval42/rollout-episode-76.mp4",
+      "bytes": 1428480,
+      "sha256": "8b5d459fbe593d1e87827f2e234c27ea01d21d5cef6ef3e16d9fc112902d45d0"
+    },
+    {
+      "training_seed": 101,
+      "episode": 77,
+      "path": "videos/human30_seed101_eval42/rollout-episode-77.mp4",
+      "bytes": 762025,
+      "sha256": "a15cc33b5d20b8d7dc18d8f430e9cba917749ec927681330e0b917631275049b"
+    },
+    {
+      "training_seed": 101,
+      "episode": 78,
+      "path": "videos/human30_seed101_eval42/rollout-episode-78.mp4",
+      "bytes": 1278844,
+      "sha256": "24cf92da4f9cb85233641bc94331ed93f1b95c91374bb23b1c2472dbd1c54ace"
+    },
+    {
+      "training_seed": 101,
+      "episode": 79,
+      "path": "videos/human30_seed101_eval42/rollout-episode-79.mp4",
+      "bytes": 1214320,
+      "sha256": "b77c37b664c70d57aa404e314f5988a5f8cf54c8cb855896d2ae01892dd8fc5f"
+    },
+    {
+      "training_seed": 101,
+      "episode": 80,
+      "path": "videos/human30_seed101_eval42/rollout-episode-80.mp4",
+      "bytes": 1239096,
+      "sha256": "91708defa725429b6a2612855551c33608268007987a918c71e20689f0d8d711"
+    },
+    {
+      "training_seed": 101,
+      "episode": 81,
+      "path": "videos/human30_seed101_eval42/rollout-episode-81.mp4",
+      "bytes": 1175273,
+      "sha256": "dc47953dc0e102b346eb2299cec7604792bfa1658b7b126529941664df6bd7c4"
+    },
+    {
+      "training_seed": 101,
+      "episode": 82,
+      "path": "videos/human30_seed101_eval42/rollout-episode-82.mp4",
+      "bytes": 1369593,
+      "sha256": "f900c563bdd3ed0162a8af2dd6a520686c46e88834790fdd595129f1a2f3728d"
+    },
+    {
+      "training_seed": 101,
+      "episode": 83,
+      "path": "videos/human30_seed101_eval42/rollout-episode-83.mp4",
+      "bytes": 638504,
+      "sha256": "14132897f0acf508e09c1f2f106a84a940d84398da28364f3525ca0c951875b5"
+    },
+    {
+      "training_seed": 101,
+      "episode": 84,
+      "path": "videos/human30_seed101_eval42/rollout-episode-84.mp4",
+      "bytes": 660259,
+      "sha256": "3aa63f2578c29616a9f4c3f122d3aee1b84a1b1b06e669a5bf02ca520f317728"
+    },
+    {
+      "training_seed": 101,
+      "episode": 85,
+      "path": "videos/human30_seed101_eval42/rollout-episode-85.mp4",
+      "bytes": 1464282,
+      "sha256": "ba7b9438add89186e7ddf0c526d2e8708c75ce69f28d1d860b80de4cc6bff1f7"
+    },
+    {
+      "training_seed": 101,
+      "episode": 86,
+      "path": "videos/human30_seed101_eval42/rollout-episode-86.mp4",
+      "bytes": 1329751,
+      "sha256": "e4e2b2b1bb6314f32cc733b4368198768d6f42a0b3d8e13ec844434218c79054"
+    },
+    {
+      "training_seed": 101,
+      "episode": 87,
+      "path": "videos/human30_seed101_eval42/rollout-episode-87.mp4",
+      "bytes": 1240083,
+      "sha256": "5b7cebb285ba20c4c92da610a0723fa7d0073ddbdfc6fa73c4a570cd2b188f9e"
+    },
+    {
+      "training_seed": 101,
+      "episode": 88,
+      "path": "videos/human30_seed101_eval42/rollout-episode-88.mp4",
+      "bytes": 1239373,
+      "sha256": "a8eceb6a76eedebcda29565a9e7cc851c7d624330d0bcf75f201a78232055450"
+    },
+    {
+      "training_seed": 101,
+      "episode": 89,
+      "path": "videos/human30_seed101_eval42/rollout-episode-89.mp4",
+      "bytes": 1276638,
+      "sha256": "b68ac7220f1a4944a2cb31293bb845a2660be8cba539fb389cd9cc6c52749f34"
+    },
+    {
+      "training_seed": 101,
+      "episode": 90,
+      "path": "videos/human30_seed101_eval42/rollout-episode-90.mp4",
+      "bytes": 1382423,
+      "sha256": "833a009280c26ebfc5aba804eaba4b5dd0e5cb730f55108a46e43764e469d98c"
+    },
+    {
+      "training_seed": 101,
+      "episode": 91,
+      "path": "videos/human30_seed101_eval42/rollout-episode-91.mp4",
+      "bytes": 1337072,
+      "sha256": "cfb351f9f94dac19e7d260081c1ab6bbc1b6fe7f58a27f9210d8731973263d3d"
+    },
+    {
+      "training_seed": 101,
+      "episode": 92,
+      "path": "videos/human30_seed101_eval42/rollout-episode-92.mp4",
+      "bytes": 1319017,
+      "sha256": "d5ca41df8144cd4a83b05591e9addef6fda771f3ea246785a4932c62442df9b3"
+    },
+    {
+      "training_seed": 101,
+      "episode": 93,
+      "path": "videos/human30_seed101_eval42/rollout-episode-93.mp4",
+      "bytes": 1331564,
+      "sha256": "98cb88abe875ec0d1691fc2759b3506593c76ddbd741ab581b076116272f47f9"
+    },
+    {
+      "training_seed": 101,
+      "episode": 94,
+      "path": "videos/human30_seed101_eval42/rollout-episode-94.mp4",
+      "bytes": 1287651,
+      "sha256": "863ccd5c6a45d1a519ae90d52ec922f65c178d18fa8063f068e5ad32def9efcb"
+    },
+    {
+      "training_seed": 101,
+      "episode": 95,
+      "path": "videos/human30_seed101_eval42/rollout-episode-95.mp4",
+      "bytes": 1251308,
+      "sha256": "d13924fa89710fc9aa864382d49a1ffbc6cbca2924c6d2e60dd1748ed525279c"
+    },
+    {
+      "training_seed": 101,
+      "episode": 96,
+      "path": "videos/human30_seed101_eval42/rollout-episode-96.mp4",
+      "bytes": 1358261,
+      "sha256": "1a95c5f4e18c9b15c865fc3b76ab0487017ac0cf843e6d75fb3c432df3d87094"
+    },
+    {
+      "training_seed": 101,
+      "episode": 97,
+      "path": "videos/human30_seed101_eval42/rollout-episode-97.mp4",
+      "bytes": 1344974,
+      "sha256": "a48dc1d1e327e679d05a1edb011e0715e86971d87cb357320374caccd2f8ecd5"
+    },
+    {
+      "training_seed": 101,
+      "episode": 98,
+      "path": "videos/human30_seed101_eval42/rollout-episode-98.mp4",
+      "bytes": 1356207,
+      "sha256": "10b6176a6d20ee443ffdfa78151b36eb71d1ca7473c0c674e7a2f1621d123913"
+    },
+    {
+      "training_seed": 101,
+      "episode": 99,
+      "path": "videos/human30_seed101_eval42/rollout-episode-99.mp4",
+      "bytes": 1396011,
+      "sha256": "1ecbb9b7d09d52fe1a6b327eb58468666019c61bcb1e322d4cdd1f2febedf7d2"
+    },
+    {
+      "training_seed": 111,
+      "episode": 0,
+      "path": "videos/human30_seed111_eval42/rollout-episode-0.mp4",
+      "bytes": 1381081,
+      "sha256": "bd85f3437739e326a2abe9e185fa15178b27f7e227a4b3764c3696b43bb5df55"
+    },
+    {
+      "training_seed": 111,
+      "episode": 1,
+      "path": "videos/human30_seed111_eval42/rollout-episode-1.mp4",
+      "bytes": 1362843,
+      "sha256": "64da0189cb9d3d5ed9db2eb471b7f607875a5d353ef86e4cf4ce6991136f02f1"
+    },
+    {
+      "training_seed": 111,
+      "episode": 2,
+      "path": "videos/human30_seed111_eval42/rollout-episode-2.mp4",
+      "bytes": 1259421,
+      "sha256": "9af3fd4585cd65ffde8af0b7c1eaccf5628bcac3e95a840a0f01732b386180f1"
+    },
+    {
+      "training_seed": 111,
+      "episode": 3,
+      "path": "videos/human30_seed111_eval42/rollout-episode-3.mp4",
+      "bytes": 591135,
+      "sha256": "9d91f8addd857e3b955f3203db620bd6563fb13763c04ea2d3b8391988d491e4"
+    },
+    {
+      "training_seed": 111,
+      "episode": 4,
+      "path": "videos/human30_seed111_eval42/rollout-episode-4.mp4",
+      "bytes": 704059,
+      "sha256": "36182760b29b7f8dab6bd6853772859e76b21bee5db93391006a28beb9e31271"
+    },
+    {
+      "training_seed": 111,
+      "episode": 5,
+      "path": "videos/human30_seed111_eval42/rollout-episode-5.mp4",
+      "bytes": 1364738,
+      "sha256": "4f67d12bef7f70fc91cc5e3fcdd8cfb68f6ab8709e005a46917a9a7e2844beb9"
+    },
+    {
+      "training_seed": 111,
+      "episode": 6,
+      "path": "videos/human30_seed111_eval42/rollout-episode-6.mp4",
+      "bytes": 407460,
+      "sha256": "fcc39060387f07de51fcaf32982164d15d4ffdd4cc328f630d9fba5e8e9356f1"
+    },
+    {
+      "training_seed": 111,
+      "episode": 7,
+      "path": "videos/human30_seed111_eval42/rollout-episode-7.mp4",
+      "bytes": 1172802,
+      "sha256": "413c7fbb89bc88fb853ea9b3157419a8996777e82439d577806ca62e76f1efea"
+    },
+    {
+      "training_seed": 111,
+      "episode": 8,
+      "path": "videos/human30_seed111_eval42/rollout-episode-8.mp4",
+      "bytes": 1214046,
+      "sha256": "624adff843398d66ccc5f5c7304171c2e974e6f0de22ec8d2aca59ecac00a802"
+    },
+    {
+      "training_seed": 111,
+      "episode": 9,
+      "path": "videos/human30_seed111_eval42/rollout-episode-9.mp4",
+      "bytes": 1337960,
+      "sha256": "43446a29894721cd640dec74e5b2e9f67d620cd4ccc92f6ec344cc6b83513794"
+    },
+    {
+      "training_seed": 111,
+      "episode": 10,
+      "path": "videos/human30_seed111_eval42/rollout-episode-10.mp4",
+      "bytes": 1358762,
+      "sha256": "ed4b1722d4484a3cee4d97031b6efd09904aef7ce94a55dc107bae6b95fd646a"
+    },
+    {
+      "training_seed": 111,
+      "episode": 11,
+      "path": "videos/human30_seed111_eval42/rollout-episode-11.mp4",
+      "bytes": 757004,
+      "sha256": "21963912b44063c12386b90d93c0e51b84be6fa65648d281bde4d339a3897126"
+    },
+    {
+      "training_seed": 111,
+      "episode": 12,
+      "path": "videos/human30_seed111_eval42/rollout-episode-12.mp4",
+      "bytes": 1109912,
+      "sha256": "ed7a9900e7f93142e20cb6fcc593b7c65b65b3003f30520fa08d35cc4d1d23f1"
+    },
+    {
+      "training_seed": 111,
+      "episode": 13,
+      "path": "videos/human30_seed111_eval42/rollout-episode-13.mp4",
+      "bytes": 1323451,
+      "sha256": "eea725373884cfe16e3b6d0d6ffaad196359c8d2b5be86ef80da8f5afcb4831d"
+    },
+    {
+      "training_seed": 111,
+      "episode": 14,
+      "path": "videos/human30_seed111_eval42/rollout-episode-14.mp4",
+      "bytes": 1236044,
+      "sha256": "a3035e971fb30b5fc9dbc71e62722251efce5e044871e9d0509727470df940b1"
+    },
+    {
+      "training_seed": 111,
+      "episode": 15,
+      "path": "videos/human30_seed111_eval42/rollout-episode-15.mp4",
+      "bytes": 1244057,
+      "sha256": "65aa297073b07408a0e2c1ccb34ebbee9694433602a8352eecd63837618c3906"
+    },
+    {
+      "training_seed": 111,
+      "episode": 16,
+      "path": "videos/human30_seed111_eval42/rollout-episode-16.mp4",
+      "bytes": 1302060,
+      "sha256": "1ade1260289df41ff97bbf42886afd59e5c154b3859131a02a5db2793b28f4f7"
+    },
+    {
+      "training_seed": 111,
+      "episode": 17,
+      "path": "videos/human30_seed111_eval42/rollout-episode-17.mp4",
+      "bytes": 573362,
+      "sha256": "70fc3333ce20ebc716bfcf8d5b6cbe480ffa62587ef274f13183f562fd6b291f"
+    },
+    {
+      "training_seed": 111,
+      "episode": 18,
+      "path": "videos/human30_seed111_eval42/rollout-episode-18.mp4",
+      "bytes": 1387663,
+      "sha256": "982ee6916cc0a9246729f82cce58d35094797a2de656fdafc2ef047a06f5ece0"
+    },
+    {
+      "training_seed": 111,
+      "episode": 19,
+      "path": "videos/human30_seed111_eval42/rollout-episode-19.mp4",
+      "bytes": 1413181,
+      "sha256": "7e8306e3d30340e0c77573732f0aa24efe35edaee5b3a6d1f5350117b0df122d"
+    },
+    {
+      "training_seed": 111,
+      "episode": 20,
+      "path": "videos/human30_seed111_eval42/rollout-episode-20.mp4",
+      "bytes": 965130,
+      "sha256": "24c4f4487c6658e1671e2ff76ae6c981bf9fde6b9fa1f5b06d2dc96701917a03"
+    },
+    {
+      "training_seed": 111,
+      "episode": 21,
+      "path": "videos/human30_seed111_eval42/rollout-episode-21.mp4",
+      "bytes": 1218990,
+      "sha256": "58cab25d970d7ba7f858e7baec4407ed9295ebe6bf40276e60ebcc92f4a29c24"
+    },
+    {
+      "training_seed": 111,
+      "episode": 22,
+      "path": "videos/human30_seed111_eval42/rollout-episode-22.mp4",
+      "bytes": 832824,
+      "sha256": "f4d3077a4093be3d0039839d63110a75b456d092f1bbf35378eca419252a24e4"
+    },
+    {
+      "training_seed": 111,
+      "episode": 23,
+      "path": "videos/human30_seed111_eval42/rollout-episode-23.mp4",
+      "bytes": 1318653,
+      "sha256": "614fc02d9f7abff252e45c1de2313f664ebb5eab65f18dc86f8d146de9ffe31e"
+    },
+    {
+      "training_seed": 111,
+      "episode": 24,
+      "path": "videos/human30_seed111_eval42/rollout-episode-24.mp4",
+      "bytes": 1317138,
+      "sha256": "509d203484d96bed8b2917f31aa3d7ff1636c6b9b8811ead487a1d11ef12a59e"
+    },
+    {
+      "training_seed": 111,
+      "episode": 25,
+      "path": "videos/human30_seed111_eval42/rollout-episode-25.mp4",
+      "bytes": 1313708,
+      "sha256": "1598351a94fcc134145e3bd1f8c8c159491b6540a810020f9e2aa0cad1fc567d"
+    },
+    {
+      "training_seed": 111,
+      "episode": 26,
+      "path": "videos/human30_seed111_eval42/rollout-episode-26.mp4",
+      "bytes": 1317895,
+      "sha256": "1159737355074d7413e7b29fdeadfccc73c617c801133d117fa9842dd01f74d3"
+    },
+    {
+      "training_seed": 111,
+      "episode": 27,
+      "path": "videos/human30_seed111_eval42/rollout-episode-27.mp4",
+      "bytes": 1219799,
+      "sha256": "8383a82fdb183b97c3ef26fa5e5fda2b47bef5a21d25847ecdf804052f732b06"
+    },
+    {
+      "training_seed": 111,
+      "episode": 28,
+      "path": "videos/human30_seed111_eval42/rollout-episode-28.mp4",
+      "bytes": 1271979,
+      "sha256": "82c18710c93c82e1a1013677ad779a8ef94200888d7258a4570e5d375924eddd"
+    },
+    {
+      "training_seed": 111,
+      "episode": 29,
+      "path": "videos/human30_seed111_eval42/rollout-episode-29.mp4",
+      "bytes": 1303432,
+      "sha256": "389fae80efc020d8bde9356f96d05856e6a006bc948c57df8669ae5f56a33fa3"
+    },
+    {
+      "training_seed": 111,
+      "episode": 30,
+      "path": "videos/human30_seed111_eval42/rollout-episode-30.mp4",
+      "bytes": 718039,
+      "sha256": "5e19199b823647a007fdc17a7959774b411928e82c4dbe327af8f8b64db495b2"
+    },
+    {
+      "training_seed": 111,
+      "episode": 31,
+      "path": "videos/human30_seed111_eval42/rollout-episode-31.mp4",
+      "bytes": 1109025,
+      "sha256": "328a471bc120748221acaeb04c849379b4ad201ffaee6f21b68af1414be21850"
+    },
+    {
+      "training_seed": 111,
+      "episode": 32,
+      "path": "videos/human30_seed111_eval42/rollout-episode-32.mp4",
+      "bytes": 1317520,
+      "sha256": "4669a8df686c6dca383510cc926ef6f84bfd8f2afa6e3d8bba62543737bde96a"
+    },
+    {
+      "training_seed": 111,
+      "episode": 33,
+      "path": "videos/human30_seed111_eval42/rollout-episode-33.mp4",
+      "bytes": 1206824,
+      "sha256": "20e1182c5f6e492df6ab6602b2f0a538bf02e52a6ce88085808518d9f795b2b3"
+    },
+    {
+      "training_seed": 111,
+      "episode": 34,
+      "path": "videos/human30_seed111_eval42/rollout-episode-34.mp4",
+      "bytes": 1245399,
+      "sha256": "da173ed8ad8e6c348f366c39c06d6ce0ff17acd0111c7a6489fbc0d342f8dd17"
+    },
+    {
+      "training_seed": 111,
+      "episode": 35,
+      "path": "videos/human30_seed111_eval42/rollout-episode-35.mp4",
+      "bytes": 1181086,
+      "sha256": "45595f6cad952b2f0320697a85d37c4f7922668ff4621a0458d819bf64468664"
+    },
+    {
+      "training_seed": 111,
+      "episode": 36,
+      "path": "videos/human30_seed111_eval42/rollout-episode-36.mp4",
+      "bytes": 569883,
+      "sha256": "2cfbc47678a9d81ce012a1cd95421de27025c7e71cfbf4948a25894f1c8c001f"
+    },
+    {
+      "training_seed": 111,
+      "episode": 37,
+      "path": "videos/human30_seed111_eval42/rollout-episode-37.mp4",
+      "bytes": 1254217,
+      "sha256": "4d8f2e84ffe4c89a17b1cf1edb0fd498c6e510ce46260d9ee7a7b1b9e146fc19"
+    },
+    {
+      "training_seed": 111,
+      "episode": 38,
+      "path": "videos/human30_seed111_eval42/rollout-episode-38.mp4",
+      "bytes": 1269092,
+      "sha256": "77c33b9c63c71f0f37b46d03a1afe8250bac03ee96f72657219cdbee7f952601"
+    },
+    {
+      "training_seed": 111,
+      "episode": 39,
+      "path": "videos/human30_seed111_eval42/rollout-episode-39.mp4",
+      "bytes": 702202,
+      "sha256": "57febd0119a76bf31d65557d97d24f96ad3380bd8135cc08c6e9f73182c7ffb3"
+    },
+    {
+      "training_seed": 111,
+      "episode": 40,
+      "path": "videos/human30_seed111_eval42/rollout-episode-40.mp4",
+      "bytes": 1332538,
+      "sha256": "2aba3355af5a3d98c4acf46b8854ff2f555c7efd40058cbbe01462bba0e162b7"
+    },
+    {
+      "training_seed": 111,
+      "episode": 41,
+      "path": "videos/human30_seed111_eval42/rollout-episode-41.mp4",
+      "bytes": 1348623,
+      "sha256": "4cb4ac1ae74137584c2ea990f3623450523a3f235fafba40bf552e5895be0d0e"
+    },
+    {
+      "training_seed": 111,
+      "episode": 42,
+      "path": "videos/human30_seed111_eval42/rollout-episode-42.mp4",
+      "bytes": 1289152,
+      "sha256": "28ac6a2f9728fc87025ec2fc97f681ebfe7063dd8083e3ed4d6505fa269ef862"
+    },
+    {
+      "training_seed": 111,
+      "episode": 43,
+      "path": "videos/human30_seed111_eval42/rollout-episode-43.mp4",
+      "bytes": 1398938,
+      "sha256": "04a0435f64c731d045878b41e1e9534e5a58f8d90f09b42713e68f4f56baff36"
+    },
+    {
+      "training_seed": 111,
+      "episode": 44,
+      "path": "videos/human30_seed111_eval42/rollout-episode-44.mp4",
+      "bytes": 1256914,
+      "sha256": "4ce412f27b4b0090f6ecc70682799cf1f88acbf9cad1778f4365c53f34a85938"
+    },
+    {
+      "training_seed": 111,
+      "episode": 45,
+      "path": "videos/human30_seed111_eval42/rollout-episode-45.mp4",
+      "bytes": 1412783,
+      "sha256": "c357f20dfb9ff8dcf1bae679aa1919b0fbb6a5a7cb69bb67fa58626453156d1e"
+    },
+    {
+      "training_seed": 111,
+      "episode": 46,
+      "path": "videos/human30_seed111_eval42/rollout-episode-46.mp4",
+      "bytes": 1245848,
+      "sha256": "0e989d4eb1b9ffd584b35dfbf6de333bc35739f59f800a01631a5023a2af8642"
+    },
+    {
+      "training_seed": 111,
+      "episode": 47,
+      "path": "videos/human30_seed111_eval42/rollout-episode-47.mp4",
+      "bytes": 1300105,
+      "sha256": "81ee0959a2ee1d96113f29e917f7847f50dc873f8168f1dcf4eae30f71b46da0"
+    },
+    {
+      "training_seed": 111,
+      "episode": 48,
+      "path": "videos/human30_seed111_eval42/rollout-episode-48.mp4",
+      "bytes": 1197729,
+      "sha256": "1b831672c191e4610f993b95d125e5b1602a81b115f94ae05f6ae1c2a0ccf72f"
+    },
+    {
+      "training_seed": 111,
+      "episode": 49,
+      "path": "videos/human30_seed111_eval42/rollout-episode-49.mp4",
+      "bytes": 1313201,
+      "sha256": "a920813e002cb459daccd057c8062ecd3cf2350f1f78a8a2dfd8df9fb9c697ba"
+    },
+    {
+      "training_seed": 111,
+      "episode": 50,
+      "path": "videos/human30_seed111_eval42/rollout-episode-50.mp4",
+      "bytes": 1252669,
+      "sha256": "8b695b6d64ae99436f1670909b923ff2aa1b8bd4eafe629f8f05a04b004f6839"
+    },
+    {
+      "training_seed": 111,
+      "episode": 51,
+      "path": "videos/human30_seed111_eval42/rollout-episode-51.mp4",
+      "bytes": 928926,
+      "sha256": "7aac55831ceed34851f7b931a90d3a06efcd8aede13107850961c7328800235c"
+    },
+    {
+      "training_seed": 111,
+      "episode": 52,
+      "path": "videos/human30_seed111_eval42/rollout-episode-52.mp4",
+      "bytes": 1348515,
+      "sha256": "24d5566257bddb40bfffb240875629c439a49a4a5dfe2e9025aa62a0b9b1a185"
+    },
+    {
+      "training_seed": 111,
+      "episode": 53,
+      "path": "videos/human30_seed111_eval42/rollout-episode-53.mp4",
+      "bytes": 792574,
+      "sha256": "ee8555def57ce8b6b610872d320e34d7070796466dddc43cb03059d8d1e98c10"
+    },
+    {
+      "training_seed": 111,
+      "episode": 54,
+      "path": "videos/human30_seed111_eval42/rollout-episode-54.mp4",
+      "bytes": 1251398,
+      "sha256": "53a3a2fb390ba623c96d5e5c583e1e8c23ae4dfb68edb2b1c01247130a11e490"
+    },
+    {
+      "training_seed": 111,
+      "episode": 55,
+      "path": "videos/human30_seed111_eval42/rollout-episode-55.mp4",
+      "bytes": 1238157,
+      "sha256": "da2383ad81c057ec194dcc627658edc85b6f080f472211d7953aa078cb0681a6"
+    },
+    {
+      "training_seed": 111,
+      "episode": 56,
+      "path": "videos/human30_seed111_eval42/rollout-episode-56.mp4",
+      "bytes": 1409219,
+      "sha256": "1d358e1a42ef0391d8185b0a2924c01aaae4f41616f3abc9912a33055aafa3f3"
+    },
+    {
+      "training_seed": 111,
+      "episode": 57,
+      "path": "videos/human30_seed111_eval42/rollout-episode-57.mp4",
+      "bytes": 1164410,
+      "sha256": "0b4dc0eeb6b6d2c4e4ee75ae620d860b8f5af2d7ec692bf8d428f50901889280"
+    },
+    {
+      "training_seed": 111,
+      "episode": 58,
+      "path": "videos/human30_seed111_eval42/rollout-episode-58.mp4",
+      "bytes": 1320558,
+      "sha256": "acf72acdd4a88802499b9c70850c53989d0ec8ef95b05b55d962aa074e666649"
+    },
+    {
+      "training_seed": 111,
+      "episode": 59,
+      "path": "videos/human30_seed111_eval42/rollout-episode-59.mp4",
+      "bytes": 1346971,
+      "sha256": "43ad9e1cbb6f06f8ed747bbc2c20533ddfbe02e83637088bc67ba03c663ef4c0"
+    },
+    {
+      "training_seed": 111,
+      "episode": 60,
+      "path": "videos/human30_seed111_eval42/rollout-episode-60.mp4",
+      "bytes": 569572,
+      "sha256": "5f75dc441a40d7f21052f35aee3b849594585ee90dbf2e3d2f15983533770e18"
+    },
+    {
+      "training_seed": 111,
+      "episode": 61,
+      "path": "videos/human30_seed111_eval42/rollout-episode-61.mp4",
+      "bytes": 1134925,
+      "sha256": "9e087899cc62dee001193469c1d3328d6c5d34c9203a7ea48759210a3ceaf5be"
+    },
+    {
+      "training_seed": 111,
+      "episode": 62,
+      "path": "videos/human30_seed111_eval42/rollout-episode-62.mp4",
+      "bytes": 1365387,
+      "sha256": "ce963762f9862a45be1877eb7551eade1c67157780424059585ac9d91ea4399b"
+    },
+    {
+      "training_seed": 111,
+      "episode": 63,
+      "path": "videos/human30_seed111_eval42/rollout-episode-63.mp4",
+      "bytes": 1349014,
+      "sha256": "473cfa156f73e021170a02df07438ad1dd6d8f02c6164b461d59b5f7090ca6cd"
+    },
+    {
+      "training_seed": 111,
+      "episode": 64,
+      "path": "videos/human30_seed111_eval42/rollout-episode-64.mp4",
+      "bytes": 1328906,
+      "sha256": "3ba035a962f7e788fb275db1f50a190dad045f54c9f10318dc58d99b8838b6f6"
+    },
+    {
+      "training_seed": 111,
+      "episode": 65,
+      "path": "videos/human30_seed111_eval42/rollout-episode-65.mp4",
+      "bytes": 1183604,
+      "sha256": "a47b5926660fdec61e8f0c17931c13434b84b3f1a89a7c4b7a16fa370f69e439"
+    },
+    {
+      "training_seed": 111,
+      "episode": 66,
+      "path": "videos/human30_seed111_eval42/rollout-episode-66.mp4",
+      "bytes": 1274174,
+      "sha256": "79cf20b8e97fed4f54e5c8c17d6cf9542ba8a416d007c85e0ff06599c1b5a292"
+    },
+    {
+      "training_seed": 111,
+      "episode": 67,
+      "path": "videos/human30_seed111_eval42/rollout-episode-67.mp4",
+      "bytes": 1282975,
+      "sha256": "558ff1b48381ab84d9a2784ae8101d5c89e345d0638932e15b9ee48559337f24"
+    },
+    {
+      "training_seed": 111,
+      "episode": 68,
+      "path": "videos/human30_seed111_eval42/rollout-episode-68.mp4",
+      "bytes": 1156717,
+      "sha256": "78d9b14b4febce32cafb0ea1804dd194eec089724a256278dff13782aa8628c0"
+    },
+    {
+      "training_seed": 111,
+      "episode": 69,
+      "path": "videos/human30_seed111_eval42/rollout-episode-69.mp4",
+      "bytes": 1349819,
+      "sha256": "96922eb4e7b6315c517e81bb5826d02e7cb2cea5554cc1a65d6c12dbbf1d8668"
+    },
+    {
+      "training_seed": 111,
+      "episode": 70,
+      "path": "videos/human30_seed111_eval42/rollout-episode-70.mp4",
+      "bytes": 1270542,
+      "sha256": "7de5fe82379ce7f3da58937621fdb54db289096ef68f302f84b1310f8a3dad16"
+    },
+    {
+      "training_seed": 111,
+      "episode": 71,
+      "path": "videos/human30_seed111_eval42/rollout-episode-71.mp4",
+      "bytes": 1386776,
+      "sha256": "5f32678bb98b5b29ddd8f51300d97f6be2191ddb44e3926bcfc473fb4f5980d7"
+    },
+    {
+      "training_seed": 111,
+      "episode": 72,
+      "path": "videos/human30_seed111_eval42/rollout-episode-72.mp4",
+      "bytes": 1278403,
+      "sha256": "7002155dcbd6c6c11b642476bd78c5ba99ba8f33614fc7b9837e7c1e93328a7f"
+    },
+    {
+      "training_seed": 111,
+      "episode": 73,
+      "path": "videos/human30_seed111_eval42/rollout-episode-73.mp4",
+      "bytes": 1302917,
+      "sha256": "89eaae01d89e458fe1da14f0853204a505857eb5e101eaf77301357430171116"
+    },
+    {
+      "training_seed": 111,
+      "episode": 74,
+      "path": "videos/human30_seed111_eval42/rollout-episode-74.mp4",
+      "bytes": 1277475,
+      "sha256": "1245443ba69c00391478604e47ced337505088c0446f461eb34b2db1fe815a6b"
+    },
+    {
+      "training_seed": 111,
+      "episode": 75,
+      "path": "videos/human30_seed111_eval42/rollout-episode-75.mp4",
+      "bytes": 1325692,
+      "sha256": "f3da2fb96f18235311e516e278e5bdf15f49107997eba970b913b2f1dcda52ef"
+    },
+    {
+      "training_seed": 111,
+      "episode": 76,
+      "path": "videos/human30_seed111_eval42/rollout-episode-76.mp4",
+      "bytes": 1252023,
+      "sha256": "8af6940ef353324209e981413dcdeccef1e39178dea9a08cdc279678dbd3a06a"
+    },
+    {
+      "training_seed": 111,
+      "episode": 77,
+      "path": "videos/human30_seed111_eval42/rollout-episode-77.mp4",
+      "bytes": 784234,
+      "sha256": "72ed7f0d5427e519d81905f255d3e57d0693911aec4c12224610d86580d89820"
+    },
+    {
+      "training_seed": 111,
+      "episode": 78,
+      "path": "videos/human30_seed111_eval42/rollout-episode-78.mp4",
+      "bytes": 971073,
+      "sha256": "2fa477fc731d4a35283e34e3047b74481c1655b084354eff33487026377de10d"
+    },
+    {
+      "training_seed": 111,
+      "episode": 79,
+      "path": "videos/human30_seed111_eval42/rollout-episode-79.mp4",
+      "bytes": 762947,
+      "sha256": "5a34ef628e32188c888542ccb19e2b2bffe1c81e5dd93529481f365c528feaef"
+    },
+    {
+      "training_seed": 111,
+      "episode": 80,
+      "path": "videos/human30_seed111_eval42/rollout-episode-80.mp4",
+      "bytes": 694607,
+      "sha256": "a5d00d64280c1168f085dfb47e130649314408190474558b6129f3cc09c7cbc1"
+    },
+    {
+      "training_seed": 111,
+      "episode": 81,
+      "path": "videos/human30_seed111_eval42/rollout-episode-81.mp4",
+      "bytes": 1225124,
+      "sha256": "a2bb1bd8798a503ef3d0aacf7c3dfc07e31bb10328a7c7afc554e9c1226f988e"
+    },
+    {
+      "training_seed": 111,
+      "episode": 82,
+      "path": "videos/human30_seed111_eval42/rollout-episode-82.mp4",
+      "bytes": 1303395,
+      "sha256": "8603a420b1b358b91a734e9d7135cf2cc10cf4f7be71c2d82fc31b48559c188f"
+    },
+    {
+      "training_seed": 111,
+      "episode": 83,
+      "path": "videos/human30_seed111_eval42/rollout-episode-83.mp4",
+      "bytes": 704768,
+      "sha256": "72c27493c49e6c26b5c7c37b9528130a23f116bfa9305fb2b8bcff41b5caaa8d"
+    },
+    {
+      "training_seed": 111,
+      "episode": 84,
+      "path": "videos/human30_seed111_eval42/rollout-episode-84.mp4",
+      "bytes": 749257,
+      "sha256": "f5a49d0b81d78866a58b33ed262ad8255a408ebbc7ec08660ffeed5529216c65"
+    },
+    {
+      "training_seed": 111,
+      "episode": 85,
+      "path": "videos/human30_seed111_eval42/rollout-episode-85.mp4",
+      "bytes": 1335799,
+      "sha256": "037755d6bcae2b81e7a69a028a8591ce9b8f0018392dcdcf76cf678f45c85aeb"
+    },
+    {
+      "training_seed": 111,
+      "episode": 86,
+      "path": "videos/human30_seed111_eval42/rollout-episode-86.mp4",
+      "bytes": 1444814,
+      "sha256": "56367b417eafb81119b852edbc4e38e6997d567879cdee9c961a22c77aeae62e"
+    },
+    {
+      "training_seed": 111,
+      "episode": 87,
+      "path": "videos/human30_seed111_eval42/rollout-episode-87.mp4",
+      "bytes": 1195702,
+      "sha256": "149616bd96e4ae8aab74141b0830eb41c6da203af8ad7df9be4dc92e50b54044"
+    },
+    {
+      "training_seed": 111,
+      "episode": 88,
+      "path": "videos/human30_seed111_eval42/rollout-episode-88.mp4",
+      "bytes": 1219066,
+      "sha256": "2cd34ee36f551dd285c1239c7c6a03376d643a30b1eef07868ec301154c675bc"
+    },
+    {
+      "training_seed": 111,
+      "episode": 89,
+      "path": "videos/human30_seed111_eval42/rollout-episode-89.mp4",
+      "bytes": 1205051,
+      "sha256": "1232e2cfc7bdfec5b1efccf0324140e31f518ed9058406354134058d951a761d"
+    },
+    {
+      "training_seed": 111,
+      "episode": 90,
+      "path": "videos/human30_seed111_eval42/rollout-episode-90.mp4",
+      "bytes": 1300116,
+      "sha256": "cbdf28c0fde399cc708da3f091081d9d11d4a95cd52eb954e901d1449180db77"
+    },
+    {
+      "training_seed": 111,
+      "episode": 91,
+      "path": "videos/human30_seed111_eval42/rollout-episode-91.mp4",
+      "bytes": 1184939,
+      "sha256": "16280a00328afa1e463b0f6a08d31f57892554f4ddbb7417dc5b9ae594af6606"
+    },
+    {
+      "training_seed": 111,
+      "episode": 92,
+      "path": "videos/human30_seed111_eval42/rollout-episode-92.mp4",
+      "bytes": 1197707,
+      "sha256": "be78f387465c11376ab9068657c87c2c4c7b91495fe244765d531118ba37588e"
+    },
+    {
+      "training_seed": 111,
+      "episode": 93,
+      "path": "videos/human30_seed111_eval42/rollout-episode-93.mp4",
+      "bytes": 1223219,
+      "sha256": "43f3387eb8dcba95ba934e28e5ad40e76f7719b04a9813d5c108e94fb963c860"
+    },
+    {
+      "training_seed": 111,
+      "episode": 94,
+      "path": "videos/human30_seed111_eval42/rollout-episode-94.mp4",
+      "bytes": 1158300,
+      "sha256": "fc572f4380362a80571cb5575fdede9a307e79157324a625bc80b0e3fa9adaa7"
+    },
+    {
+      "training_seed": 111,
+      "episode": 95,
+      "path": "videos/human30_seed111_eval42/rollout-episode-95.mp4",
+      "bytes": 1339659,
+      "sha256": "e9627d236464fdcf1557b4942255f93d05d1d78b2a51598a46f653f13af8b700"
+    },
+    {
+      "training_seed": 111,
+      "episode": 96,
+      "path": "videos/human30_seed111_eval42/rollout-episode-96.mp4",
+      "bytes": 1273348,
+      "sha256": "df11ea1426c7c0f288cfa1e65bacd56e881ed1cc7af3b53dab24ea2995e4cc26"
+    },
+    {
+      "training_seed": 111,
+      "episode": 97,
+      "path": "videos/human30_seed111_eval42/rollout-episode-97.mp4",
+      "bytes": 1091131,
+      "sha256": "9ab5b6706df4ffbb623bae66b6bb102873af491413e1facbe2942d9b916d78f0"
+    },
+    {
+      "training_seed": 111,
+      "episode": 98,
+      "path": "videos/human30_seed111_eval42/rollout-episode-98.mp4",
+      "bytes": 1196917,
+      "sha256": "7366794e95ecb8930fa44b6fc48cb544dcbaa99d0bfdb3d364e440a803527bd1"
+    },
+    {
+      "training_seed": 111,
+      "episode": 99,
+      "path": "videos/human30_seed111_eval42/rollout-episode-99.mp4",
+      "bytes": 1268303,
+      "sha256": "23232c5b00e00cee88c608526da2bcb283e79eef2a6383875bd9504b3ed50db2"
+    }
+  ],
+  "limitations": [
+    "Different encoded-file hashes do not alone prove different visual content.",
+    "These recording runs are separate from the later logged, non-video evaluations.",
+    "No video episode is assigned a success label from a different evaluation run."
+  ]
+}

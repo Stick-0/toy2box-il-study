@@ -1,0 +1,273 @@
+{
+  "audit_date": "2026-10-29",
+  "timezone": "Asia/Seoul",
+  "post_hoc": true,
+  "new_training_or_rollouts": false,
+  "training_runs": [
+    {
+      "condition": "baseline",
+      "training_seed": 101,
+      "epochs": 2000,
+      "source_log": {
+        "path": "../IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed101/20261028154854/logs/log.txt",
+        "scope": "external_local_IsaacLab_RS",
+        "sha256": "57646042cd89c5a99fab92b65cc1a6f39bf80031a6cbb2b9a4b9bc729f9cd983"
+      },
+      "source_config": {
+        "path": "human_study/results/mimic500_20261028/configs/baseline_seed101.json",
+        "scope": "repository",
+        "sha256": "bf1acfb97ea6e5224547c2dfcc5fedfe45128c80b340dfbb0ad2c97f079a998c"
+      },
+      "loss_epoch1": -4.234719829438254,
+      "loss_epoch2000": -51.27438884735108,
+      "loss_first100_mean": -25.614667831608926,
+      "loss_last100_mean": -49.71983121733666,
+      "validate": false,
+      "training_rollouts_enabled": false,
+      "rnn_open_loop": false,
+      "rnn_horizon": 10
+    },
+    {
+      "condition": "baseline",
+      "training_seed": 111,
+      "epochs": 2000,
+      "source_log": {
+        "path": "../IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human30_seed111/20261028161147/logs/log.txt",
+        "scope": "external_local_IsaacLab_RS",
+        "sha256": "dfd1230dc29bb6d0efdda0a508e94cbc35bae44b387f720305bd53572a3fc1ce"
+      },
+      "source_config": {
+        "path": "human_study/results/mimic500_20261028/configs/baseline_seed111.json",
+        "scope": "repository",
+        "sha256": "f39d4aecc733a326efa47e5a6e5e55b47042a366766fd5dd1ef107cc721ee975"
+      },
+      "loss_epoch1": -8.534506791755557,
+      "loss_epoch2000": -43.469522123336795,
+      "loss_first100_mean": -26.105970121490188,
+      "loss_last100_mean": -42.266057593435036,
+      "validate": false,
+      "training_rollouts_enabled": false,
+      "rnn_open_loop": false,
+      "rnn_horizon": 10
+    },
+    {
+      "condition": "mimic500",
+      "training_seed": 101,
+      "epochs": 2000,
+      "source_log": {
+        "path": "human_study/results/mimic500_20261028/training/mimic500_seed101/training.log",
+        "scope": "repository",
+        "sha256": "3a73ee46629036758ec5bcb0ce3872a9e4c6c241b05b0487750b658b2e9911ba"
+      },
+      "source_config": {
+        "path": "human_study/results/mimic500_20261028/training/mimic500_seed101/effective_config.json",
+        "scope": "repository",
+        "sha256": "b07bad68bafbc5915fcbfff32e0b153ab275d90b5aef3dab7ce7b51ea1922061"
+      },
+      "loss_epoch1": -4.150251136422157,
+      "loss_epoch2000": -27.86393955230713,
+      "loss_first100_mean": -21.92153792116047,
+      "loss_last100_mean": -27.81800195865631,
+      "validate": false,
+      "training_rollouts_enabled": false,
+      "rnn_open_loop": false,
+      "rnn_horizon": 10
+    },
+    {
+      "condition": "mimic500",
+      "training_seed": 111,
+      "epochs": 2000,
+      "source_log": {
+        "path": "human_study/results/mimic500_20261028/training/mimic500_seed111/training.log",
+        "scope": "repository",
+        "sha256": "b963dc59833c20e46ab105c9f9501ba5fd45e219c38f3e07c7f965ebb5b232d7"
+      },
+      "source_config": {
+        "path": "human_study/results/mimic500_20261028/training/mimic500_seed111/effective_config.json",
+        "scope": "repository",
+        "sha256": "faf67142cb2ced1acd50935d8c9ae20ed0a4c81fca30ec014853e93386af4304"
+      },
+      "loss_epoch1": -4.631362653113902,
+      "loss_epoch2000": -28.274573345184326,
+      "loss_first100_mean": -22.35276189680435,
+      "loss_last100_mean": -28.149026093864446,
+      "validate": false,
+      "training_rollouts_enabled": false,
+      "rnn_open_loop": false,
+      "rnn_horizon": 10
+    }
+  ],
+  "loss_csv": {
+    "path": "human_study/analysis/training_loss.csv",
+    "scope": "repository",
+    "sha256": "17ecaa7d822adad0a695b61663ed6ab14015f3afd19d4992c86990c55bff9888"
+  },
+  "loss_definition": "BC_RNN_GMM negative mean log probability of demonstration actions; lower is better on that training distribution.",
+  "training_config_differences": {
+    "101": [
+      {
+        "field": ".experiment.name",
+        "baseline": "human30_seed101",
+        "mimic500": "mimic500_seed101"
+      },
+      {
+        "field": ".train.data",
+        "baseline": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+        "mimic500": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_plus_mimic500_20261028.hdf5"
+      },
+      {
+        "field": ".train.output_dir",
+        "baseline": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+        "mimic500": "/home/jm/robot_sim/IsaacLab_RS/logs/human_study/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0"
+      }
+    ],
+    "111": [
+      {
+        "field": ".experiment.name",
+        "baseline": "human30_seed111",
+        "mimic500": "mimic500_seed111"
+      },
+      {
+        "field": ".train.data",
+        "baseline": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human_20261028_112300.hdf5",
+        "mimic500": "/home/jm/robot_sim/toy2box-il-study/human_study/data/human30_plus_mimic500_20261028.hdf5"
+      },
+      {
+        "field": ".train.output_dir",
+        "baseline": "/home/jm/robot_sim/IsaacLab_RS/logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+        "mimic500": "/home/jm/robot_sim/IsaacLab_RS/logs/human_study/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0"
+      }
+    ]
+  },
+  "equal_training_budget": {
+    "epochs": 2000,
+    "optimizer_updates_per_epoch": 100,
+    "batch_size": 100,
+    "optimizer_updates_total": 200000
+  },
+  "video_audit": {
+    "path": "human_study/analysis/video_source_audit.json",
+    "scope": "repository",
+    "sha256": "e0251134ab86abdd76bbb85840b8f5e56cb35d7f3454a7654c482de9bc2b4ce1"
+  },
+  "formal_evaluation_runs": [
+    {
+      "condition": "baseline",
+      "training_seed": 101,
+      "started_at_utc": "2026-10-28T09:27:37.779394+00:00",
+      "video": false,
+      "record": {
+        "path": "human_study/results/mimic500_20261028/evaluation/baseline_seed101/run.json",
+        "scope": "repository",
+        "sha256": "9ecc0712cf2c6a5cb4386e34a988a368c57494ac4b25866c792b00dd81fb1907"
+      },
+      "summary": {
+        "path": "human_study/results/mimic500_20261028/evaluation/baseline_seed101/summary.json",
+        "scope": "repository",
+        "sha256": "b1a8b65310f319dbc618766418c54262fdebf3717c919aa04c1f529cf1fd2759"
+      },
+      "trials": {
+        "path": "human_study/results/mimic500_20261028/evaluation/baseline_seed101/trials.jsonl",
+        "scope": "repository",
+        "sha256": "0253b2ff53278243259a92f54bec8337bf462ccae1a960bfd43657279e2dbe30"
+      }
+    },
+    {
+      "condition": "baseline",
+      "training_seed": 111,
+      "started_at_utc": "2026-10-28T09:27:40.455360+00:00",
+      "video": false,
+      "record": {
+        "path": "human_study/results/mimic500_20261028/evaluation/baseline_seed111/run.json",
+        "scope": "repository",
+        "sha256": "9ae582fbb26459d85e8b46bf769474b9d06619fd60d2339285010259fe2a3d08"
+      },
+      "summary": {
+        "path": "human_study/results/mimic500_20261028/evaluation/baseline_seed111/summary.json",
+        "scope": "repository",
+        "sha256": "57d93fa0bf90bb3cdc5a12fd6796a66e2225c8ded6f384dca78bd20f064acef0"
+      },
+      "trials": {
+        "path": "human_study/results/mimic500_20261028/evaluation/baseline_seed111/trials.jsonl",
+        "scope": "repository",
+        "sha256": "5783f78aa0eb5e2fb787e4d3d56b9089246c1473a6efdb3de88b9c404f919d48"
+      }
+    },
+    {
+      "condition": "mimic500",
+      "training_seed": 101,
+      "started_at_utc": "2026-10-28T12:14:57.045968+00:00",
+      "video": false,
+      "record": {
+        "path": "human_study/results/mimic500_20261028/evaluation/mimic500_seed101/run.json",
+        "scope": "repository",
+        "sha256": "5c663b79d07326002dfa61f9718634dce8eae4d7a4fd8936d35d9681a5865b12"
+      },
+      "summary": {
+        "path": "human_study/results/mimic500_20261028/evaluation/mimic500_seed101/summary.json",
+        "scope": "repository",
+        "sha256": "cc68d22984a3a494b30b0720d034219325e7ad6562f7a6d2002178754df2ff9f"
+      },
+      "trials": {
+        "path": "human_study/results/mimic500_20261028/evaluation/mimic500_seed101/trials.jsonl",
+        "scope": "repository",
+        "sha256": "ad9736623fb360b36e490f46e1fa336d64120d121c6e54c927e651bdadddebb6"
+      }
+    },
+    {
+      "condition": "mimic500",
+      "training_seed": 111,
+      "started_at_utc": "2026-10-28T12:14:57.048757+00:00",
+      "video": false,
+      "record": {
+        "path": "human_study/results/mimic500_20261028/evaluation/mimic500_seed111/run.json",
+        "scope": "repository",
+        "sha256": "dd6b3be38f04165d4c597dabfd5dabcfa6ab9c22dd20f6f08f5de89fbce1c063"
+      },
+      "summary": {
+        "path": "human_study/results/mimic500_20261028/evaluation/mimic500_seed111/summary.json",
+        "scope": "repository",
+        "sha256": "08bd9a0eb767e2897e7a84b948629ae0da7311f37bd114de9aa6f766b9f05c76"
+      },
+      "trials": {
+        "path": "human_study/results/mimic500_20261028/evaluation/mimic500_seed111/trials.jsonl",
+        "scope": "repository",
+        "sha256": "ba6cfa2337245420cae8a2050e88ecb1385e63630bcabac8288bf79c5941ec7a"
+      }
+    }
+  ],
+  "code_evidence": {
+    "native_play": {
+      "path": "IsaacLab/scripts/imitation_learning/robomimic/play.py",
+      "scope": "repository",
+      "sha256": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f"
+    },
+    "environment_config": {
+      "path": "IsaacLab/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/place_toy2box_rmp_rel_env_cfg.py",
+      "scope": "repository",
+      "sha256": "bc01d693edd412e84f675713991de930004e3edf7e661a4e8749aafd2940d19e"
+    },
+    "robomimic_bc": {
+      "path": "site-packages/robomimic/algo/bc.py",
+      "scope": "installed_dependency",
+      "sha256": "dfe8054e956192182a167b8f4b6e0aead792f609fd0a70ff19cdca9d4bade374"
+    },
+    "robomimic_symbols": [
+      "BC_RNN.get_action",
+      "BC_RNN_GMM._compute_losses"
+    ]
+  },
+  "extraction_script": {
+    "path": "human_study/scripts/audit_existing_evidence.py",
+    "scope": "repository",
+    "sha256": "6bd64614f05086f9446d100f19ceaaf34646b6643da1f33c0ada57d654083a7a"
+  },
+  "interpretation": [
+    "Baseline training NLL improved; this does not establish rollout competence or identify the failure cause.",
+    "No validation loss exists because experiment.validate is false; overfitting is not directly demonstrated.",
+    "Training NLL values from different dataset distributions are not a generalization ranking.",
+    "rnn.open_loop=false means current observations are consumed at every step; blind sequence replay is not an established explanation.",
+    "Mimic addition changes dataset size and distribution together; the effect of diversity alone is not isolated.",
+    "Recording runs cannot be joined to later logged evaluation trials solely by seed and episode number."
+  ]
+}

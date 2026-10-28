@@ -51,6 +51,16 @@ python human_study/scripts/summarize_comparison.py \
 
 실행 당시 기록 JSON의 절대 경로는 당시 실험 파일의 식별 정보다. 실제 배포 모델 경로는 `models/manifest.json`과 평가 명령어를 기준으로 한다.
 
+### 기존 자료의 사후 분석
+
+원본 HDF5와 Release의 Mimic 성공 데이터를 준비한 뒤 다음 명령으로 530개 시범의 행동·초기 상태 분포, 동수 부분집합 비교, 분석 기준의 민감도와 그림을 재생성할 수 있다. NumPy, SciPy, h5py, Matplotlib이 필요하다.
+
+```bash
+python human_study/analysis/analyze_demonstrations.py
+```
+
+이 명령은 데이터 파일을 읽기 전용으로 열며 시뮬레이션·학습·평가를 실행하지 않는다. [측정 정의와 한계](analysis/data_diagnosis.md)를 참고한다. 영상에서 추출한 근거 프레임·GIF·수동 주석은 저장소에 포함되어 있으며, 원본 MP4에서 다시 추출하는 명령은 [영상 분석](video_analysis/README.md)에 있다. 원본 MP4와 Baseline 훈련 로그는 실험 PC에 보존되어 있다. 해당 원본 없이도 게시된 프레임·주석·훈련 손실 CSV를 검토할 수 있지만, 원본을 다시 읽어 검증한 것과는 구분한다. [학습·영상 출처 검증](analysis/evidence_audit.md)
+
 ## 4. 데이터와 학습 재현
 
 [데이터 안내](data/README.md)에 따라 사람 시범과 Mimic 성공 시범을 준비하고 SHA256을 확인한다. 두 원본으로 합본을 만든다. 출력 파일이 이미 존재하면 결합을 반복하지 않는다.

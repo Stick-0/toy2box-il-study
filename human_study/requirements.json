@@ -54,7 +54,7 @@
     "mimic_mean_percent": 62.0,
     "mean_delta_percentage_points": 44.5,
     "hypothesis_support": "augmentation_prediction_supported",
-    "causal_limit": "relative-position coverage is a prioritized explanation, not a uniquely established cause"
+    "causal_limit": "Initial-pose sparsity and local coverage gaps are measured post hoc; augmentation prediction is supported, but sample count, coverage, action distribution and mixture effects are not isolated."
   },
   "submission": {
     "repository": "https://github.com/Stick-0/toy2box-il-study",
@@ -67,5 +67,15 @@
     "presentation_minutes": 5,
     "final_evaluation_by": "teaching_assistant",
     "final_evaluation_seed": "undisclosed"
+  },
+  "posthoc_analysis": {
+    "date": "2026-10-29",
+    "new_training_or_rollouts": false,
+    "data_analysis": "human_study/analysis/demonstration_analysis.json",
+    "video_analysis": "human_study/video_analysis/annotations.json",
+    "evidence_audit": "human_study/analysis/evidence_audit.json",
+    "video_sample_count": 30,
+    "original_video_run_separate_from_recorded_evaluation": true,
+    "mimic_policy_video_available": false
   }
 }

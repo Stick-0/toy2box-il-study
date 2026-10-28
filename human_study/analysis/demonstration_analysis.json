@@ -1,0 +1,547 @@
+{
+  "schema": "toy2box.posthoc_demonstration_analysis.v1",
+  "analysis_date": "2026-10-29",
+  "analysis_type": "Retrospective descriptive analysis; no additional training or rollouts",
+  "sources": {
+    "human30": {
+      "path": "human_study/data/human_20261028_112300.hdf5",
+      "sha256": "4aaf12dba9ffb1e9833ade4b4e75e597f2059a745390a37a625c5c47775354ce"
+    },
+    "mimic500": {
+      "path": "human_study/data/human30_mimic500_raw_20261028_env8.hdf5",
+      "sha256": "03addfc4e3b7c18c337f97836889d6368bcadd804df44d841fca077879368a3e"
+    }
+  },
+  "action_semantics": "3D relative Cartesian displacement (m), 3D axis-angle displacement (rad), binary gripper (-1 close, +1 open); scale 1; 20 Hz",
+  "observation_semantics": "Pre-step EE and toy poses in fixed robot-base coordinates; action is desired target delta, not observed motion",
+  "occupancy": {
+    "toy_range_base_frame": [
+      [
+        0.45,
+        -0.3,
+        -3.14
+      ],
+      [
+        0.8,
+        -0.15,
+        3.14
+      ]
+    ],
+    "bins": [
+      4,
+      3,
+      8
+    ],
+    "bin_widths": [
+      0.08750000000000001,
+      0.049999999999999996,
+      0.785
+    ]
+  },
+  "geometric_probes": {
+    "dimensions": [
+      20,
+      12,
+      24
+    ],
+    "n": 5760,
+    "xy_threshold_m": 0.03,
+    "yaw_threshold_deg": 30,
+    "meaning": "Deterministic uniformly spaced points in configured initial toy pose domain; not rollout observations or success estimates"
+  },
+  "datasets": {
+    "human30": {
+      "demonstrations": 30,
+      "steps": 11769,
+      "single_close_then_open_demonstrations": 30,
+      "arm_zero_fraction_step_weighted": 0.26034497408445917,
+      "metrics": {
+        "steps": {
+          "n": 30,
+          "mean": 392.3,
+          "median": 399.0,
+          "min": 251.0,
+          "max": 610.0,
+          "p25": 343.75,
+          "p75": 436.75,
+          "sd_sample": 72.43363192939285
+        },
+        "duration_s": {
+          "n": 30,
+          "mean": 19.615,
+          "median": 19.950000000000003,
+          "min": 12.55,
+          "max": 30.5,
+          "p25": 17.1875,
+          "p75": 21.837500000000002,
+          "sd_sample": 3.6216815964696427
+        },
+        "arm_zero_fraction": {
+          "n": 30,
+          "mean": 0.26416093046015515,
+          "median": 0.26243461487014497,
+          "min": 0.2,
+          "max": 0.3812154696132597,
+          "p25": 0.2412068601025316,
+          "p75": 0.28466022651565626,
+          "sd_sample": 0.04289532169751386
+        },
+        "leading_arm_zero_steps": {
+          "n": 30,
+          "mean": 15.966666666666667,
+          "median": 15.0,
+          "min": 11.0,
+          "max": 29.0,
+          "p25": 12.25,
+          "p75": 17.75,
+          "sd_sample": 4.3429160180954325
+        },
+        "preclose_arm_zero_fraction": {
+          "n": 30,
+          "mean": 0.23258857091178212,
+          "median": 0.22247662773271165,
+          "min": 0.14634146341463414,
+          "max": 0.4044943820224719,
+          "p25": 0.19535480193787402,
+          "p75": 0.2692953699206735,
+          "sd_sample": 0.05411888745266302
+        },
+        "first_close_fraction": {
+          "n": 30,
+          "mean": 0.7186006732853762,
+          "median": 0.7224304823552118,
+          "min": 0.5859649122807018,
+          "max": 0.7945205479452054,
+          "p25": 0.6882279227480466,
+          "p75": 0.746845061558958,
+          "sd_sample": 0.04662650967633494
+        },
+        "preclose_path_chord_ratio": {
+          "n": 30,
+          "mean": 1.9566014732604402,
+          "median": 1.9420308149269867,
+          "min": 1.7872543430110208,
+          "max": 2.377878672314964,
+          "p25": 1.8847815812508888,
+          "p75": 2.0054351577796377,
+          "sd_sample": 0.10935468024245597
+        },
+        "close_ee_toy_xy_m": {
+          "n": 30,
+          "mean": 0.02237551342592196,
+          "median": 0.02220574075636052,
+          "min": 0.007641635346628254,
+          "max": 0.04533405074344047,
+          "p25": 0.013190142105846965,
+          "p75": 0.029833082109015564,
+          "sd_sample": 0.010833051318706996
+        },
+        "close_ee_toy_z_m": {
+          "n": 30,
+          "mean": -0.021829440196355184,
+          "median": -0.022356271743774414,
+          "min": -0.04088872671127319,
+          "max": 0.007897257804870605,
+          "p25": -0.0296725332736969,
+          "p75": -0.014340922236442566,
+          "sd_sample": 0.011308431255103045
+        },
+        "preclose_x_command_sign_flips": {
+          "n": 30,
+          "mean": 0.6333333333333333,
+          "median": 0.5,
+          "min": 0.0,
+          "max": 3.0,
+          "p25": 0.0,
+          "p75": 1.0,
+          "sd_sample": 0.7648904962570575
+        },
+        "preclose_y_command_sign_flips": {
+          "n": 30,
+          "mean": 1.3333333333333333,
+          "median": 1.0,
+          "min": 0.0,
+          "max": 3.0,
+          "p25": 1.0,
+          "p75": 2.0,
+          "sd_sample": 0.9222660747548281
+        },
+        "preclose_z_command_sign_flips": {
+          "n": 30,
+          "mean": 0.1,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 2.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "sd_sample": 0.4025778999364487
+        }
+      },
+      "initial_ee_xyz_spread_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "mimic500": {
+      "demonstrations": 500,
+      "steps": 210707,
+      "single_close_then_open_demonstrations": 500,
+      "arm_zero_fraction_step_weighted": 0.0,
+      "metrics": {
+        "steps": {
+          "n": 500,
+          "mean": 421.414,
+          "median": 433.0,
+          "min": 282.0,
+          "max": 641.0,
+          "p25": 373.0,
+          "p75": 464.0,
+          "sd_sample": 65.53475575925228
+        },
+        "duration_s": {
+          "n": 500,
+          "mean": 21.0707,
+          "median": 21.650000000000002,
+          "min": 14.100000000000001,
+          "max": 32.050000000000004,
+          "p25": 18.650000000000002,
+          "p75": 23.200000000000003,
+          "sd_sample": 3.276737787962614
+        },
+        "arm_zero_fraction": {
+          "n": 500,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "sd_sample": 0.0
+        },
+        "leading_arm_zero_steps": {
+          "n": 500,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "sd_sample": 0.0
+        },
+        "preclose_arm_zero_fraction": {
+          "n": 500,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "sd_sample": 0.0
+        },
+        "first_close_fraction": {
+          "n": 500,
+          "mean": 0.7088397642834476,
+          "median": 0.7137096774193549,
+          "min": 0.5791139240506329,
+          "max": 0.7761194029850746,
+          "p25": 0.6962750716332379,
+          "p75": 0.730593607305936,
+          "sd_sample": 0.03825323740083187
+        },
+        "preclose_path_chord_ratio": {
+          "n": 500,
+          "mean": 3.4803908155324095,
+          "median": 3.473970246911052,
+          "min": 2.2322714595077184,
+          "max": 6.912631639724245,
+          "p25": 3.0722928552967734,
+          "p75": 3.7719410072604838,
+          "sd_sample": 0.5672484520020279
+        },
+        "close_ee_toy_xy_m": {
+          "n": 500,
+          "mean": 0.022175963291946748,
+          "median": 0.020037140116520247,
+          "min": 0.0025111289338566683,
+          "max": 0.08785113339794587,
+          "p25": 0.012445310491960319,
+          "p75": 0.02876200007273909,
+          "sd_sample": 0.012809604832901255
+        },
+        "close_ee_toy_z_m": {
+          "n": 500,
+          "mean": -0.020664467692375184,
+          "median": -0.020266860723495483,
+          "min": -0.04604315757751465,
+          "max": 0.018325507640838623,
+          "p25": -0.02985621988773346,
+          "p75": -0.012445136904716492,
+          "sd_sample": 0.01203726609276879
+        },
+        "preclose_x_command_sign_flips": {
+          "n": 500,
+          "mean": 105.442,
+          "median": 108.0,
+          "min": 0.0,
+          "max": 234.0,
+          "p25": 81.75,
+          "p75": 131.25,
+          "sd_sample": 37.5999221314164
+        },
+        "preclose_y_command_sign_flips": {
+          "n": 500,
+          "mean": 113.976,
+          "median": 115.0,
+          "min": 9.0,
+          "max": 245.0,
+          "p25": 89.0,
+          "p75": 140.0,
+          "sd_sample": 37.72651592723633
+        },
+        "preclose_z_command_sign_flips": {
+          "n": 500,
+          "mean": 112.944,
+          "median": 115.0,
+          "min": 26.0,
+          "max": 233.0,
+          "p25": 89.0,
+          "p75": 134.25,
+          "sd_sample": 33.71501547585399
+        }
+      },
+      "initial_ee_xyz_spread_m": [
+        1.430511474609375e-06,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "coverage": {
+    "human30": {
+      "n": 30,
+      "occupied_toy_xy_yaw_bins": 27,
+      "total_toy_xy_yaw_bins": 96,
+      "occupied_toy_xy_bins": 11,
+      "occupied_toy_yaw_bins": 8,
+      "pose_min": [
+        0.5028941035270691,
+        -0.29603642225265503,
+        -3.0555983173453236
+      ],
+      "pose_max": [
+        0.7969925403594971,
+        -0.1537339836359024,
+        2.9631493453550157
+      ],
+      "probe_nearest_xy_m": {
+        "n": 5760,
+        "mean": 0.022480703130330088,
+        "median": 0.020568799474267083,
+        "min": 0.0005313898628014229,
+        "max": 0.07235002909868755,
+        "p25": 0.012081775286822275,
+        "p75": 0.028866895537071606,
+        "sd_sample": 0.013286255651288884
+      },
+      "probe_fraction_near_xy_and_yaw": 0.21579861111111112,
+      "probe_fraction_near_xy": 0.775
+    },
+    "mimic500": {
+      "n": 500,
+      "occupied_toy_xy_yaw_bins": 91,
+      "total_toy_xy_yaw_bins": 96,
+      "occupied_toy_xy_bins": 12,
+      "occupied_toy_yaw_bins": 8,
+      "pose_min": [
+        0.45023608207702637,
+        -0.2999640703201294,
+        -3.138527602649732
+      ],
+      "pose_max": [
+        0.7993558645248413,
+        -0.1503007411956787,
+        3.1362052214948197
+      ],
+      "probe_nearest_xy_m": {
+        "n": 5760,
+        "mean": 0.005146689598142783,
+        "median": 0.004536480794814739,
+        "min": 0.00029565789597108677,
+        "max": 0.017893454895395924,
+        "p25": 0.002951537060544605,
+        "p75": 0.006771710587063906,
+        "sd_sample": 0.0030289147777562667
+      },
+      "probe_fraction_near_xy_and_yaw": 0.9048611111111111,
+      "probe_fraction_near_xy": 1.0
+    },
+    "combined530": {
+      "n": 530,
+      "occupied_toy_xy_yaw_bins": 91,
+      "total_toy_xy_yaw_bins": 96,
+      "occupied_toy_xy_bins": 12,
+      "occupied_toy_yaw_bins": 8,
+      "pose_min": [
+        0.45023608207702637,
+        -0.2999640703201294,
+        -3.138527602649732
+      ],
+      "pose_max": [
+        0.7993558645248413,
+        -0.1503007411956787,
+        3.1362052214948197
+      ],
+      "probe_nearest_xy_m": {
+        "n": 5760,
+        "mean": 0.004882798565666105,
+        "median": 0.004342605065766962,
+        "min": 0.00029565789597108677,
+        "max": 0.014658495197445815,
+        "p25": 0.0028943069929176666,
+        "p75": 0.006342756458979929,
+        "sd_sample": 0.0027895264300530223
+      },
+      "probe_fraction_near_xy_and_yaw": 0.9130208333333333,
+      "probe_fraction_near_xy": 1.0
+    }
+  },
+  "sensitivity": {
+    "occupancy": [
+      {
+        "bins": [
+          2,
+          2,
+          4
+        ],
+        "total_bins": 16,
+        "human30": 12,
+        "mimic500": 16,
+        "combined530": 16
+      },
+      {
+        "bins": [
+          4,
+          3,
+          8
+        ],
+        "total_bins": 96,
+        "human30": 27,
+        "mimic500": 91,
+        "combined530": 91
+      },
+      {
+        "bins": [
+          6,
+          4,
+          12
+        ],
+        "total_bins": 288,
+        "human30": 29,
+        "mimic500": 216,
+        "combined530": 221
+      }
+    ],
+    "geometric_proximity": [
+      {
+        "dataset": "human30",
+        "xy_threshold_m": 0.02,
+        "yaw_threshold_deg": 15,
+        "probe_near_fraction": 0.05364583333333333
+      },
+      {
+        "dataset": "human30",
+        "xy_threshold_m": 0.03,
+        "yaw_threshold_deg": 30,
+        "probe_near_fraction": 0.21579861111111112
+      },
+      {
+        "dataset": "human30",
+        "xy_threshold_m": 0.05,
+        "yaw_threshold_deg": 45,
+        "probe_near_fraction": 0.5651041666666666
+      },
+      {
+        "dataset": "mimic500",
+        "xy_threshold_m": 0.02,
+        "yaw_threshold_deg": 15,
+        "probe_near_fraction": 0.5732638888888889
+      },
+      {
+        "dataset": "mimic500",
+        "xy_threshold_m": 0.03,
+        "yaw_threshold_deg": 30,
+        "probe_near_fraction": 0.9048611111111111
+      },
+      {
+        "dataset": "mimic500",
+        "xy_threshold_m": 0.05,
+        "yaw_threshold_deg": 45,
+        "probe_near_fraction": 0.9918402777777777
+      },
+      {
+        "dataset": "combined530",
+        "xy_threshold_m": 0.02,
+        "yaw_threshold_deg": 15,
+        "probe_near_fraction": 0.5925347222222223
+      },
+      {
+        "dataset": "combined530",
+        "xy_threshold_m": 0.03,
+        "yaw_threshold_deg": 30,
+        "probe_near_fraction": 0.9130208333333333
+      },
+      {
+        "dataset": "combined530",
+        "xy_threshold_m": 0.05,
+        "yaw_threshold_deg": 45,
+        "probe_near_fraction": 0.9935763888888889
+      }
+    ]
+  },
+  "matched_size_mimic30": {
+    "resamples": 1000,
+    "seed": 20261029,
+    "occupied_bins": {
+      "n": 1000,
+      "mean": 25.589,
+      "median": 26.0,
+      "min": 21.0,
+      "max": 30.0,
+      "p25": 24.0,
+      "p75": 27.0,
+      "sd_sample": 1.6609749660479047
+    },
+    "probe_near_fraction": {
+      "n": 1000,
+      "mean": 0.21085520833333335,
+      "median": 0.21128472222222222,
+      "min": 0.1796875,
+      "max": 0.23506944444444444,
+      "p25": 0.20451388888888888,
+      "p75": 0.21736111111111112,
+      "sd_sample": 0.009748470705422561
+    },
+    "occupied_bins_2p5_97p5_percentiles": [
+      22.0,
+      29.0
+    ],
+    "occupancy_percentile_of_human30": 0.88,
+    "interpretation": "Descriptive equal-size subsampling; resamples overlap and are not independent experiments or a statistical test"
+  },
+  "training_mix": {
+    "human_demo_fraction": 0.05660377358490566,
+    "human_step_fraction": 0.052900088099390494
+  },
+  "limitations": [
+    "Initial pose coverage does not measure evaluation-time policy state coverage or prove the cause of failures.",
+    "The fixed initial EE pose makes initial EE-to-toy XY coverage equivalent to initial toy XY coverage, not independent evidence.",
+    "Coarse bins and geometric proximity thresholds are analyst choices; occupancy depends on sample size.",
+    "Only successful Mimic demonstrations used in training are analyzed; generation selection bias and reuse of 28 annotated source demonstrations remain.",
+    "A single close/open sequence supports coarse action-order consistency, not correct grasp alignment or expert optimality.",
+    "Zero arm action may be a deliberate hold; a path/chord ratio above 1 includes intended alignment and descent; axis sign changes are not automatically jitter.",
+    "Mimic retargeting, interpolation and noise change action distribution; raw action smoothness is not directly comparable to discrete keyboard actions.",
+    "The intervention combines extra samples, pose coverage, changed action targets and changed human/synthetic mixture; it does not isolate coverage from sample count or noise.",
+    "No evaluation state trajectories are available to link individual rollout failures to distance from the training pose distribution."
+  ]
+}
