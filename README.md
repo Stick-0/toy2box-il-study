@@ -54,7 +54,7 @@
 
 ![100+1,000개 모델의 성공 시행 마지막 프레임](human_study/results/human100_mimic1000/figures/seed111_trial000_success_final.png)
 
-[실패 시행 마지막 프레임](human_study/results/human100_mimic1000/figures/seed101_trial000_failure_final.png) · [200회 판정 검증](human_study/results/human100_mimic1000/evaluation_audit.txt) · [데이터·평가 영상 Release](https://github.com/Stick-0/toy2box-il-study/releases/tag/human100-mimic1000)
+[실패 시행 마지막 프레임](human_study/results/human100_mimic1000/figures/seed101_trial000_failure_final.png) · [200회 판정 검증](human_study/results/human100_mimic1000/evaluation_audit.txt) · [원본 자료 배포 상태](human_study/data/README.md)
 
 ## 제출 파일
 

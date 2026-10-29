@@ -4,7 +4,8 @@
   "sha256": "788f9f0aadb1b71d0adaca84abc68f579316bb68caaa34430258ed422b50b34e",
   "video_count": 200,
   "state_action_record_count": 200,
-  "release_tag": "human100-mimic1000",
-  "download_url": "https://github.com/Stick-0/toy2box-il-study/releases/download/human100-mimic1000/human100_mimic1000_evaluation.tar.gz",
-  "contents": "evaluation/seed101 and seed111 contain 100 videos, 100 trial NPZs, JSONL and summaries each; logs/ contains both native evaluation logs."
+  "contents": "evaluation/seed101 and seed111 contain 100 videos, 100 trial NPZs, JSONL and summaries each; logs/ contains both native evaluation logs.",
+  "publication_status": "not_published",
+  "planned_download_url": "https://github.com/Stick-0/toy2box-il-study/releases/download/human100-mimic1000/human100_mimic1000_evaluation.tar.gz",
+  "release_tag_planned": "human100-mimic1000"
 }

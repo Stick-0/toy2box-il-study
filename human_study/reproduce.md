@@ -1,6 +1,6 @@
 # 실행 환경과 재현 절차
 
-모든 경로는 저장소를 복제한 위치를 기준으로 한다. 최종 평가에는 `models/human100_mimic1000_seed101.pth`와 `models/human100_mimic1000_seed111.pth`를 사용한다. 학습 데이터는 [데이터 안내](data/README.md)의 Release에서 준비하며, 사람 100개+Mimic 1,000개와 기존 사람 30개+Mimic 500개 조건을 각각 재현할 수 있다.
+모든 경로는 저장소를 복제한 위치를 기준으로 한다. 최종 평가에는 `models/human100_mimic1000_seed101.pth`와 `models/human100_mimic1000_seed111.pth`를 사용한다. 기존 사람 30개+Mimic 500개 학습 데이터는 [데이터 안내](data/README.md)의 Release에서 준비한다. 사람 100개+Mimic 1,000개 원본은 아직 외부 미배포 상태이므로 해당 학습 재현 명령은 원본 파일 확보 후 실행한다. 제출 모델 평가와 저장된 결과 검증에는 학습 원본이 필요하지 않다.
 
 ## 1. 실행 환경
 

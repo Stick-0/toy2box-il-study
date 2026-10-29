@@ -10,9 +10,14 @@
     "minimum": 20,
     "maximum": 100,
     "used": 100,
-    "composition": [30, 20, 25, 25],
+    "composition": [
+      30,
+      20,
+      25,
+      25
+    ],
     "dataset": "human_study/data/human100.hdf5",
-    "dataset_delivery": "GitHub Release human100-mimic1000; see human_study/data/README.md"
+    "dataset_delivery": "Local archive prepared; not externally published. See human_study/data/README.md"
   },
   "mimic": {
     "maximum_successful_used": 1000,
@@ -55,7 +60,10 @@
         "condition": "human30_baseline",
         "human_count": 30,
         "mimic_count": 0,
-        "successes_by_training_seed_101_111": [16, 19],
+        "successes_by_training_seed_101_111": [
+          16,
+          19
+        ],
         "mean_percent": 17.5,
         "sample_sd_percentage_points": 2.1213203435596424,
         "recorded_evaluation_video": false
@@ -65,7 +73,10 @@
         "human_count": 30,
         "mimic_count": 500,
         "annotated_sources": 28,
-        "successes_by_training_seed_101_111": [64, 60],
+        "successes_by_training_seed_101_111": [
+          64,
+          60
+        ],
         "mean_percent": 62.0,
         "sample_sd_percentage_points": 2.8284271247461903,
         "recorded_evaluation_video": false
@@ -75,7 +86,10 @@
         "human_count": 100,
         "mimic_count": 1000,
         "annotated_sources": 93,
-        "successes_by_training_seed_101_111": [68, 65],
+        "successes_by_training_seed_101_111": [
+          68,
+          65
+        ],
         "mean_percent": 66.5,
         "sample_sd_percentage_points": 2.1213203435596424,
         "recorded_evaluation_video": true,
@@ -93,7 +107,10 @@
     "scale_comparison": {
       "from": "human30_mimic500",
       "to": "human100_mimic1000",
-      "delta_percentage_points_by_training_seed_101_111": [4.0, 5.0],
+      "delta_percentage_points_by_training_seed_101_111": [
+        4.0,
+        5.0
+      ],
       "mean_delta_percentage_points": 4.5,
       "one_factor_controlled_comparison": false,
       "human100_only_baseline_available": false,
@@ -136,8 +153,9 @@
       "video_count": 200,
       "state_action_record_count": 200,
       "same_run_as_reported_success_rate": true,
-      "release": "https://github.com/Stick-0/toy2box-il-study/releases/tag/human100-mimic1000",
-      "evaluation_audit": "human_study/results/human100_mimic1000/evaluation_audit.json"
+      "evaluation_audit": "human_study/results/human100_mimic1000/evaluation_audit.json",
+      "planned_release": "https://github.com/Stick-0/toy2box-il-study/releases/tag/human100-mimic1000",
+      "publication_status": "not_published"
     }
   }
 }

@@ -28,7 +28,6 @@
     "note": "Rebuilt HDF5 byte hashes may depend on HDF5 library metadata; validate selected records and source hashes."
   },
   "human100_mimic1000": {
-    "release_tag": "human100-mimic1000",
     "human": {
       "path_after_decompression": "human_study/data/human100.hdf5",
       "demonstrations": 100,
@@ -38,9 +37,14 @@
       "archive_name": "human100.hdf5.gz",
       "archive_sha256": "62ae2327870e32383ab0edba707451efd28e81166429efed7ad8b524fd91c227",
       "archive_bytes": 21597136,
-      "download_url": "https://github.com/Stick-0/toy2box-il-study/releases/download/human100-mimic1000/human100.hdf5.gz",
-      "source_counts": [30, 20, 25, 25],
-      "duplicate_episode_count": 0
+      "source_counts": [
+        30,
+        20,
+        25,
+        25
+      ],
+      "duplicate_episode_count": 0,
+      "planned_download_url": "https://github.com/Stick-0/toy2box-il-study/releases/download/human100-mimic1000/human100.hdf5.gz"
     },
     "mimic_success": {
       "path_after_decompression": "human_study/data/human100_mimic1000_raw.hdf5",
@@ -51,8 +55,8 @@
       "archive_name": "human100_mimic1000_success.hdf5.gz",
       "archive_sha256": "db3842dc5d23978aae0a72601023347fb44de346cb0face4ad21651c8062d6aa",
       "archive_bytes": 265550839,
-      "download_url": "https://github.com/Stick-0/toy2box-il-study/releases/download/human100-mimic1000/human100_mimic1000_success.hdf5.gz",
-      "all_records_successful": true
+      "all_records_successful": true,
+      "planned_download_url": "https://github.com/Stick-0/toy2box-il-study/releases/download/human100-mimic1000/human100_mimic1000_success.hdf5.gz"
     },
     "annotation": {
       "processed_count": 100,
@@ -84,6 +88,8 @@
       "header_mtime": 0,
       "header_filename": "",
       "decompressed_size_and_sha256_match_sources": true
-    }
+    },
+    "publication_status": "not_published",
+    "release_tag_planned": "human100-mimic1000"
   }
 }

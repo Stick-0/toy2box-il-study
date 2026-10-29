@@ -182,7 +182,7 @@ seed 111 / trial 0의 마지막 프레임(29.65초)에서는 장난감이 박스
 
 ![seed 101 trial 0 실패 시행의 마지막 프레임](results/human100_mimic1000/figures/seed101_trial000_failure_final.png)
 
-영상·상태 전체 자료와 입력 학습 데이터는 [실험 Release](https://github.com/Stick-0/toy2box-il-study/releases/tag/human100-mimic1000)에서 제공한다.
+영상·상태 전체 자료와 입력 학습 데이터의 압축본은 로컬에 보존하며 아직 외부에 배포하지 않았다. 저장소에는 집계·시행별 성공 라벨·설정·감사 결과·예시 프레임을 제공한다. [원본 자료 배포 상태](data/README.md)
 
 ## 6. 제출 모델과 재현 근거
 
