@@ -1,0 +1,20 @@
+Evaluation audit: pass
+Read-only CPU audit of existing evaluation recordings; no simulator, inference, training, Git or environment changes.
+Original source hashes verified: 10
+
+Seed 101: 68/100 successes; 52403 actions; 52503 states.
+Native stdout, exact source predicate, record continuity, file hashes, shapes, finite values and state/action alignment verified.
+Auto-reset trials with pre-reset dropping state verified: []
+Maximum alignment errors: {'toy_truck_positions': 0.0, 'box_positions': 0.0, 'eef_pos': 0.0, 'raw_action_vs_next_obs_actions': 0.0}
+Recomputed native grasp-positive states: 7852
+
+Seed 111: 65/100 successes; 53252 actions; 53352 states.
+Native stdout, exact source predicate, record continuity, file hashes, shapes, finite values and state/action alignment verified.
+Auto-reset trials with pre-reset dropping state verified: [1, 96]
+Maximum alignment errors: {'toy_truck_positions': 0.0, 'box_positions': 0.0, 'eef_pos': 0.0, 'raw_action_vs_next_obs_actions': 0.0}
+Recomputed native grasp-positive states: 7663
+
+Grasp predicate is recomputed from saved state and net contact forces, not independently logged object-specific contact labels.
+Terminal stored state is pre-reset; returned final observations after native termination are post-reset and excluded from alignment checks.
+Success labels use the exact native predicate without a settling requirement.
+Trial indices across models are not assumed paired. Video rendering is enabled in this evaluation.

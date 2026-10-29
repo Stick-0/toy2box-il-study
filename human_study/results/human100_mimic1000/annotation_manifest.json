@@ -1,0 +1,932 @@
+{
+  "status": "completed",
+  "processed_count": 100,
+  "exported_count": 93,
+  "skipped_count": 7,
+  "source": "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100.hdf5",
+  "source_sha256": "cf55843f15ba7e553c52e9544a4d907f8fcea9eb4fddfdebf7ea4ba017e72c4a",
+  "output": "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_annotated.hdf5",
+  "output_sha256": "3d77853ae4dbdbc82bb3b520f42063407d050540a781d5171b83f640860bbeea",
+  "log_sha256": "5f295c8b73fccc77f6f6ebaf15cf2e3b24345b34f3458f2defb5fad9b57fe3d9",
+  "output_env_args": {
+    "env_name": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-Rel-Mimic-v0",
+    "type": 2,
+    "sim_args": {
+      "dt": 0.016666666666666666,
+      "decimation": 3,
+      "render_interval": 6,
+      "num_envs": 1
+    }
+  },
+  "selection": "Native automatic annotation; no manually changed success or grasp thresholds.",
+  "training_note": "All 100 original human demonstrations remain in the combined training data; only annotated sources seed Mimic generation.",
+  "episodes": [
+    {
+      "input_iteration": 0,
+      "source_demo": "demo_0",
+      "exported": false,
+      "annotated_demo": null,
+      "messages": [
+        "Did not detect completion for the subtask \"grasp\".",
+        "Skipped exporting the episode due to incomplete subtask annotations."
+      ]
+    },
+    {
+      "input_iteration": 1,
+      "source_demo": "demo_1",
+      "exported": false,
+      "annotated_demo": null,
+      "messages": [
+        "Did not detect completion for the subtask \"grasp\".",
+        "Skipped exporting the episode due to incomplete subtask annotations."
+      ]
+    },
+    {
+      "input_iteration": 2,
+      "source_demo": "demo_10",
+      "exported": true,
+      "annotated_demo": "demo_0",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 3,
+      "source_demo": "demo_11",
+      "exported": true,
+      "annotated_demo": "demo_1",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 4,
+      "source_demo": "demo_12",
+      "exported": true,
+      "annotated_demo": "demo_2",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 5,
+      "source_demo": "demo_13",
+      "exported": true,
+      "annotated_demo": "demo_3",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 6,
+      "source_demo": "demo_14",
+      "exported": true,
+      "annotated_demo": "demo_4",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 7,
+      "source_demo": "demo_15",
+      "exported": true,
+      "annotated_demo": "demo_5",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 8,
+      "source_demo": "demo_16",
+      "exported": true,
+      "annotated_demo": "demo_6",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 9,
+      "source_demo": "demo_17",
+      "exported": true,
+      "annotated_demo": "demo_7",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 10,
+      "source_demo": "demo_18",
+      "exported": true,
+      "annotated_demo": "demo_8",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 11,
+      "source_demo": "demo_19",
+      "exported": true,
+      "annotated_demo": "demo_9",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 12,
+      "source_demo": "demo_2",
+      "exported": true,
+      "annotated_demo": "demo_10",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 13,
+      "source_demo": "demo_20",
+      "exported": true,
+      "annotated_demo": "demo_11",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 14,
+      "source_demo": "demo_21",
+      "exported": true,
+      "annotated_demo": "demo_12",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 15,
+      "source_demo": "demo_22",
+      "exported": true,
+      "annotated_demo": "demo_13",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 16,
+      "source_demo": "demo_23",
+      "exported": true,
+      "annotated_demo": "demo_14",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 17,
+      "source_demo": "demo_24",
+      "exported": true,
+      "annotated_demo": "demo_15",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 18,
+      "source_demo": "demo_25",
+      "exported": true,
+      "annotated_demo": "demo_16",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 19,
+      "source_demo": "demo_26",
+      "exported": true,
+      "annotated_demo": "demo_17",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 20,
+      "source_demo": "demo_27",
+      "exported": true,
+      "annotated_demo": "demo_18",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 21,
+      "source_demo": "demo_28",
+      "exported": true,
+      "annotated_demo": "demo_19",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 22,
+      "source_demo": "demo_29",
+      "exported": true,
+      "annotated_demo": "demo_20",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 23,
+      "source_demo": "demo_3",
+      "exported": true,
+      "annotated_demo": "demo_21",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 24,
+      "source_demo": "demo_30",
+      "exported": true,
+      "annotated_demo": "demo_22",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 25,
+      "source_demo": "demo_31",
+      "exported": true,
+      "annotated_demo": "demo_23",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 26,
+      "source_demo": "demo_32",
+      "exported": true,
+      "annotated_demo": "demo_24",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 27,
+      "source_demo": "demo_33",
+      "exported": true,
+      "annotated_demo": "demo_25",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 28,
+      "source_demo": "demo_34",
+      "exported": true,
+      "annotated_demo": "demo_26",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 29,
+      "source_demo": "demo_35",
+      "exported": true,
+      "annotated_demo": "demo_27",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 30,
+      "source_demo": "demo_36",
+      "exported": true,
+      "annotated_demo": "demo_28",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 31,
+      "source_demo": "demo_37",
+      "exported": true,
+      "annotated_demo": "demo_29",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 32,
+      "source_demo": "demo_38",
+      "exported": true,
+      "annotated_demo": "demo_30",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 33,
+      "source_demo": "demo_39",
+      "exported": false,
+      "annotated_demo": null,
+      "messages": [
+        "Did not detect completion for the subtask \"grasp\".",
+        "Skipped exporting the episode due to incomplete subtask annotations."
+      ]
+    },
+    {
+      "input_iteration": 34,
+      "source_demo": "demo_4",
+      "exported": true,
+      "annotated_demo": "demo_31",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 35,
+      "source_demo": "demo_40",
+      "exported": true,
+      "annotated_demo": "demo_32",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 36,
+      "source_demo": "demo_41",
+      "exported": false,
+      "annotated_demo": null,
+      "messages": [
+        "Did not detect completion for the subtask \"grasp\".",
+        "Skipped exporting the episode due to incomplete subtask annotations."
+      ]
+    },
+    {
+      "input_iteration": 37,
+      "source_demo": "demo_42",
+      "exported": true,
+      "annotated_demo": "demo_33",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 38,
+      "source_demo": "demo_43",
+      "exported": true,
+      "annotated_demo": "demo_34",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 39,
+      "source_demo": "demo_44",
+      "exported": true,
+      "annotated_demo": "demo_35",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 40,
+      "source_demo": "demo_45",
+      "exported": true,
+      "annotated_demo": "demo_36",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 41,
+      "source_demo": "demo_46",
+      "exported": true,
+      "annotated_demo": "demo_37",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 42,
+      "source_demo": "demo_47",
+      "exported": true,
+      "annotated_demo": "demo_38",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 43,
+      "source_demo": "demo_48",
+      "exported": true,
+      "annotated_demo": "demo_39",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 44,
+      "source_demo": "demo_49",
+      "exported": true,
+      "annotated_demo": "demo_40",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 45,
+      "source_demo": "demo_5",
+      "exported": true,
+      "annotated_demo": "demo_41",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 46,
+      "source_demo": "demo_50",
+      "exported": true,
+      "annotated_demo": "demo_42",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 47,
+      "source_demo": "demo_51",
+      "exported": false,
+      "annotated_demo": null,
+      "messages": [
+        "Did not detect completion for the subtask \"grasp\".",
+        "Skipped exporting the episode due to incomplete subtask annotations."
+      ]
+    },
+    {
+      "input_iteration": 48,
+      "source_demo": "demo_52",
+      "exported": true,
+      "annotated_demo": "demo_43",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 49,
+      "source_demo": "demo_53",
+      "exported": true,
+      "annotated_demo": "demo_44",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 50,
+      "source_demo": "demo_54",
+      "exported": false,
+      "annotated_demo": null,
+      "messages": [
+        "Did not detect completion for the subtask \"grasp\".",
+        "Skipped exporting the episode due to incomplete subtask annotations."
+      ]
+    },
+    {
+      "input_iteration": 51,
+      "source_demo": "demo_55",
+      "exported": true,
+      "annotated_demo": "demo_45",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 52,
+      "source_demo": "demo_56",
+      "exported": true,
+      "annotated_demo": "demo_46",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 53,
+      "source_demo": "demo_57",
+      "exported": true,
+      "annotated_demo": "demo_47",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 54,
+      "source_demo": "demo_58",
+      "exported": true,
+      "annotated_demo": "demo_48",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 55,
+      "source_demo": "demo_59",
+      "exported": true,
+      "annotated_demo": "demo_49",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 56,
+      "source_demo": "demo_6",
+      "exported": true,
+      "annotated_demo": "demo_50",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 57,
+      "source_demo": "demo_60",
+      "exported": true,
+      "annotated_demo": "demo_51",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 58,
+      "source_demo": "demo_61",
+      "exported": true,
+      "annotated_demo": "demo_52",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 59,
+      "source_demo": "demo_62",
+      "exported": true,
+      "annotated_demo": "demo_53",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 60,
+      "source_demo": "demo_63",
+      "exported": true,
+      "annotated_demo": "demo_54",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 61,
+      "source_demo": "demo_64",
+      "exported": true,
+      "annotated_demo": "demo_55",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 62,
+      "source_demo": "demo_65",
+      "exported": true,
+      "annotated_demo": "demo_56",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 63,
+      "source_demo": "demo_66",
+      "exported": true,
+      "annotated_demo": "demo_57",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 64,
+      "source_demo": "demo_67",
+      "exported": true,
+      "annotated_demo": "demo_58",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 65,
+      "source_demo": "demo_68",
+      "exported": true,
+      "annotated_demo": "demo_59",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 66,
+      "source_demo": "demo_69",
+      "exported": true,
+      "annotated_demo": "demo_60",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 67,
+      "source_demo": "demo_7",
+      "exported": true,
+      "annotated_demo": "demo_61",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 68,
+      "source_demo": "demo_70",
+      "exported": true,
+      "annotated_demo": "demo_62",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 69,
+      "source_demo": "demo_71",
+      "exported": true,
+      "annotated_demo": "demo_63",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 70,
+      "source_demo": "demo_72",
+      "exported": true,
+      "annotated_demo": "demo_64",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 71,
+      "source_demo": "demo_73",
+      "exported": true,
+      "annotated_demo": "demo_65",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 72,
+      "source_demo": "demo_74",
+      "exported": true,
+      "annotated_demo": "demo_66",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 73,
+      "source_demo": "demo_75",
+      "exported": true,
+      "annotated_demo": "demo_67",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 74,
+      "source_demo": "demo_76",
+      "exported": true,
+      "annotated_demo": "demo_68",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 75,
+      "source_demo": "demo_77",
+      "exported": true,
+      "annotated_demo": "demo_69",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 76,
+      "source_demo": "demo_78",
+      "exported": true,
+      "annotated_demo": "demo_70",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 77,
+      "source_demo": "demo_79",
+      "exported": true,
+      "annotated_demo": "demo_71",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 78,
+      "source_demo": "demo_8",
+      "exported": true,
+      "annotated_demo": "demo_72",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 79,
+      "source_demo": "demo_80",
+      "exported": true,
+      "annotated_demo": "demo_73",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 80,
+      "source_demo": "demo_81",
+      "exported": true,
+      "annotated_demo": "demo_74",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 81,
+      "source_demo": "demo_82",
+      "exported": true,
+      "annotated_demo": "demo_75",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 82,
+      "source_demo": "demo_83",
+      "exported": true,
+      "annotated_demo": "demo_76",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 83,
+      "source_demo": "demo_84",
+      "exported": true,
+      "annotated_demo": "demo_77",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 84,
+      "source_demo": "demo_85",
+      "exported": true,
+      "annotated_demo": "demo_78",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 85,
+      "source_demo": "demo_86",
+      "exported": true,
+      "annotated_demo": "demo_79",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 86,
+      "source_demo": "demo_87",
+      "exported": true,
+      "annotated_demo": "demo_80",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 87,
+      "source_demo": "demo_88",
+      "exported": true,
+      "annotated_demo": "demo_81",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 88,
+      "source_demo": "demo_89",
+      "exported": false,
+      "annotated_demo": null,
+      "messages": [
+        "Did not detect completion for the subtask \"grasp\".",
+        "Skipped exporting the episode due to incomplete subtask annotations."
+      ]
+    },
+    {
+      "input_iteration": 89,
+      "source_demo": "demo_9",
+      "exported": true,
+      "annotated_demo": "demo_82",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 90,
+      "source_demo": "demo_90",
+      "exported": true,
+      "annotated_demo": "demo_83",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 91,
+      "source_demo": "demo_91",
+      "exported": true,
+      "annotated_demo": "demo_84",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 92,
+      "source_demo": "demo_92",
+      "exported": true,
+      "annotated_demo": "demo_85",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 93,
+      "source_demo": "demo_93",
+      "exported": true,
+      "annotated_demo": "demo_86",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 94,
+      "source_demo": "demo_94",
+      "exported": true,
+      "annotated_demo": "demo_87",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 95,
+      "source_demo": "demo_95",
+      "exported": true,
+      "annotated_demo": "demo_88",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 96,
+      "source_demo": "demo_96",
+      "exported": true,
+      "annotated_demo": "demo_89",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 97,
+      "source_demo": "demo_97",
+      "exported": true,
+      "annotated_demo": "demo_90",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 98,
+      "source_demo": "demo_98",
+      "exported": true,
+      "annotated_demo": "demo_91",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    },
+    {
+      "input_iteration": 99,
+      "source_demo": "demo_99",
+      "exported": true,
+      "annotated_demo": "demo_92",
+      "messages": [
+        "Exported the annotated episode."
+      ]
+    }
+  ]
+}

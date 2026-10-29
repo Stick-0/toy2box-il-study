@@ -1,0 +1,373 @@
+{
+  "schema": "toy2box.experiment_archive.v1",
+  "experiment": "human100_mimic1000",
+  "path_policy": "원본 기록의 절대 경로는 실제 실행 위치를 나타내는 출처 정보다. 복제한 저장소에서 그대로 실행하는 경로가 아니며 원본 바이트와 SHA256 보존을 위해 치환하지 않았다.",
+  "files": [
+    {
+      "repository_path": "human_study/results/human100_mimic1000/results.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/results.json",
+      "sha256": "35e546cb509e9250485b8d0478bd14783a1d0215403cd5e2704f4f96961f7589",
+      "bytes": 3129,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/results.csv",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/results.csv",
+      "sha256": "1804bd1bfe9394a2716cfd6092feafadc11c07e95287b236508bb042822a1e36",
+      "bytes": 430,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/success_rates.png",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/success_rates.png",
+      "sha256": "1aed02a36cfb97b7c7588689ce627e96f6b88e068097a162e81ef41046911a8d",
+      "bytes": 71679,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/annotation_manifest.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/annotation_manifest.json",
+      "sha256": "71bf68f1aa16c668af3e8a23ae75c5e0df43147bbb601c27dd2900701c2b10d3",
+      "bytes": 22000,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/dataset_manifest.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/dataset_manifest.json",
+      "sha256": "98e790ae24007c5d6c7ed32cee61662fb24e67c4d9287a606fa90d49a17fa426",
+      "bytes": 262822,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/generation_summary.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/generation_summary.json",
+      "sha256": "15efec461def032763e2ddd5133e53a16a6dc77073091056acce416346e66303",
+      "bytes": 518,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/data_audit.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/data_audit.json",
+      "sha256": "4cebeda2bd9e6b09ec94e7d27356404e64c03d259133fa01f9f011abf339bae7",
+      "bytes": 1936562,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/data_audit.txt",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/data_audit.txt",
+      "sha256": "bb2374d2cecd59e8b184e73592826ecc7c1f705e443767e27794b2413177f278",
+      "bytes": 1650,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/combined_data_audit.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/combined_data_audit.json",
+      "sha256": "19c9927c23135b2785b2e60b56bcda7614ddfaabd452dc91dd67883fb624776f",
+      "bytes": 394346,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/combined_data_audit.txt",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/combined_data_audit.txt",
+      "sha256": "797dea2001c0ecd0e695013310e9df7178905e458d86ee36fa67cefcbdcef1c9",
+      "bytes": 560,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training_audit.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training_audit.json",
+      "sha256": "12a0181c724efd9263e4f396edf65db8e880a3ed6db30e979c1d4ae558abd773",
+      "bytes": 7252,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training_audit.txt",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training_audit.txt",
+      "sha256": "49ed1eeac332e30012b1d482b28263fcc56b9409d9f3747cb01e591bbc945395",
+      "bytes": 1254,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/evaluation_audit.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation_audit.json",
+      "sha256": "3f85e2671edef4ff49dcb2e7577b5cd192711d740b0e2653aab23b536a474e35",
+      "bytes": 2410,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/evaluation_audit.txt",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation_audit.txt",
+      "sha256": "0301ad83c46f6a62e25741dee91dc5fd2db4e51f4f374d0464cc920085bfcd81",
+      "bytes": 1482,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/evaluation_wrapper_validation.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation_wrapper_validation.json",
+      "sha256": "fea04d92d552dbccd51ab581d7f42c5045f358ea572c2021c1f3cd405c4b370e",
+      "bytes": 529,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/native_source_hashes.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/native_source_hashes.json",
+      "sha256": "12924450f5a74178ae8b6d1671f56fa33af0047eec61e98d6d79a06ff47f7a0f",
+      "bytes": 1840,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/software.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/software.json",
+      "sha256": "0eb0078d46ca5f4060d388235abc8fa9f0e6cc6eba251b6f446787af63657725",
+      "bytes": 304,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/run_plan.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/run_plan.json",
+      "sha256": "499578b29ddd029bd0d4aed649a2606c4b067d6117b67800e18a734c351095de",
+      "bytes": 827,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/pipeline_status.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/pipeline_status.json",
+      "sha256": "439836f1a35b39004bccad246cd56903f3d629136b3613fb79e4824b30edfe65",
+      "bytes": 8861,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training_validation.txt",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training_validation.txt",
+      "sha256": "a9a9be63d92dd7a086985c75071f2a1bd35d90dd2719be6d3d6b4b902417d943",
+      "bytes": 5905,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/scripts/run_pipeline.py",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/run_pipeline.py",
+      "sha256": "2032e3d471e2a41be71f760577d6384522561953ce06c901399d6fcbbbcdd54c",
+      "bytes": 9073,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/scripts/train_with_local_config.py",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/train_with_local_config.py",
+      "sha256": "d799391bc20767861c5341f2d08060061ee014d9a7b4d480824b1baa5f36f23a",
+      "bytes": 13028,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/scripts/evaluate_with_telemetry.py",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluate_with_telemetry.py",
+      "sha256": "0929ca4a31ba4a0f228626221efbd4149ffb747f4e04a7d316fb3909110e4b09",
+      "bytes": 15296,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/scripts/summarize_annotation.py",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/summarize_annotation.py",
+      "sha256": "aa1a8cefecfadeea46596c93a5aded7ef41788d5c76c470cce08ce5e82ef4bf2",
+      "bytes": 2310,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/scripts/summarize_run.py",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/summarize_run.py",
+      "sha256": "68bfc5ac08bcd1af73de11e9708c364f023b2641582e5270ed5902c59a61e9ad",
+      "bytes": 8127,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/scripts/audit_human100.py",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/audit_human100.py",
+      "sha256": "a90276e817d06ecc165492a72e471f330b06c24c0f4fce10cd2365791ce85cba",
+      "bytes": 10833,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/scripts/audit_combined.py",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/audit_combined.py",
+      "sha256": "408c3cb7b8560b59a411eb6868478e75d149e7883cfee0afdd37f49b58b0ba3d",
+      "bytes": 14126,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/scripts/audit_training.py",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/audit_training.py",
+      "sha256": "9446ce466f77c7d6706d2072b71579111a33b6a987944897f2c95230ad273c4b",
+      "bytes": 11226,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/scripts/audit_evaluation.py",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/audit_evaluation.py",
+      "sha256": "9f9ce972bb10e6ff1da3fa3752ca60d65960c1a6472be4182c2bd32fbbfdb720",
+      "bytes": 13920,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/provenance/original_evaluation_commands.txt",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation_commands.txt",
+      "sha256": "ecc69596a54227f615de6c358dfffb923e95bddfd277eb19c03bfa6712b1a6ae",
+      "bytes": 921,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/provenance/original_models_manifest.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/manifest.json",
+      "sha256": "caaa8cbb816f9552419102726f773d78df14280607d5bae0d1c0399aca49a14a",
+      "bytes": 568,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed101/run.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed101/run.json",
+      "sha256": "c101f7633e5fa9fc2505610c1711a76e4af86dac7ec670cfce3f2f7aa369a1f9",
+      "bytes": 2477,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed101/summary.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed101/summary.json",
+      "sha256": "4c1d8aa7e5895234e21a38bd37bd9b8e384f2e6ffbe3b45efbf1a826cea7641c",
+      "bytes": 8417,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed101/input_config.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed101/input_config.json",
+      "sha256": "83815c17c2328f903ee8314ab8bcb16d5628f79c91afadfc806d168d2a187f7a",
+      "bytes": 2190,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed101/effective_config.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed101/effective_config.json",
+      "sha256": "23bc934f7f2a0c886de671904e8ab0a750a854859d41033e821f44fb347db57b",
+      "bytes": 5042,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/evaluation/seed101/run.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed101/run.json",
+      "sha256": "0b8aaf5e3339cf42bb57cbbd8db4839585489c703e41752a3ab7fa5ab3e684b1",
+      "bytes": 4861,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/evaluation/seed101/summary.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed101/summary.json",
+      "sha256": "c0bba55702d40ecb8bfca4514044d9950b8ac01d314e42c488c497dc8ebb0dcf",
+      "bytes": 7745,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/evaluation/seed101/trials.jsonl",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed101/trials.jsonl",
+      "sha256": "93d18e7e9d284c30a1bac534089c40c9c0a561cc8f035215167063afbcb2505a",
+      "bytes": 26377,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed101/native_config.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/native_training/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human100_mimic1000_seed101/20261029174245/config.json",
+      "sha256": "1bc97fb208f145f8fe2f6a7ad06c961bc35b10557ccdfed0b67a5acf682cf0b0",
+      "bytes": 6295,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed111/run.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed111/run.json",
+      "sha256": "d96061c1f122027dd873d701df7842eff415405d5a70e1fa4dab451587b98552",
+      "bytes": 2477,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed111/summary.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed111/summary.json",
+      "sha256": "86d7df66cf7dad775597b85ed6eae56c326c9baa00c1d9996da70d5b52a2edbe",
+      "bytes": 8417,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed111/input_config.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed111/input_config.json",
+      "sha256": "d8bc5ea2d0672b22da1c8f5dc768c2370bd8764c348cc2d2d8ea730a3bae505b",
+      "bytes": 2190,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed111/effective_config.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed111/effective_config.json",
+      "sha256": "4487e427ec76eb0cbd272bc96ed4522b9a8b641cc25a2033424dfc8e33ebcfde",
+      "bytes": 5042,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/evaluation/seed111/run.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111/run.json",
+      "sha256": "91c973416032cc30a8f7769b75cbe83ee71be0f90b9768400f45f4d3a1002365",
+      "bytes": 4861,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/evaluation/seed111/summary.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111/summary.json",
+      "sha256": "02cee4a6aca216151cb99c73862163d32706f776a99606a448aba7b0a22a5491",
+      "bytes": 7745,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/evaluation/seed111/trials.jsonl",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111/trials.jsonl",
+      "sha256": "b48d0ea00b25b7dcf91dd51cb5a878f7b6c06e3f6e5af7613b66ffab0ba99712",
+      "bytes": 26373,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/training/seed111/native_config.json",
+      "original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/native_training/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human100_mimic1000_seed111/20261029174246/config.json",
+      "sha256": "6cfa7a0df7527fb4b3e3f9b4fa086e48af646c2b2f37fce6c53fe9699b98389f",
+      "bytes": 6295,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/provenance/registered_config_source.json",
+      "original_path": "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/agents/robomimic/bc_rnn_low_dim.json",
+      "sha256": "5c43489d7e4045001469a8a2f159cbab1970355e247892c960cb0f75d7581ab2",
+      "bytes": 2177,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/provenance/video_qa_original_manifest.json",
+      "original_path": "/tmp/human100_video_qa/manifest.json",
+      "sha256": "05f31b83d8c7f440d37b06891298673258411b77364285af636033cd7d7d0043",
+      "bytes": 2904,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/figures/seed101_trial000_failure_final.png",
+      "original_path": "/tmp/human100_video_qa/seed101_trial000_03.png",
+      "sha256": "0dccf78cb47a34dc9d8b4bc3d60346f62f79206c05c100c14140632322e758aa",
+      "bytes": 466854,
+      "byte_identical_to_original": true
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/figures/seed111_trial000_success_final.png",
+      "original_path": "/tmp/human100_video_qa/seed111_trial000_03.png",
+      "sha256": "8b4346f02712d4219825f65d59ef355a2f849dfaa879ff67283b52aa3bc7479e",
+      "bytes": 480151,
+      "byte_identical_to_original": true
+    }
+  ],
+  "omitted_local_artifacts": [
+    "중간 epoch 가중치",
+    "전체 학습·시뮬레이션 로그",
+    "200회 평가 영상 원본",
+    "200회 평가 상태·행동 NPZ 원본"
+  ],
+  "runnable_evaluation_commands": "submission/evaluation_commands.txt",
+  "recorded_configs": "training/seed*/effective_config.json은 실제 실행 설정의 원본 사본이며 데이터·출력 절대 경로를 보존한다.",
+  "helper_scripts": "scripts/는 실행 당시 스크립트의 바이트 동일 사본이다. 원래 폴더 구조와 절대 경로에 의존하므로 저장소 재현 명령은 human_study/reproduce.md를 따른다."
+}

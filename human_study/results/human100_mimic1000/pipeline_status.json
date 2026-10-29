@@ -1,0 +1,238 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-29T06:40:54.265817+00:00",
+  "stages": {
+    "generation": {
+      "status": "completed",
+      "started_at": "2026-10-29T06:40:54.300448+00:00",
+      "jobs": [
+        {
+          "label": "mimic1000",
+          "command": [
+            "/home/jm/robot_sim/IsaacLab_RS/isaaclab.sh",
+            "-p",
+            "-u",
+            "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/isaaclab_mimic/generate_dataset.py",
+            "--task",
+            "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-Rel-Mimic-v0",
+            "--headless",
+            "--num_envs",
+            "8",
+            "--generation_num_trials",
+            "1000",
+            "--input_file",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_annotated.hdf5",
+            "--output_file",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_mimic1000_raw.hdf5"
+          ],
+          "log": "/home/jm/robot_sim/local_analysis/human100_mimic1000/logs/generation.log",
+          "pid": 993386
+        }
+      ],
+      "finished_at": "2026-10-29T08:42:22.624010+00:00",
+      "returncodes": [
+        0
+      ]
+    },
+    "prepare_training_data": {
+      "status": "completed",
+      "started_at": "2026-10-29T08:42:22.840259+00:00",
+      "jobs": [
+        {
+          "label": "combine1100",
+          "command": [
+            "/home/jm/robot_sim/IsaacLab_RS/isaaclab.sh",
+            "-p",
+            "-u",
+            "/home/jm/robot_sim/toy2box-il-study/human_study/scripts/prepare_mimic_training.py",
+            "--human",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100.hdf5",
+            "--mimic",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_mimic1000_raw.hdf5",
+            "--output",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_plus_mimic1000.hdf5",
+            "--manifest",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/dataset_manifest.json",
+            "--limit",
+            "1000"
+          ],
+          "log": "/home/jm/robot_sim/local_analysis/human100_mimic1000/logs/prepare.log",
+          "pid": 1065565
+        }
+      ],
+      "finished_at": "2026-10-29T08:42:26.849023+00:00",
+      "returncodes": [
+        0
+      ]
+    },
+    "training": {
+      "status": "completed",
+      "started_at": "2026-10-29T08:42:26.931870+00:00",
+      "jobs": [
+        {
+          "label": "seed101",
+          "command": [
+            "/home/jm/robot_sim/IsaacLab_RS/isaaclab.sh",
+            "-p",
+            "-u",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/train_with_local_config.py",
+            "--seed",
+            "101",
+            "--config",
+            "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/agents/robomimic/bc_rnn_low_dim.json",
+            "--baseline-config",
+            "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/configs/baseline_seed101.json",
+            "--native-source",
+            "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/train.py",
+            "--lab-dir",
+            "/home/jm/robot_sim/IsaacLab_RS",
+            "--dataset",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_plus_mimic1000.hdf5",
+            "--name",
+            "human100_mimic1000_seed101",
+            "--log-dir",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/native_training",
+            "--output-dir",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed101"
+          ],
+          "log": "/home/jm/robot_sim/local_analysis/human100_mimic1000/logs/train_seed101.log",
+          "pid": 1065596
+        },
+        {
+          "label": "seed111",
+          "command": [
+            "/home/jm/robot_sim/IsaacLab_RS/isaaclab.sh",
+            "-p",
+            "-u",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/train_with_local_config.py",
+            "--seed",
+            "111",
+            "--config",
+            "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/agents/robomimic/bc_rnn_low_dim.json",
+            "--baseline-config",
+            "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/configs/baseline_seed111.json",
+            "--native-source",
+            "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/train.py",
+            "--lab-dir",
+            "/home/jm/robot_sim/IsaacLab_RS",
+            "--dataset",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_plus_mimic1000.hdf5",
+            "--name",
+            "human100_mimic1000_seed111",
+            "--log-dir",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/native_training",
+            "--output-dir",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed111"
+          ],
+          "log": "/home/jm/robot_sim/local_analysis/human100_mimic1000/logs/train_seed111.log",
+          "pid": 1065597
+        }
+      ],
+      "finished_at": "2026-10-29T09:15:25.021400+00:00",
+      "returncodes": [
+        0,
+        0
+      ]
+    },
+    "evaluation": {
+      "status": "completed",
+      "started_at": "2026-10-29T09:15:25.059307+00:00",
+      "jobs": [
+        {
+          "label": "seed101",
+          "command": [
+            "/home/jm/robot_sim/IsaacLab_RS/isaaclab.sh",
+            "-p",
+            "-u",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluate_with_telemetry.py",
+            "--output-dir",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed101",
+            "--training-seed",
+            "101",
+            "--native-play",
+            "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/play.py",
+            "--task",
+            "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+            "--checkpoint",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed101.pth",
+            "--seed",
+            "42",
+            "--num_rollouts",
+            "100",
+            "--horizon",
+            "800",
+            "--headless",
+            "--video",
+            "--video_length",
+            "1000",
+            "--video_folder",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed101/videos"
+          ],
+          "log": "/home/jm/robot_sim/local_analysis/human100_mimic1000/logs/evaluation_seed101.log",
+          "pid": 1131811
+        },
+        {
+          "label": "seed111",
+          "command": [
+            "/home/jm/robot_sim/IsaacLab_RS/isaaclab.sh",
+            "-p",
+            "-u",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluate_with_telemetry.py",
+            "--output-dir",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111",
+            "--training-seed",
+            "111",
+            "--native-play",
+            "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/play.py",
+            "--task",
+            "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+            "--checkpoint",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed111.pth",
+            "--seed",
+            "42",
+            "--num_rollouts",
+            "100",
+            "--horizon",
+            "800",
+            "--headless",
+            "--video",
+            "--video_length",
+            "1000",
+            "--video_folder",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111/videos"
+          ],
+          "log": "/home/jm/robot_sim/local_analysis/human100_mimic1000/logs/evaluation_seed111.log",
+          "pid": 1131812
+        }
+      ],
+      "finished_at": "2026-10-29T10:19:55.217306+00:00",
+      "returncodes": [
+        0,
+        0
+      ]
+    },
+    "summarize": {
+      "status": "completed",
+      "started_at": "2026-10-29T10:19:55.226337+00:00",
+      "jobs": [
+        {
+          "label": "results",
+          "command": [
+            "/home/jm/robot_sim/IsaacLab_RS/isaaclab.sh",
+            "-p",
+            "-u",
+            "/home/jm/robot_sim/local_analysis/human100_mimic1000/summarize_run.py"
+          ],
+          "log": "/home/jm/robot_sim/local_analysis/human100_mimic1000/logs/summarize.log",
+          "pid": 1149182
+        }
+      ],
+      "finished_at": "2026-10-29T10:19:57.227334+00:00",
+      "returncodes": [
+        0
+      ]
+    }
+  },
+  "current_stage": "summarize",
+  "finished_at": "2026-10-29T10:19:57.227767+00:00"
+}

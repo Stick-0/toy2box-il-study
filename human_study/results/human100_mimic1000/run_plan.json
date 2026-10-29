@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-29T06:23:09.385725+00:00",
+  "human_source": "/home/jm/robot_sim/IsaacLab_RS/datasets/human100.hdf5",
+  "human_snapshot": "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100.hdf5",
+  "human_sha256": "cf55843f15ba7e553c52e9544a4d907f8fcea9eb4fddfdebf7ea4ba017e72c4a",
+  "human_count": 100,
+  "mimic_success_count": 1000,
+  "combined_training_count": 1100,
+  "training_seeds": [
+    101,
+    111
+  ],
+  "epochs": 2000,
+  "updates_per_epoch": 100,
+  "batch_size": 100,
+  "evaluation_seed": 42,
+  "rollouts_per_model": 100,
+  "horizon": 800,
+  "checkpoint_selection": "final epoch 2000, no evaluation based selection",
+  "publish_github": false,
+  "comparison_note": "Comparison with prior human30+mimic500 changes both human and synthetic counts; not a one-factor causal experiment."
+}

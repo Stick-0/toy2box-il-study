@@ -1,0 +1,71 @@
+{
+  "human_count": 100,
+  "mimic_count": 1000,
+  "training_count": 1100,
+  "annotated_source_count": 93,
+  "annotation_skipped_count": 7,
+  "generation_native_counts": [
+    1000,
+    2680
+  ],
+  "training_total_steps": 434605,
+  "training_seeds": [
+    101,
+    111
+  ],
+  "evaluation_seed": 42,
+  "rollouts_per_model": 100,
+  "horizon": 800,
+  "mean_percent": 66.5,
+  "sample_std_percent": 2.1213203435596424,
+  "std_ddof": 1,
+  "mean_difference_from_prior_augmented_pp": 4.5,
+  "prior_result_sources": [
+    {
+      "summary": "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/evaluation/baseline_seed101/summary.json",
+      "sha256": "b1a8b65310f319dbc618766418c54262fdebf3717c919aa04c1f529cf1fd2759",
+      "trials_sha256": "0253b2ff53278243259a92f54bec8337bf462ccae1a960bfd43657279e2dbe30",
+      "video": false
+    },
+    {
+      "summary": "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/evaluation/baseline_seed111/summary.json",
+      "sha256": "57d93fa0bf90bb3cdc5a12fd6796a66e2225c8ded6f384dca78bd20f064acef0",
+      "trials_sha256": "5783f78aa0eb5e2fb787e4d3d56b9089246c1473a6efdb3de88b9c404f919d48",
+      "video": false
+    },
+    {
+      "summary": "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/evaluation/mimic500_seed101/summary.json",
+      "sha256": "cc68d22984a3a494b30b0720d034219325e7ad6562f7a6d2002178754df2ff9f",
+      "trials_sha256": "ad9736623fb360b36e490f46e1fa336d64120d121c6e54c927e651bdadddebb6",
+      "video": false
+    },
+    {
+      "summary": "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/evaluation/mimic500_seed111/summary.json",
+      "sha256": "08bd9a0eb767e2897e7a84b948629ae0da7311f37bd114de9aa6f766b9f05c76",
+      "trials_sha256": "ba6cfa2337245420cae8a2050e88ecb1385e63630bcabac8288bf79c5941ec7a",
+      "video": false
+    }
+  ],
+  "models": [
+    {
+      "training_seed": 101,
+      "successes": 68,
+      "rollouts": 100,
+      "success_rate_percent": 68.0,
+      "checkpoint": "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed101.pth",
+      "checkpoint_sha256": "33c7d122185aa1ca24303d44e9e3206b8ee96e2ea2fd0951f62d2dac6a966ee1"
+    },
+    {
+      "training_seed": 111,
+      "successes": 65,
+      "rollouts": 100,
+      "success_rate_percent": 65.0,
+      "checkpoint": "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed111.pth",
+      "checkpoint_sha256": "bda8c12ce70b448de2d90ab34354fc5cf6e7d9017da0a857654cae72720f4726"
+    }
+  ],
+  "dataset_manifest_sha256": "98e790ae24007c5d6c7ed32cee61662fb24e67c4d9287a606fa90d49a17fa426",
+  "comparison_limitation": "Both human and synthetic demonstration counts changed versus human30+Mimic500; this is not a one-factor causal comparison.",
+  "recording_difference": "Current evaluation records videos and telemetry; prior evaluation had video disabled. Native environment, rollout, success, termination and model execution logic are preserved.",
+  "checkpoint_selection": "Fixed final epoch 2000 for both seeds; no evaluation-based model selection."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "num_envs": 8,
+  "target_successes": 1000,
+  "successful_file_count": 1000,
+  "raw_file_episode_count": 1000,
+  "last_native_counts": [
+    1000,
+    2680
+  ],
+  "input_annotations": 93,
+  "raw_file": "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_mimic1000_raw.hdf5",
+  "raw_sha256": "d636592ad2b392d84e6a0e42ec90debc5d3c6a55e8291bb9e8b0b7ae04a10ef9",
+  "selection": "First 1000 successful records in numeric order; failed/overflow records excluded from training."
+}

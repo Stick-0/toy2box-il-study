@@ -1,0 +1,152 @@
+{
+  "audited_at": "2026-10-29T09:16:20.277647+00:00",
+  "scope": "complete",
+  "status": "passed",
+  "gpu_execution": false,
+  "dataset": "/home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_plus_mimic1000.hdf5",
+  "dataset_sha256": "0a23c455ff5a3cc11a5ce32856162d2bca9afc1cc44ad861b3e6484141440d54",
+  "human_count": 100,
+  "mimic_count": 1000,
+  "demo_count": 1100,
+  "all_training_demos_stored_successful": true,
+  "runs": [
+    {
+      "training_seed": 101,
+      "native_effective_config": "/home/jm/robot_sim/local_analysis/human100_mimic1000/native_training/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human100_mimic1000_seed101/20261029174245/config.json",
+      "native_effective_config_sha256": "1bc97fb208f145f8fe2f6a7ad06c961bc35b10557ccdfed0b67a5acf682cf0b0",
+      "configuration_matches_prior_baseline": true,
+      "only_local_input_seed_changed": true,
+      "shared_configuration_unchanged": true,
+      "source_hashes_unchanged": {
+        "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/train.py": "7d38483469b7655f87435dea2ea82ac8b4229fce3d1cae937fb938f9280debfe",
+        "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/agents/robomimic/bc_rnn_low_dim.json": "5c43489d7e4045001469a8a2f159cbab1970355e247892c960cb0f75d7581ab2",
+        "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed101/input_config.json": "83815c17c2328f903ee8314ab8bcb16d5628f79c91afadfc806d168d2a187f7a",
+        "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/configs/baseline_seed101.json": "bf1acfb97ea6e5224547c2dfcc5fedfe45128c80b340dfbb0ad2c97f079a998c",
+        "/home/jm/robot_sim/local_analysis/human100_mimic1000/train_with_local_config.py": "d799391bc20767861c5341f2d08060061ee014d9a7b4d480824b1baa5f36f23a"
+      },
+      "epochs": 2000,
+      "updates_per_epoch": 100,
+      "batch_size": 100,
+      "log": {
+        "log_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed101/training.log",
+        "snapshot_bytes": 1750365,
+        "snapshot_sha256": "7a8c7d66707a3f54d2a53d7415973ece4b02a15a9e2f34ad9fd29cc75c52a402",
+        "completed_logged_epochs": 2000,
+        "epoch_order_consecutive": true,
+        "all_logged_numeric_metrics_finite": true,
+        "completion_markers": 1,
+        "first_loss": -2.5138276855647566,
+        "last_loss": -27.94048852920532,
+        "minimum_loss": -28.19086784362793,
+        "maximum_loss": -2.5138276855647566,
+        "first_100_loss_mean": -22.459739408938585,
+        "latest_100_loss_mean": -28.01402204608918,
+        "loss_definition": "Negative GMM log likelihood; negative values are expected and do not directly measure rollout success."
+      },
+      "checkpoint": {
+        "path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/native_training/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human100_mimic1000_seed101/20261029174245/models/model_epoch_2000.pth",
+        "sha256": "33c7d122185aa1ca24303d44e9e3206b8ee96e2ea2fd0951f62d2dac6a966ee1",
+        "epoch": 2000,
+        "embedded_seed": 101,
+        "embedded_config_matches_actual": true,
+        "tensor_count": 20,
+        "tensor_elements": 2023350,
+        "all_weights_finite_on_cpu": true,
+        "action_dimension": 7,
+        "observation_dimensions": {
+          "box_orientations": [
+            4
+          ],
+          "box_positions": [
+            3
+          ],
+          "eef_pos": [
+            3
+          ],
+          "eef_quat": [
+            4
+          ],
+          "gripper_pos": [
+            2
+          ],
+          "toy_truck_orientations": [
+            4
+          ],
+          "toy_truck_positions": [
+            3
+          ]
+        },
+        "local_model_copy_hash_checked": true
+      }
+    },
+    {
+      "training_seed": 111,
+      "native_effective_config": "/home/jm/robot_sim/local_analysis/human100_mimic1000/native_training/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human100_mimic1000_seed111/20261029174246/config.json",
+      "native_effective_config_sha256": "6cfa7a0df7527fb4b3e3f9b4fa086e48af646c2b2f37fce6c53fe9699b98389f",
+      "configuration_matches_prior_baseline": true,
+      "only_local_input_seed_changed": true,
+      "shared_configuration_unchanged": true,
+      "source_hashes_unchanged": {
+        "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/train.py": "7d38483469b7655f87435dea2ea82ac8b4229fce3d1cae937fb938f9280debfe",
+        "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/agents/robomimic/bc_rnn_low_dim.json": "5c43489d7e4045001469a8a2f159cbab1970355e247892c960cb0f75d7581ab2",
+        "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed111/input_config.json": "d8bc5ea2d0672b22da1c8f5dc768c2370bd8764c348cc2d2d8ea730a3bae505b",
+        "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/configs/baseline_seed111.json": "f39d4aecc733a326efa47e5a6e5e55b47042a366766fd5dd1ef107cc721ee975",
+        "/home/jm/robot_sim/local_analysis/human100_mimic1000/train_with_local_config.py": "d799391bc20767861c5341f2d08060061ee014d9a7b4d480824b1baa5f36f23a"
+      },
+      "epochs": 2000,
+      "updates_per_epoch": 100,
+      "batch_size": 100,
+      "log": {
+        "log_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed111/training.log",
+        "snapshot_bytes": 1733200,
+        "snapshot_sha256": "b1355e7764879415ff980d2b3c6e139df5a2b17cb31efaabcc9a6ea208cdbaa2",
+        "completed_logged_epochs": 2000,
+        "epoch_order_consecutive": true,
+        "all_logged_numeric_metrics_finite": true,
+        "completion_markers": 1,
+        "first_loss": -4.016951815932989,
+        "last_loss": -28.013049755096436,
+        "minimum_loss": -28.163282928466796,
+        "maximum_loss": -4.016951815932989,
+        "first_100_loss_mean": -22.550408841679985,
+        "latest_100_loss_mean": -27.99810798797607,
+        "loss_definition": "Negative GMM log likelihood; negative values are expected and do not directly measure rollout success."
+      },
+      "checkpoint": {
+        "path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/native_training/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/human100_mimic1000_seed111/20261029174246/models/model_epoch_2000.pth",
+        "sha256": "bda8c12ce70b448de2d90ab34354fc5cf6e7d9017da0a857654cae72720f4726",
+        "epoch": 2000,
+        "embedded_seed": 111,
+        "embedded_config_matches_actual": true,
+        "tensor_count": 20,
+        "tensor_elements": 2023350,
+        "all_weights_finite_on_cpu": true,
+        "action_dimension": 7,
+        "observation_dimensions": {
+          "box_orientations": [
+            4
+          ],
+          "box_positions": [
+            3
+          ],
+          "eef_pos": [
+            3
+          ],
+          "eef_quat": [
+            4
+          ],
+          "gripper_pos": [
+            2
+          ],
+          "toy_truck_orientations": [
+            4
+          ],
+          "toy_truck_positions": [
+            3
+          ]
+        },
+        "local_model_copy_hash_checked": true
+      }
+    }
+  ]
+}

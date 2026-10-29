@@ -8,19 +8,25 @@ conda activate lerobot-arena
 export TERM=xterm
 cd IsaacLab
 
-# 학습 seed 101 모델: 자체 검증 64/100
+# 학습 seed 101 모델: 자체 검증 68/100
 ./isaaclab.sh -p scripts/imitation_learning/robomimic/play.py \
   --task Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0 \
-  --checkpoint ../models/mimic500_seed101.pth \
-  --seed 42 --num_rollouts 100 --horizon 800 --headless
+  --checkpoint ../models/human100_mimic1000_seed101.pth \
+  --seed 42 --num_rollouts 100 --horizon 800 --headless \
+  --video --video_length 1000 \
+  --video_folder ../videos/human100_mimic1000_seed101
 
-# 학습 seed 111 모델: 자체 검증 60/100
+# 학습 seed 111 모델: 자체 검증 65/100
 ./isaaclab.sh -p scripts/imitation_learning/robomimic/play.py \
   --task Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0 \
-  --checkpoint ../models/mimic500_seed111.pth \
-  --seed 42 --num_rollouts 100 --horizon 800 --headless
+  --checkpoint ../models/human100_mimic1000_seed111.pth \
+  --seed 42 --num_rollouts 100 --horizon 800 --headless \
+  --video --video_length 1000 \
+  --video_folder ../videos/human100_mimic1000_seed111
 
 --seed 42는 자체 검증용 평가 seed이며 모델의 학습 seed와 다르다.
+두 모델의 자체 검증 평균 ± 표본 표준편차는 66.5 ± 2.12%이다.
+위 명령은 실측 평가와 같이 영상 기록을 활성화한다.
 조교 최종 평가에서는 조교가 지정한 비공개 평가 seed로 --seed만 변경한다.
 화면을 보며 실행하려면 --headless를 생략한다.
 conda 환경 이름이 다르면 설치된 Isaac Sim 환경 이름으로 변경한다.

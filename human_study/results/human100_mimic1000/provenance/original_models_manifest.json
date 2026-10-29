@@ -1,0 +1,17 @@
+{
+  "models": [
+    {
+      "training_seed": 101,
+      "path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed101.pth",
+      "sha256": "33c7d122185aa1ca24303d44e9e3206b8ee96e2ea2fd0951f62d2dac6a966ee1",
+      "epoch": 2000
+    },
+    {
+      "training_seed": 111,
+      "path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed111.pth",
+      "sha256": "bda8c12ce70b448de2d90ab34354fc5cf6e7d9017da0a857654cae72720f4726",
+      "epoch": 2000
+    }
+  ],
+  "selection": "Fixed final epoch 2000"
+}

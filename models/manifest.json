@@ -4,23 +4,25 @@
   "models": [
     {
       "training_seed": 101,
-      "path": "models/mimic500_seed101.pth",
-      "sha256": "5609d8e2d1c19e44a6f28f3012badcb42356fb1860f6f241f05182648f1d9737",
+      "path": "models/human100_mimic1000_seed101.pth",
+      "sha256": "33c7d122185aa1ca24303d44e9e3206b8ee96e2ea2fd0951f62d2dac6a966ee1",
       "bytes": 7985734,
       "epoch": 2000,
-      "dataset": "human30_plus_mimic500",
-      "training_record": "human_study/results/mimic500_20261028/training/mimic500_seed101/summary.json",
-      "evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed101/summary.json"
+      "dataset": "human100_plus_mimic1000",
+      "training_record": "human_study/results/human100_mimic1000/training/seed101/summary.json",
+      "evaluation_record": "human_study/results/human100_mimic1000/evaluation/seed101/summary.json"
     },
     {
       "training_seed": 111,
-      "path": "models/mimic500_seed111.pth",
-      "sha256": "ea1882e7b7b7a1e3a27ff6acf8ba12926c6222ba9d6fbe9cd5ef5494c8fe9f1c",
+      "path": "models/human100_mimic1000_seed111.pth",
+      "sha256": "bda8c12ce70b448de2d90ab34354fc5cf6e7d9017da0a857654cae72720f4726",
       "bytes": 7985734,
       "epoch": 2000,
-      "dataset": "human30_plus_mimic500",
-      "training_record": "human_study/results/mimic500_20261028/training/mimic500_seed111/summary.json",
-      "evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed111/summary.json"
+      "dataset": "human100_plus_mimic1000",
+      "training_record": "human_study/results/human100_mimic1000/training/seed111/summary.json",
+      "evaluation_record": "human_study/results/human100_mimic1000/evaluation/seed111/summary.json"
     }
-  ]
+  ],
+  "selection": "학습 seed 101과 111 각각의 마지막 epoch 2000 모델을 제출한다. 평가 결과에 따른 checkpoint 선택은 하지 않았다.",
+  "experiment_archive": "human_study/results/human100_mimic1000/archive_manifest.json"
 }

@@ -1,5 +1,6 @@
 {
-  "schema": "toy2box.submission_datasets.v1",
+  "schema": "toy2box.submission_datasets.v2",
+  "legacy_fields": "Top-level human, mimic_success and combined describe the retained Human30+Mimic500 experiment.",
   "human": {
     "path": "human_study/data/human_20261028_112300.hdf5",
     "demonstrations": 30,
@@ -25,5 +26,64 @@
     "construction": "scripts/prepare_mimic_training.py: all 30 human demonstrations plus 500 successful Mimic demonstrations",
     "original_file_sha256": "ff326a1bd45f4abf94ed576865bce2fd5beea4f36c0aa4bc7aed2c975a70d101",
     "note": "Rebuilt HDF5 byte hashes may depend on HDF5 library metadata; validate selected records and source hashes."
+  },
+  "human100_mimic1000": {
+    "release_tag": "human100-mimic1000",
+    "human": {
+      "path_after_decompression": "human_study/data/human100.hdf5",
+      "demonstrations": 100,
+      "steps": 36838,
+      "sha256": "cf55843f15ba7e553c52e9544a4d907f8fcea9eb4fddfdebf7ea4ba017e72c4a",
+      "bytes": 30575719,
+      "archive_name": "human100.hdf5.gz",
+      "archive_sha256": "62ae2327870e32383ab0edba707451efd28e81166429efed7ad8b524fd91c227",
+      "archive_bytes": 21597136,
+      "download_url": "https://github.com/Stick-0/toy2box-il-study/releases/download/human100-mimic1000/human100.hdf5.gz",
+      "source_counts": [30, 20, 25, 25],
+      "duplicate_episode_count": 0
+    },
+    "mimic_success": {
+      "path_after_decompression": "human_study/data/human100_mimic1000_raw.hdf5",
+      "demonstrations": 1000,
+      "steps": 397767,
+      "sha256": "d636592ad2b392d84e6a0e42ec90debc5d3c6a55e8291bb9e8b0b7ae04a10ef9",
+      "bytes": 358071770,
+      "archive_name": "human100_mimic1000_success.hdf5.gz",
+      "archive_sha256": "db3842dc5d23978aae0a72601023347fb44de346cb0face4ad21651c8062d6aa",
+      "archive_bytes": 265550839,
+      "download_url": "https://github.com/Stick-0/toy2box-il-study/releases/download/human100-mimic1000/human100_mimic1000_success.hdf5.gz",
+      "all_records_successful": true
+    },
+    "annotation": {
+      "processed_count": 100,
+      "exported_count": 93,
+      "skipped_count": 7,
+      "note": "93 annotated demonstrations seed Mimic generation; all 100 original human demonstrations remain in training."
+    },
+    "generation": {
+      "num_envs": 8,
+      "successful_attempts": 1000,
+      "total_attempts": 2680,
+      "failed_attempts": 1680,
+      "failed_demonstrations_in_training": 0
+    },
+    "combined": {
+      "path_after_reconstruction": "human_study/data/human100_plus_mimic1000.hdf5",
+      "human_demonstrations": 100,
+      "mimic_demonstrations": 1000,
+      "demonstrations": 1100,
+      "steps": 434605,
+      "construction": "human_study/scripts/prepare_mimic_training.py: all 100 human demonstrations plus the first 1000 successful Mimic demonstrations in numeric order",
+      "original_file_sha256": "0a23c455ff5a3cc11a5ce32856162d2bca9afc1cc44ad861b3e6484141440d54",
+      "original_file_bytes": 385591749,
+      "note": "Rebuilt HDF5 byte hashes may depend on HDF5 library metadata; validate selected records and source hashes."
+    },
+    "archive_verification": {
+      "format": "gzip",
+      "compression_level": 6,
+      "header_mtime": 0,
+      "header_filename": "",
+      "decompressed_size_and_sha256_match_sources": true
+    }
   }
 }

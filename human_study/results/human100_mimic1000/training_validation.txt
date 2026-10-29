@@ -1,0 +1,80 @@
+로컬 학습 실행 및 검증
+
+범위
+- train_with_local_config.py는 기존 native train.py를 수정하지 않는다.
+- 공유 bc_rnn_low_dim.json을 읽어 새 기록 폴더/input_config.json에 복사하고,
+  복사본의 train.seed만 101 또는 111로 변경한다.
+- 자식 프로세스에서만 gym.spec(TASK).kwargs의 robomimic_bc_cfg_entry_point를
+  해당 복사본 경로로 지정한 뒤, 원본 main(argparse.Namespace(...))을 호출한다.
+- 원본 main의 인자 형태는 main(args)이며 Namespace에는 task, algo, dataset,
+  name, log_dir, normalize_training_actions=False, epochs=None을 전달한다.
+- 원본 스크립트가 학습 모델 생성, 데이터 로더, 학습 루프, 모델 저장을 담당한다.
+- runpy.run_path(..., run_name="toy2box_native_training")을 사용해 원본 CLI의
+  __main__ 블록만 실행하지 않는다. AppLauncher와 모듈 초기화는 그대로 실행한다.
+- 두 seed가 서로 다른 JSON과 출력 폴더를 사용하므로 공유 설정 파일 경쟁이 없다.
+- GitHub 및 기존 저장소 파일은 변경하지 않는다.
+
+고정 조건
+- BC-RNN: 기존 모델과 같은 구성; 2,000 epoch, epoch당 100 update, batch 100.
+- num_data_workers=4, seq_length=10, 기존 관측 및 행동 표현 유지.
+- 학습 중 rollout/validation 비활성화; 별도 조기 종료나 최적 checkpoint 탐색 없음.
+- 평가 대상은 각 seed의 model_epoch_2000.pth로 사전 고정.
+- 입력 데이터의 성공 여부·개수·중복 검증은 별도 데이터 감사와 결합 manifest에서
+  수행한다. 이 래퍼는 학습 입력 파일 SHA256과 설정 일치 여부를 검증한다.
+
+검증
+1. --validate-only는 파일을 읽기만 하며 GPU나 시뮬레이터를 실행하지 않는다.
+   native main(args) 서명, 입력 경로, 기존 출력 충돌, 필수 학습 설정 및 baseline의
+   제공된 JSON 필드를 확인한다. 101/111 모두 human100 스냅샷으로 사전검증 통과.
+   최종 1,100개 결합 파일은 생성 완료 후 같은 사전검증을 다시 실행해야 한다.
+2. 학습 직전 자식은 native config_factory로 기본값까지 확장한 전체 구성을 기존
+   seed별 baseline JSON과 비교한다. 예외는 데이터·출력 경로·실험 이름뿐이다.
+   설치된 robomimic.config만 CPU에서 불러와 101/111 전체 기본값 확장 비교를 모두
+   통과했다. batch_size를 99로 바꾼 음성 검증은 두 seed 모두 올바르게 거부했다.
+   tuple 기본값과 JSON list는 JSON 직렬화 후 같은 의미로 비교한다.
+3. 학습 출력 전체를 training.log에 기록한다. 원본이 예외를 잡고 종료 코드 0을
+   반환할 수 있으므로 완료 문구, traceback/실패 문구, 종료 코드까지 함께 확인한다.
+4. epoch 2000 파일이 정확히 하나인지 검사하고 그 디렉터리의 실제 config.json을
+   baseline과 다시 대조한다. seed·dataset·output_dir·name도 각각 확인한다.
+5. 입력 데이터, native 소스, 공유 JSON, baseline JSON, 로컬 JSON, 래퍼의 SHA256이
+   시작 시점과 같은지 검사한다. 결과·체크포인트 SHA256은 summary.json에 저장한다.
+6. 실패·중단 시 실행한 자식 프로세스 그룹을 종료하고 실패 상태와 로그를 보존한다.
+   기존 출력 폴더는 덮어쓰지 않는다.
+
+실행 예시: 결합 데이터 생성 완료 후
+
+conda activate lerobot-arena
+cd /home/jm/robot_sim/IsaacLab_RS
+export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 TERM=xterm
+export LD_PRELOAD="$CONDA_PREFIX/lib/libstdc++.so.6"
+
+# 아래 데이터 파일명은 prepare_mimic_training.py의 실제 출력과 일치시킨다.
+# 두 seed를 순차 실행하는 예시이며, 별도 프로세스로 동시 실행해도 설정이 격리된다.
+for TRAIN_SEED in 101 111; do
+  ./isaaclab.sh -p -u /home/jm/robot_sim/local_analysis/human100_mimic1000/train_with_local_config.py \
+    --seed "$TRAIN_SEED" \
+    --config /home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/agents/robomimic/bc_rnn_low_dim.json \
+    --baseline-config "/home/jm/robot_sim/toy2box-il-study/human_study/results/mimic500_20261028/configs/baseline_seed${TRAIN_SEED}.json" \
+    --native-source /home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/train.py \
+    --lab-dir /home/jm/robot_sim/IsaacLab_RS \
+    --dataset /home/jm/robot_sim/local_analysis/human100_mimic1000/data/human100_plus_mimic1000.hdf5 \
+    --name "human100_mimic1000_seed${TRAIN_SEED}" \
+    --log-dir /home/jm/robot_sim/local_analysis/human100_mimic1000/native_training \
+    --output-dir "/home/jm/robot_sim/local_analysis/human100_mimic1000/training/seed${TRAIN_SEED}" || break
+done
+
+평가
+- 기존 human_study/scripts/evaluate_recorded.py를 그대로 사용 가능.
+- --lab-dir /home/jm/robot_sim/IsaacLab_RS, --checkpoint에는 각 학습 summary.json의
+  checkpoint 경로, --output-dir에는 로컬의 새 seed별 평가 폴더를 지정한다.
+- 도구가 평가 seed 42, rollout 100, horizon 800을 고정하고 전체 출력·회차별 성공
+  판정·합계·성공률·체크포인트 및 evaluator 해시를 기록하고 검증한다.
+- 공식 비교와 같은 영상 비활성화를 유지하려면 --video-folder를 생략한다.
+
+시간과 병렬성 참고
+- 기존 530개 데이터 조건은 각 seed 학습 20.68분/20.49분, 종료 RSS 약 4.52GB였다.
+- 기존 100회 평가는 동시 실행 시 각 49.47분/50.21분이었다.
+- 현재 1,100개 조건의 실시간·메모리는 실행 전 확정할 수 없다. update 수는 같지만
+  hdf5_cache_mode=all 데이터 캐시가 커진다. 단일 GPU를 공유하므로 두 학습의 동시
+  실행이 순차 실행보다 빠르다고 보장할 수 없다.
+- 생성 완료 후 GPU/RAM 여유를 확인해 병렬 여부를 결정한다.

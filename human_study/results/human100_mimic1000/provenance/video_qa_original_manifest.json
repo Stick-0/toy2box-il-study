@@ -1,0 +1,83 @@
+{
+  "purpose": "Two completed evaluation-video QA samples, not an outcome analysis",
+  "probe_note": "ffprobe is not installed. Used installed imageio FFmpeg full decode with showinfo and cross-checked OpenCV stream metadata.",
+  "ffmpeg_binary": "/home/jm/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2",
+  "videos": [
+    {
+      "training_seed": 101,
+      "trial": 0,
+      "native_success": false,
+      "rollout_steps": 800,
+      "source_video": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed101/videos/rollout-episode-0.mp4",
+      "video_sha256": "ea59c8853b63f30273b9aec97d5d4b921774a7a31aedd74e16c571c4f8ef0017",
+      "source_unchanged": true,
+      "metadata": {
+        "width": 1280,
+        "height": 720,
+        "fps": 20.0,
+        "frames": 800
+      },
+      "full_decode_returncode": 0,
+      "frame_count": 800,
+      "frames": [
+        {
+          "position": "start",
+          "frame_index": 0,
+          "timestamp_seconds": 0.0,
+          "path": "/tmp/human100_video_qa/seed101_trial000_01.png"
+        },
+        {
+          "position": "middle",
+          "frame_index": 399,
+          "timestamp_seconds": 19.95,
+          "path": "/tmp/human100_video_qa/seed101_trial000_02.png"
+        },
+        {
+          "position": "end",
+          "frame_index": 799,
+          "timestamp_seconds": 39.95,
+          "path": "/tmp/human100_video_qa/seed101_trial000_03.png"
+        }
+      ],
+      "extraction_note": "Original decoded frames saved directly as PNG; no resizing, crop, overlay, composition or color editing."
+    },
+    {
+      "training_seed": 111,
+      "trial": 0,
+      "native_success": true,
+      "rollout_steps": 593,
+      "source_video": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111/videos/rollout-episode-0.mp4",
+      "video_sha256": "514a6330ba73f6c3abf424ab9a73faedb848aab3861c8ad02f05fe04e269f8aa",
+      "source_unchanged": true,
+      "metadata": {
+        "width": 1280,
+        "height": 720,
+        "fps": 20.0,
+        "frames": 594
+      },
+      "full_decode_returncode": 0,
+      "frame_count": 594,
+      "frames": [
+        {
+          "position": "start",
+          "frame_index": 0,
+          "timestamp_seconds": 0.0,
+          "path": "/tmp/human100_video_qa/seed111_trial000_01.png"
+        },
+        {
+          "position": "middle",
+          "frame_index": 296,
+          "timestamp_seconds": 14.8,
+          "path": "/tmp/human100_video_qa/seed111_trial000_02.png"
+        },
+        {
+          "position": "end",
+          "frame_index": 593,
+          "timestamp_seconds": 29.65,
+          "path": "/tmp/human100_video_qa/seed111_trial000_03.png"
+        }
+      ],
+      "extraction_note": "Original decoded frames saved directly as PNG; no resizing, crop, overlay, composition or color editing."
+    }
+  ]
+}

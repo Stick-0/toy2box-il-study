@@ -1,0 +1,12 @@
+{
+  "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "h5py": "3.16.0",
+    "robomimic": "0.4.0",
+    "isaacsim": "5.1.0.0",
+    "isaaclab": "0.47.2"
+  }
+}

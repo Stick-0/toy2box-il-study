@@ -1,21 +1,26 @@
 {
-  "schema": "toy2box.submission_requirements.v2",
+  "schema": "toy2box.submission_requirements.v3",
   "task": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
   "status": "completed",
+  "final_experiment": "human100_mimic1000",
   "research_question": "사람 시범으로 학습한 BC 정책은 Toy2Box에서 왜 성공률이 저조한가? 원인 하나를 진단하고, 그 원인을 겨냥해 성공률을 높여라.",
   "human_demonstrations": {
     "method": "direct_keyboard",
     "collection_protocol": "approach, align and rotate gripper, descend and grasp, lift and transport, place",
     "minimum": 20,
     "maximum": 100,
-    "used": 30,
-    "dataset": "human_study/data/human_20261028_112300.hdf5"
+    "used": 100,
+    "composition": [30, 20, 25, 25],
+    "dataset": "human_study/data/human100.hdf5",
+    "dataset_delivery": "GitHub Release human100-mimic1000; see human_study/data/README.md"
   },
   "mimic": {
     "maximum_successful_used": 1000,
-    "successful_used": 500,
-    "annotated_sources": 28,
-    "combined_count": 530
+    "successful_used": 1000,
+    "annotated_sources": 93,
+    "annotation_skipped": 7,
+    "all_original_human_demos_used_for_training": true,
+    "combined_count": 1100
   },
   "immutable_conditions": [
     "environment and initial object position distributions",
@@ -39,27 +44,67 @@
     "horizon": 800,
     "mean_and_sd_over_training_seeds": true,
     "sd_ddof": 1,
-    "n": 2
+    "n": 2,
+    "final_condition_video": true,
+    "final_condition_state_action_recording": true,
+    "conditions_have_same_recording_options": false
   },
   "results": {
-    "baseline_successes": [
-      16,
-      19
+    "conditions": [
+      {
+        "condition": "human30_baseline",
+        "human_count": 30,
+        "mimic_count": 0,
+        "successes_by_training_seed_101_111": [16, 19],
+        "mean_percent": 17.5,
+        "sample_sd_percentage_points": 2.1213203435596424,
+        "recorded_evaluation_video": false
+      },
+      {
+        "condition": "human30_mimic500",
+        "human_count": 30,
+        "mimic_count": 500,
+        "annotated_sources": 28,
+        "successes_by_training_seed_101_111": [64, 60],
+        "mean_percent": 62.0,
+        "sample_sd_percentage_points": 2.8284271247461903,
+        "recorded_evaluation_video": false
+      },
+      {
+        "condition": "human100_mimic1000",
+        "human_count": 100,
+        "mimic_count": 1000,
+        "annotated_sources": 93,
+        "successes_by_training_seed_101_111": [68, 65],
+        "mean_percent": 66.5,
+        "sample_sd_percentage_points": 2.1213203435596424,
+        "recorded_evaluation_video": true,
+        "submitted": true
+      }
     ],
-    "mimic_successes": [
-      64,
-      60
-    ],
-    "baseline_mean_percent": 17.5,
-    "mimic_mean_percent": 62.0,
-    "mean_delta_percentage_points": 44.5,
-    "hypothesis_support": "augmentation_prediction_supported",
-    "causal_limit": "Initial-pose sparsity and local coverage gaps are measured post hoc; augmentation prediction is supported, but sample count, coverage, action distribution and mixture effects are not isolated."
+    "controlled_comparison": {
+      "from": "human30_baseline",
+      "to": "human30_mimic500",
+      "changed_factor": "addition_of_500_successful_mimic_demonstrations",
+      "mean_delta_percentage_points": 44.5,
+      "hypothesis_support": "augmentation_prediction_supported",
+      "causal_limit": "Augmentation improved observed success; data quantity, state coverage, action distribution and mixture effects are not isolated."
+    },
+    "scale_comparison": {
+      "from": "human30_mimic500",
+      "to": "human100_mimic1000",
+      "delta_percentage_points_by_training_seed_101_111": [4.0, 5.0],
+      "mean_delta_percentage_points": 4.5,
+      "one_factor_controlled_comparison": false,
+      "human100_only_baseline_available": false,
+      "limitation": "Both human and Mimic counts changed, and video/state recording was enabled only for the larger condition; individual causal contributions and statistical significance are not established."
+    }
   },
   "submission": {
     "repository": "https://github.com/Stick-0/toy2box-il-study",
     "project": "IsaacLab",
     "model_count": 2,
+    "experiment": "human100_mimic1000",
     "models_manifest": "models/manifest.json",
     "evaluation_commands": "submission/evaluation_commands.txt",
     "deadline": "2026-11-03T23:59:00+09:00",
@@ -68,14 +113,31 @@
     "final_evaluation_by": "teaching_assistant",
     "final_evaluation_seed": "undisclosed"
   },
-  "posthoc_analysis": {
-    "date": "2026-10-29",
-    "new_training_or_rollouts": false,
+  "diagnosis_evidence": {
+    "data_analysis_scope": "human30_and_mimic500_demonstrations",
     "data_analysis": "human_study/analysis/demonstration_analysis.json",
     "video_analysis": "human_study/video_analysis/annotations.json",
     "evidence_audit": "human_study/analysis/evidence_audit.json",
+    "video_sample_condition": "human30_baseline",
     "video_sample_count": 30,
     "original_video_run_separate_from_recorded_evaluation": true,
-    "mimic_policy_video_available": false
+    "metrics_not_extrapolated_to_human100_mimic1000": true
+  },
+  "video_evidence_by_condition": {
+    "human30_baseline": {
+      "video_count": 200,
+      "same_run_as_reported_success_rate": false,
+      "manually_reviewed_count": 30
+    },
+    "human30_mimic500": {
+      "video_available": false
+    },
+    "human100_mimic1000": {
+      "video_count": 200,
+      "state_action_record_count": 200,
+      "same_run_as_reported_success_rate": true,
+      "release": "https://github.com/Stick-0/toy2box-il-study/releases/tag/human100-mimic1000",
+      "evaluation_audit": "human_study/results/human100_mimic1000/evaluation_audit.json"
+    }
   }
 }

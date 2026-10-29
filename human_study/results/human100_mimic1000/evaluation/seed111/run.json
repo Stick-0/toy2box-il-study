@@ -1,0 +1,109 @@
+{
+  "purpose": "course_100_rollout_self_evaluation_with_telemetry",
+  "training_seed": 111,
+  "status": "running",
+  "started_at": "2026-10-29T09:15:25.092257+00:00",
+  "command": [
+    "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluate_with_telemetry.py",
+    "--output-dir",
+    "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111",
+    "--training-seed",
+    "111",
+    "--native-play",
+    "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/play.py",
+    "--task",
+    "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+    "--checkpoint",
+    "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed111.pth",
+    "--seed",
+    "42",
+    "--num_rollouts",
+    "100",
+    "--horizon",
+    "800",
+    "--headless",
+    "--video",
+    "--video_length",
+    "1000",
+    "--video_folder",
+    "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111/videos"
+  ],
+  "task": "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+  "evaluation_seed": 42,
+  "num_rollouts": 100,
+  "horizon": 800,
+  "video": true,
+  "video_length": 1000,
+  "video_folder": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111/videos",
+  "checkpoint": "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed111.pth",
+  "checkpoint_sha256": "bda8c12ce70b448de2d90ab34354fc5cf6e7d9017da0a857654cae72720f4726",
+  "native_play": "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/play.py",
+  "native_play_sha256": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+  "observer_sha256": "0929ca4a31ba4a0f228626221efbd4149ffb747f4e04a7d316fb3909110e4b09",
+  "source_and_checkpoint_sha256_before": {
+    "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/play.py": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+    "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluate_with_telemetry.py": "0929ca4a31ba4a0f228626221efbd4149ffb747f4e04a7d316fb3909110e4b09",
+    "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/place_toy2box_rmp_rel_env_cfg.py": "bc01d693edd412e84f675713991de930004e3edf7e661a4e8749aafd2940d19e",
+    "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/__init__.py": "23e4bdd154bf7a733d2663cca2c6de3b46db182b90c704633eb913a1e8cbf6f3",
+    "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/mdp/observations.py": "f87c0f127b1f3927cef6537fd3802e5d5df8ec1a04940226af85f6a68e34d5aa",
+    "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/mdp/terminations.py": "5537c5603bca07935f6b4d068167cac7e2c1d03722e5984112cf0f02813e68d1",
+    "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/stack/mdp/franka_stack_events.py": "29a27c45059e8a7923bf8810ab3a5fe7c39359ca517a86d461c74410beff47ec",
+    "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab/isaaclab/envs/manager_based_rl_env.py": "8ec2759541c8320ed725411d49564f5617b3ab6b9d340c860bededee13d557d4",
+    "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed111.pth": "bda8c12ce70b448de2d90ab34354fc5cf6e7d9017da0a857654cae72720f4726"
+  },
+  "native_command": [
+    "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/play.py",
+    "--task",
+    "Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0",
+    "--checkpoint",
+    "/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed111.pth",
+    "--seed",
+    "42",
+    "--num_rollouts",
+    "100",
+    "--horizon",
+    "800",
+    "--headless",
+    "--video",
+    "--video_length",
+    "1000",
+    "--video_folder",
+    "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111/videos"
+  ],
+  "note": "Course self-validation with fixed evaluation seed 42, 100 rollouts and horizon 800; not the hidden-seed final evaluation. Video is enabled. Per-model trial numbers are not assumed paired.",
+  "telemetry_columns": {
+    "toy_root_state_w": [
+      0,
+      13
+    ],
+    "box_root_state_w": [
+      13,
+      26
+    ],
+    "ee_position_w": [
+      26,
+      29
+    ],
+    "ee_quaternion_wxyz": [
+      29,
+      33
+    ],
+    "gripper_joints": [
+      33,
+      35
+    ],
+    "pad_net_forces_w": [
+      35,
+      41
+    ],
+    "robot_position_w": [
+      41,
+      44
+    ],
+    "robot_quaternion_wxyz": [
+      44,
+      48
+    ]
+  },
+  "state_alignment": "state[0] is reset initial state; state[k+1] is after action[k]. For termination auto-reset, stored states contain captured pre-reset state; the returned observation is still post-reset. Native execution receives unchanged returns."
+}

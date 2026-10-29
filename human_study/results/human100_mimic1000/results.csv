@@ -1,0 +1,3 @@
+training_seed,successes,rollouts,success_rate_percent,checkpoint,checkpoint_sha256
+101,68,100,68.0,/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed101.pth,33c7d122185aa1ca24303d44e9e3206b8ee96e2ea2fd0951f62d2dac6a966ee1
+111,65,100,65.0,/home/jm/robot_sim/local_analysis/human100_mimic1000/models/human100_mimic1000_seed111.pth,bda8c12ce70b448de2d90ab34354fc5cf6e7d9017da0a857654cae72720f4726

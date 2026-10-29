@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "syntax",
+    "GPU-free import",
+    "source paths exist",
+    "observer AST identical except log label",
+    "native count and consecutive-trial validation",
+    "seed42/100rollouts/horizon800 rejection checks",
+    "failure summary before simulator launch"
+  ],
+  "original_observer_sha256": "44bf6b83961a9e7e3b56e343963470f9c981ba1bc76b0c0d6062c6d7f9e8d8f5",
+  "evaluator_sha256": "0929ca4a31ba4a0f228626221efbd4149ffb747f4e04a7d316fb3909110e4b09",
+  "gpu_or_simulator_executed": false
+}

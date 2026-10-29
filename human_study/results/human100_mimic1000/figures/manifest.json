@@ -1,0 +1,30 @@
+{
+  "frames": [
+    {
+      "repository_path": "human_study/results/human100_mimic1000/figures/seed101_trial000_failure_final.png",
+      "training_seed": 101,
+      "trial": 0,
+      "native_success": false,
+      "frame_index": 799,
+      "timestamp_seconds": 39.95,
+      "source_video_original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed101/videos/rollout-episode-0.mp4",
+      "source_video_sha256": "ea59c8853b63f30273b9aec97d5d4b921774a7a31aedd74e16c571c4f8ef0017",
+      "png_sha256": "0dccf78cb47a34dc9d8b4bc3d60346f62f79206c05c100c14140632322e758aa",
+      "processing": "원본 영상에서 해당 프레임을 PNG로 추출했다. 크롭·리사이즈·도형·문구를 적용하지 않았다.",
+      "interpretation": "성공·실패 각 1개를 보여 주는 사례이며 전체 실패 경향을 대표하는 통계 표본은 아니다."
+    },
+    {
+      "repository_path": "human_study/results/human100_mimic1000/figures/seed111_trial000_success_final.png",
+      "training_seed": 111,
+      "trial": 0,
+      "native_success": true,
+      "frame_index": 593,
+      "timestamp_seconds": 29.65,
+      "source_video_original_path": "/home/jm/robot_sim/local_analysis/human100_mimic1000/evaluation/seed111/videos/rollout-episode-0.mp4",
+      "source_video_sha256": "514a6330ba73f6c3abf424ab9a73faedb848aab3861c8ad02f05fe04e269f8aa",
+      "png_sha256": "8b4346f02712d4219825f65d59ef355a2f849dfaa879ff67283b52aa3bc7479e",
+      "processing": "원본 영상에서 해당 프레임을 PNG로 추출했다. 크롭·리사이즈·도형·문구를 적용하지 않았다.",
+      "interpretation": "성공·실패 각 1개를 보여 주는 사례이며 전체 실패 경향을 대표하는 통계 표본은 아니다."
+    }
+  ]
+}

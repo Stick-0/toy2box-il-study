@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "scope": "Read-only CPU audit of existing evaluation recordings; no simulator, inference, training, Git or environment changes.",
+  "auditor_sha256": "9f9ce972bb10e6ff1da3fa3752ca60d65960c1a6472be4182c2bd32fbbfdb720",
+  "original_source_hash_count": 10,
+  "runs": [
+    {
+      "seed": 101,
+      "recorded_trials": 100,
+      "successful_trials": 68,
+      "complete_jsonl_snapshot_sha256": "93d18e7e9d284c30a1bac534089c40c9c0a561cc8f035215167063afbcb2505a",
+      "incomplete_jsonl_tail_ignored": false,
+      "checkpoint_sha256": "33c7d122185aa1ca24303d44e9e3206b8ee96e2ea2fd0951f62d2dac6a966ee1",
+      "source_hash_count": 9,
+      "states": 52503,
+      "actions": 52403,
+      "native_grasp_states": 7852,
+      "height_float_comparison_differences": 0,
+      "auto_reset_trials": [],
+      "maximum_alignment_errors": {
+        "toy_truck_positions": 0.0,
+        "box_positions": 0.0,
+        "eef_pos": 0.0,
+        "raw_action_vs_next_obs_actions": 0.0
+      },
+      "native_printed_trials_available": 100,
+      "source_checks_passed": true
+    },
+    {
+      "seed": 111,
+      "recorded_trials": 100,
+      "successful_trials": 65,
+      "complete_jsonl_snapshot_sha256": "b48d0ea00b25b7dcf91dd51cb5a878f7b6c06e3f6e5af7613b66ffab0ba99712",
+      "incomplete_jsonl_tail_ignored": false,
+      "checkpoint_sha256": "bda8c12ce70b448de2d90ab34354fc5cf6e7d9017da0a857654cae72720f4726",
+      "source_hash_count": 9,
+      "states": 53352,
+      "actions": 53252,
+      "native_grasp_states": 7663,
+      "height_float_comparison_differences": 0,
+      "auto_reset_trials": [
+        1,
+        96
+      ],
+      "maximum_alignment_errors": {
+        "toy_truck_positions": 0.0,
+        "box_positions": 0.0,
+        "eef_pos": 0.0,
+        "raw_action_vs_next_obs_actions": 0.0
+      },
+      "native_printed_trials_available": 100,
+      "source_checks_passed": true
+    }
+  ],
+  "limitations": [
+    "Grasp predicate is recomputed from saved state and net contact forces, not independently logged object-specific contact labels.",
+    "Terminal stored state is pre-reset; returned final observations after native termination are post-reset and excluded from alignment checks.",
+    "Success labels use the exact native predicate without a settling requirement.",
+    "Trial indices across models are not assumed paired. Video rendering is enabled in this evaluation."
+  ]
+}

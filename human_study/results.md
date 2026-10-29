@@ -2,6 +2,8 @@
 
 키보드 사람 시범 30개로 학습한 BC 정책의 자체 검증 성공률은 **17.5 ± 2.12%**였다. 녹화 영상에서는 물체를 확보하지 못한 채 머무르거나 빈손으로 후속 동작을 수행하는 실패가 반복되었다. HDF5 분석에서는 그리퍼 명령 순서의 일관성이 확인되었지만, 초기 장난감 위치·방향을 함께 고려한 상태 조합은 제한적이었다. 동일 사람 시범에 Mimic 성공 시범 500개를 추가하자 성공률은 **62.0 ± 2.83%**, 평균 **44.5%p** 증가했다.
 
+사람 시범 100개와 Mimic 성공 시범 1,000개를 결합한 데이터 규모 조건에서는 **66.5 ± 2.12%**를 기록했다. 30+500개 조건 대비 **4.5%p** 높은 관측 성공률이다. 앞의 두 조건은 같은 사람 시범에 증강을 추가한 통제 실험이고, 100+1,000개 조건과의 비교는 사람·증강 데이터 수를 함께 늘린 규모 비교다. 두 비교가 답하는 질문을 구분한다.
+
 핵심 해석은 **제한된 시범 수에 따른 상태 조합의 희소성이 물체 획득 구간의 일반화 실패에 기여했을 가능성**이다. 증강으로 초기 상태의 표본 밀도가 높아진 사실과 성공률 개선은 이 설명에 부합한다. 그러나 수집 품질, 데이터 수량, 생성 행동의 변화가 각각 얼마나 기여했는지는 분리하지 못했다.
 
 평가 수치는 평가 seed 42, 모델당 100 rollout, horizon 800의 기록이다. 평균 ± 표준편차는 학습 seed 101·111에 대한 **표본 표준편차(ddof=1, n=2)**를 사용한다. 행동 데이터, 초기 상태 분포, 영상의 실패 단계, 통제 실험 결과를 함께 분석하되 각 근거가 설명할 수 있는 범위를 구분한다.
@@ -58,7 +60,7 @@
 
 seed 111/trial 85의 14.8–17.0초 구간. 원본 시각과 파일 식별 해시를 표시했다. 이 장면은 단순히 물체에 도달하지 못한 것과, 물체 근처까지 왔지만 안정적으로 잡지 못한 것을 구분하는 근거다. [배치 결과가 불확실한 사례](video_analysis/clips/placement_ambiguity.gif)도 보존했다.
 
-이 영상들은 **영상 활성화 상태의 별도 Baseline 실행**이다. 공식 16%·19%는 `video=false`로 기록한 별도 평가 결과다. 같은 seed와 trial 번호만으로 두 실행을 연결하지 않았으며, 영상의 완료 수를 성공률로 환산하지 않았다. 증강 정책의 녹화 영상은 남아 있지 않아 증강 전후의 단계별 실패율 변화도 계산하지 않았다. 표본 선택·전체 판정·원본 SHA256·시점은 [영상 분석](video_analysis/README.md), [판정 JSON](video_analysis/annotations.json), [출처 검증](analysis/evidence_audit.md)에 있다.
+이 영상들은 **영상 활성화 상태의 별도 Baseline 실행**이다. 공식 16%·19%는 `video=false`로 기록한 별도 평가 결과다. 같은 seed와 trial 번호만으로 두 실행을 연결하지 않았으며, 영상의 완료 수를 성공률로 환산하지 않았다. 30+500개 정책에는 대응하는 녹화 영상이 없어 이 통제 실험의 단계별 실패율 변화도 계산하지 않았다. 표본 선택·전체 판정·원본 SHA256·시점은 [영상 분석](video_analysis/README.md), [판정 JSON](video_analysis/annotations.json), [출처 검증](analysis/evidence_audit.md)에 있다.
 
 ## 3. 데이터 분포로 보강한 원인 가설
 
@@ -130,17 +132,31 @@ seed 111/trial 85의 14.8–17.0초 구간. 원본 시각과 파일 식별 해�
 
 실행상 조정으로 RMP 제어기 초기화 비용을 줄이기 위해 생성 병렬 환경 수를 자료의 100에서 8로 변경했다. 환경과 Mimic 변환 코드는 수정하지 않았다. 생성 시 접촉 필터 불일치 메시지가 한 차례 발생했으며, 정상 종료와 저장 데이터 검증을 확인했으나 센서 업데이트에 대한 간접 영향까지 배제하지는 못했다. 세부 근거는 [생성 기록](results/mimic500_20261028/generation_summary.json)과 [병렬 수 조정 기록](results/mimic500_20261028/generation_runtime_retry.json)에 제시했다.
 
+### 데이터 규모 조건: 사람 100개 + Mimic 성공 1,000개
+
+사람 자료는 기존 30개와 추가 키보드 시범 20·25·25개를 합친 **100개, 36,838스텝**이다. 원본 시범과 합본을 대조하여 누락·중복 없이 포함됐음을 확인했다. 자동 annotation은 **93/100개**를 통과했다. 나머지 7개는 Mimic 생성 소스로 사용하지 않았으며, 학습에는 사람 원본 100개를 모두 포함했다. 이 annotation 탈락을 원본 사람 시범의 작업 실패 판정으로 해석하지 않는다.
+
+동일한 강의 Mimic 설정(seed 1, action noise 0.01, 병렬 환경 8개)에서 **2,680회 시도로 성공 시범 1,000개**를 확보했다. 생성 성공 비율 37.31%는 아래 BC 정책의 평가 성공률과 다른 값이다. 실패 생성 시범은 학습에서 제외했다. 학습 합본은 **1,100개, 434,605스텝**이며 Mimic 부분은 397,767스텝이다. 원본 대응, 성공 라벨, 관측·행동 길이·차원, 유한값을 검증했다. [데이터 감사](results/human100_mimic1000/combined_data_audit.txt), [시범별 출처](results/human100_mimic1000/dataset_manifest.json), [annotation](results/human100_mimic1000/annotation_manifest.json), [생성 집계](results/human100_mimic1000/generation_summary.json)
+
+학습 seed 101·111, 2,000 epoch, epoch당 100 update, batch 100, 정책·관측·행동·최적화 설정은 30+500개 조건과 같다. 두 모델 모두 마지막 epoch 2000을 평가했다. 실제 학습 설정과 체크포인트 내장 설정을 대조했으며, 환경·학습·평가 핵심 코드는 변경하지 않았다. [학습 감사](results/human100_mimic1000/training_audit.txt)
+
+평가는 같은 seed 42·100 rollout·horizon 800을 사용하면서 **영상과 상태·행동 기록을 활성화**했다. 이전 두 조건의 기록 평가는 영상 비활성화 상태였다는 실행 차이를 공개한다. 원본 `play.py`의 정책 실행·성공 판정·종료 로직은 유지했다. 사람 수와 Mimic 수를 동시에 바꿨고 사람 100개만 학습한 조건은 없으므로, 이 규모 비교를 한 요인 통제 실험으로 보지 않는다.
+
 ## 5. 결과와 가설 판정
 
 | 학습 조건 | seed 101 | seed 111 | 평균 ± 표본 표준편차 |
 |---|---:|---:|---:|
 | 사람 시범 30개 | 16 / 100 (**16.0%**) | 19 / 100 (**19.0%**) | **17.5 ± 2.12%** |
 | 사람 30개 + Mimic 500개 | 64 / 100 (**64.0%**) | 60 / 100 (**60.0%**) | **62.0 ± 2.83%** |
-| Baseline 대비 변화량 | **+48.0%p** | **+41.0%p** | **평균 +44.5%p** |
+| 사람 100개 + Mimic 1,000개 | 68 / 100 (**68.0%**) | 65 / 100 (**65.0%**) | **66.5 ± 2.12%** |
+| 30 → 30+500개 변화량 | +48.0%p | +41.0%p | +44.5%p |
+| 30+500 → 100+1,000개 변화량 | +4.0%p | +5.0%p | +4.5%p |
 
-![Baseline과 Mimic 증강의 성공률 비교](results/mimic500_20261028/figures/success_rates.png)
+![세 데이터 조건의 성공률 비교](results/human100_mimic1000/success_rates.png)
 
-각 성공률은 공식 성공 판정을 만족한 횟수를 모델당 평가 횟수 100으로 나눈 값이다. 오차선은 학습 seed 두 개의 성공률에 대한 표본 표준편차(ddof=1)이며 신뢰구간이 아니다. 그림의 연결선은 같은 학습 seed의 두 조건 결과를 연결한다. 동일 평가 seed가 개별 rollout의 동일 궤적을 보장한다고 가정하지 않는다. [전체 집계 JSON](results/mimic500_20261028/comparison.json), [결과 CSV](results/mimic500_20261028/comparison.csv)
+각 성공률은 공식 성공 판정을 만족한 횟수를 모델당 평가 횟수 100으로 나눈 값이다. 오차선은 학습 seed 두 개의 성공률에 대한 표본 표준편차(ddof=1)이며 신뢰구간이 아니다. 점은 각 학습 seed의 결과다. 동일 평가 seed가 개별 rollout의 동일 궤적을 보장한다고 가정하지 않는다. [30개·30+500개 집계](results/mimic500_20261028/comparison.json), [100+1,000개 집계](results/human100_mimic1000/results.json), [결과 CSV](results/human100_mimic1000/results.csv)
+
+### 같은 사람 30개에 대한 증강 추가의 판정
 
 두 학습 seed 모두에서 성공률이 증가했으므로 **“Mimic 성공 시범을 추가하면 동일 학습량에서 성공률이 높아진다”는 개선 예측은 지지**된다. 초기 위치·방향 조합의 포함 범위가 27/96에서 91/96으로 넓어진 측정 결과도, 상태 조합의 희소성을 완화했다는 설명에 부합한다.
 
@@ -148,22 +164,42 @@ seed 111/trial 85의 14.8–17.0초 구간. 원본 시각과 파일 식별 해�
 
 원본 30개만 같은 횟수 반복하는 조건, 같은 수의 추가 사람 시범, 잡음만 달리한 증강 등을 비교하지 않았으므로 수량·분포·행동 변화의 구분은 미해결이다. 따라서 이 비교의 효과는 증강 절차 전체에 대한 것으로 해석한다.
 
-영상은 별도 Baseline 실행의 30개 표본이고 증강 정책 영상은 없으므로, **접근·파지 실패율이 몇 %p 감소했는지는 산출할 수 없다.** 검증은 평가 seed 42와 학습 seed 두 개에 한정되어 통계적 유의성이나 비공개 최종 평가 성능도 주장하지 않는다.
+Baseline의 단계별 분석은 별도 실행의 영상 30개 표본이고 30+500개 조건에는 대응 영상이 없으므로, 이 비교에서 **접근·파지 실패율이 몇 %p 감소했는지는 산출할 수 없다.**
+
+### 100+1,000개 데이터 규모 비교의 판정
+
+30+500개 대비 seed 101은 **64% → 68%**, seed 111은 **60% → 65%**로 모두 높아졌다. 두 seed의 평균 차이는 **+4.5%p**다. 이는 이 자체 검증에서 더 큰 데이터 구성의 관측 성공률이 높았다는 결과이며, 사람 추가 70개와 Mimic 추가 500개의 개별 기여는 분리할 수 없다. 사람 100개만 학습한 정책이 없어 해당 규모의 증강 효과도 계산하지 않는다. 100개 자료의 초기 상태 구간 점유를 별도로 측정하지 않았으므로, 앞의 27/96·91/96 통계를 이 조건에 적용하지 않는다.
+
+학습 seed가 두 개이고 평가 seed는 42 하나이므로 통계적 유의성이나 비공개 평가 성능을 주장하지 않는다. 두 규모 사이에는 영상·상태 기록 활성화 여부의 차이도 있다. 한 요인의 원인 검증은 사람 30개를 고정한 통제 실험에 근거하고, 최종 모델의 자체 검증 성능은 100+1,000개 조건의 결과로 제시한다.
+
+### 동일 평가 실행의 영상과 판정 기록
+
+100+1,000개 조건의 200회 평가에서는 영상 200개, 상태·행동 NPZ 200개, 시행별 성공 라벨과 native 출력 로그를 함께 저장했다. 원본 성공 함수를 저장 상태에 적용한 결과가 native 출력·JSONL·summary의 판정과 모두 일치했다. 종료 시 자동 reset이 발생한 시행에서도 reset 직전 상태를 보존했다. 이 검증은 판정의 일관성 확인이며 새로운 평가 실행은 아니다. [평가 감사](results/human100_mimic1000/evaluation_audit.txt)
+
+![seed 111 trial 0 성공 시행의 마지막 프레임](results/human100_mimic1000/figures/seed111_trial000_success_final.png)
+
+seed 111 / trial 0의 마지막 프레임(29.65초)에서는 장난감이 박스 안에 있으며 공식 성공 라벨도 참이다. 아래 seed 101 / trial 0의 마지막 프레임(39.95초)은 장난감이 박스 밖에 남은 horizon 종료 실패다. 두 사례는 각 모델의 첫 시행을 보여 주는 기록 예시이며, 전체 실패 단계 비율이나 개선 원인의 증거로 일반화하지 않는다.
+
+![seed 101 trial 0 실패 시행의 마지막 프레임](results/human100_mimic1000/figures/seed101_trial000_failure_final.png)
+
+영상·상태 전체 자료와 입력 학습 데이터는 [실험 Release](https://github.com/Stick-0/toy2box-il-study/releases/tag/human100-mimic1000)에서 제공한다.
 
 ## 6. 제출 모델과 재현 근거
 
-최종 제출 모델은 Mimic 증강 조건의 seed 101·111 모델 **두 개**다. 두 모델 모두 마지막 epoch 2000 체크포인트를 사용했으며, 평가 결과에 따라 중간 epoch를 선택하지 않았다. 실행 절차와 평가 명령은 [재현 안내](reproduce.md)를 따른다.
+최종 제출 모델은 **사람 100개 + Mimic 성공 1,000개** 조건의 seed 101·111 모델 **두 개**다. 두 모델 모두 마지막 epoch 2000 체크포인트를 사용했으며, 평가 결과에 따라 중간 epoch를 선택하지 않았다. 기존 비교 조건의 결과·설정·해시 기록은 보존하되, 제출 트리에는 이 최종 가중치 두 개만 포함한다. 실행 절차와 평가 명령은 [재현 안내](reproduce.md)를 따른다.
 
 | 최종 모델 | 가중치 | 학습 설정 | 학습 완료·해시 기록 |
 |---|---|---|---|
-| seed 101 | [mimic500_seed101.pth](../models/mimic500_seed101.pth) | [설정 JSON](results/mimic500_20261028/training/mimic500_seed101/effective_config.json) | [학습 요약](results/mimic500_20261028/training/mimic500_seed101/summary.json) |
-| seed 111 | [mimic500_seed111.pth](../models/mimic500_seed111.pth) | [설정 JSON](results/mimic500_20261028/training/mimic500_seed111/effective_config.json) | [학습 요약](results/mimic500_20261028/training/mimic500_seed111/summary.json) |
+| seed 101 | [human100_mimic1000_seed101.pth](../models/human100_mimic1000_seed101.pth) | [설정 JSON](results/human100_mimic1000/training/seed101/effective_config.json) | [학습 요약](results/human100_mimic1000/training/seed101/summary.json) |
+| seed 111 | [human100_mimic1000_seed111.pth](../models/human100_mimic1000_seed111.pth) | [설정 JSON](results/human100_mimic1000/training/seed111/effective_config.json) | [학습 요약](results/human100_mimic1000/training/seed111/summary.json) |
 
 | 평가 대상 | 최종 판정 요약 | 시행별 기록 |
 |---|---|---|
 | Baseline seed 101 | [summary.json](results/mimic500_20261028/evaluation/baseline_seed101/summary.json) | [100회 판정](results/mimic500_20261028/evaluation/baseline_seed101/trials.jsonl) |
 | Baseline seed 111 | [summary.json](results/mimic500_20261028/evaluation/baseline_seed111/summary.json) | [100회 판정](results/mimic500_20261028/evaluation/baseline_seed111/trials.jsonl) |
-| Mimic seed 101 | [summary.json](results/mimic500_20261028/evaluation/mimic500_seed101/summary.json) | [100회 판정](results/mimic500_20261028/evaluation/mimic500_seed101/trials.jsonl) |
-| Mimic seed 111 | [summary.json](results/mimic500_20261028/evaluation/mimic500_seed111/summary.json) | [100회 판정](results/mimic500_20261028/evaluation/mimic500_seed111/trials.jsonl) |
+| 30+500개 seed 101 | [summary.json](results/mimic500_20261028/evaluation/mimic500_seed101/summary.json) | [100회 판정](results/mimic500_20261028/evaluation/mimic500_seed101/trials.jsonl) |
+| 30+500개 seed 111 | [summary.json](results/mimic500_20261028/evaluation/mimic500_seed111/summary.json) | [100회 판정](results/mimic500_20261028/evaluation/mimic500_seed111/trials.jsonl) |
+| 100+1,000개 seed 101 | [summary.json](results/human100_mimic1000/evaluation/seed101/summary.json) | [100회 판정](results/human100_mimic1000/evaluation/seed101/trials.jsonl) |
+| 100+1,000개 seed 111 | [summary.json](results/human100_mimic1000/evaluation/seed111/summary.json) | [100회 판정](results/human100_mimic1000/evaluation/seed111/trials.jsonl) |
 
-네 평가 모두 trial 0–99의 판정 합계와 최종 성공률이 일치함을 확인했다. 모델 SHA256와 체크포인트 내장 학습 설정을 연결하여 seed, 학습 조건, 사용 데이터 및 평가 대상의 대응을 검증했다. 동일 seed의 두 조건에서 데이터 경로·저장 경로·실험 이름을 제외한 학습 설정은 일치한다. [과제 조건](assignment_notice.md), [실험 계획](protocol.md), [재현 안내](reproduce.md)
+여섯 평가 모두 trial 0–99의 판정 합계와 최종 성공률이 일치함을 확인했다. 모델 SHA256와 체크포인트 내장 학습 설정을 연결하여 seed, 학습 조건, 사용 데이터 및 평가 대상의 대응을 검증했다. 동일 seed의 세 조건에서 데이터 경로·저장 경로·실험 이름을 제외한 학습 설정은 일치한다. 원본 실행 기록에 남은 절대 경로는 당시 실행 출처이며, 다른 장비에서는 [재현 안내](reproduce.md)의 저장소 상대 경로 명령을 사용한다. [과제 조건](assignment_notice.md), [실험 계획](protocol.md)

@@ -8,8 +8,8 @@ __pycache__/
 *.pth
 *.pt
 *.ckpt
-!models/mimic500_seed101.pth
-!models/mimic500_seed111.pth
+!models/human100_mimic1000_seed101.pth
+!models/human100_mimic1000_seed111.pth
 human_study/data/*.hdf5
 human_study/data/*.h5
 human_study/data/*.gz

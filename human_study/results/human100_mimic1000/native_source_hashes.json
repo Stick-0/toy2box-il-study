@@ -1,0 +1,12 @@
+{
+  "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/train.py": "7d38483469b7655f87435dea2ea82ac8b4229fce3d1cae937fb938f9280debfe",
+  "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/robomimic/play.py": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+  "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/isaaclab_mimic/annotate_demos.py": "ee3010b0fc753f56ea28cd7e2480d4e6f4d123423efa73603d1e2724554c2e23",
+  "/home/jm/robot_sim/IsaacLab_RS/scripts/imitation_learning/isaaclab_mimic/generate_dataset.py": "c61fb43a1be160d6fe08414cb31e457b442d8aa770bb89f1fd81ad73c23e328f",
+  "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_mimic/isaaclab_mimic/envs/agibot_place_toy2box_mimic_env_cfg.py": "b56ff68dd3200843f9470fb901c9a489a8c9b8043d8707c2215f6f7d019b9e27",
+  "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/place_toy2box_rmp_rel_env_cfg.py": "bc01d693edd412e84f675713991de930004e3edf7e661a4e8749aafd2940d19e",
+  "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/mdp/observations.py": "f87c0f127b1f3927cef6537fd3802e5d5df8ec1a04940226af85f6a68e34d5aa",
+  "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/mdp/terminations.py": "5537c5603bca07935f6b4d068167cac7e2c1d03722e5984112cf0f02813e68d1",
+  "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/mdp/__init__.py": "262a5650fe417aefc1d7ffdf3f7904464f2899d9d4539e4c0809333c1dd80443",
+  "/home/jm/robot_sim/IsaacLab_RS/source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation/place/config/agibot/agents/robomimic/bc_rnn_low_dim.json": "5c43489d7e4045001469a8a2f159cbab1970355e247892c960cb0f75d7581ab2"
+}
