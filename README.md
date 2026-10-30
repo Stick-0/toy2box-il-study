@@ -42,19 +42,31 @@
 
 구간은 강의 환경의 초기 장난감 범위를 x 4개 × y 3개 × yaw 8개로 나눈 것이다. 위 수치는 **초기 상태의 기하학적 분포**이며 정책 성공률이나 평가 중 방문한 상태의 범위가 아니다. 그림의 동수 부분집합 비교도 추가 학습 실험이 아니다. [분석 방법·민감도·수치](human_study/analysis/data_diagnosis.md), [학습·영상 출처 검증](human_study/analysis/evidence_audit.md)
 
+## 실제 실행 영상
+
+[**조건별 실행 영상 12개 보기**](human_study/videos/README.md) — 각 조건의 성공·실패 장면을 원본 MP4와 썸네일로 제공한다. 원본 파일 전체를 복사했으며 재인코딩·구간 편집 없이 보존했다.
+
+| 학습 조건 | 제공 영상 | 판정 근거 |
+|---|---|---|
+| 사람 30개 Baseline | 시각적 완료 2개 · 실패 2개 | 별도 녹화 실행의 육안 관찰, native 성공 라벨 미보존 |
+| 사람 30개 + Mimic 500개 | 성공 2개 · 실패 2개 | 별도 20회/seed 진단 실행의 native 판정 |
+| 사람 100개 + Mimic 1,000개 | 성공 2개 · 실패 2개 | 68%·65%를 집계한 동일 평가의 native 판정 |
+
+예시는 동작을 비교하기 위해 선별했으며, 예시의 성공 비율을 전체 성공률로 해석하지 않는다. 영상별 학습 seed·trial·관찰 시점·SHA256과 판정 기록은 [영상 목록](human_study/videos/README.md)에 있다.
+
 ## 녹화 영상으로 확인한 실패
 
 기존 Baseline 영상에서 두 seed에 걸쳐 고정 간격으로 선택한 30개를 검토했다. 접근 실패 1개, 파지 실패 19개, 접근·파지 경계 불명 7개로 **물체 획득 이전의 실패가 27개**였다. 나머지는 시각적 완료 2개, 파지·운반 뒤 배치 결과를 확정할 수 없는 1개였다.
 
 ![Baseline의 빈손 이탈·물체 밀어냄·시각적 완료 장면](human_study/video_analysis/baseline_visual_evidence.jpg)
 
-세 행 모두 **Baseline**의 장면이다. Baseline 성공률은 영상 촬영과 별도 실행에서 집계했으므로, 이 영상 표본의 완료 수를 성공률로 사용하지 않았다. 30+500개 조건에는 대응하는 평가 영상이 없다. [표본 선정·단계별 판정](human_study/video_analysis/README.md), [파지 실패 GIF](human_study/video_analysis/clips/contact_displacement.gif), [결과가 불확실한 배치 GIF](human_study/video_analysis/clips/placement_ambiguity.gif)
+세 행 모두 **Baseline**의 장면이다. Baseline 성공률은 영상 촬영과 별도 실행에서 집계했으므로, 이 영상 표본의 완료 수를 성공률로 사용하지 않았다. 30+500개 조건의 공식 100회 평가에는 대응 영상이 없으며, 별도 20회/seed 진단 실행에서 보존한 영상은 [실행 영상 목록](human_study/videos/README.md)으로 제공한다. [표본 선정·단계별 판정](human_study/video_analysis/README.md), [파지 실패 GIF](human_study/video_analysis/clips/contact_displacement.gif), [결과가 불확실한 배치 GIF](human_study/video_analysis/clips/placement_ambiguity.gif)
 
 100+1,000개 조건에서는 **성공률을 집계한 동일 실행의 영상 200개와 상태·행동 기록 200개**를 보관했다. 아래는 seed 111 / trial 0의 마지막 프레임으로, 공식 성공 라벨과 박스 안에 놓인 장난감을 함께 확인할 수 있다. 성공·실패 각 첫 시행은 기록 확인용 예시이며, 전체 실패 경향을 대표하는 표본으로 사용하지 않는다.
 
 ![100+1,000개 모델의 성공 시행 마지막 프레임](human_study/results/human100_mimic1000/figures/seed111_trial000_success_final.png)
 
-[실패 시행 마지막 프레임](human_study/results/human100_mimic1000/figures/seed101_trial000_failure_final.png) · [200회 판정 검증](human_study/results/human100_mimic1000/evaluation_audit.txt) · [원본 자료 배포 상태](human_study/data/README.md)
+[선별 실행 MP4](human_study/videos/README.md) · [실패 시행 마지막 프레임](human_study/results/human100_mimic1000/figures/seed101_trial000_failure_final.png) · [200회 판정 검증](human_study/results/human100_mimic1000/evaluation_audit.txt) · [원본 자료 배포 상태](human_study/data/README.md)
 
 ## 제출 파일
 

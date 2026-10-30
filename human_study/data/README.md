@@ -76,6 +76,8 @@ sha256sum --ignore-missing -c human_study/data/SHA256SUMS
 
 ## 평가 영상·상태 기록
 
+조건별 원본 MP4 예시 12개는 [실행 영상 목록](../videos/README.md)에서 바로 확인할 수 있다. 이는 선별 영상의 별도 제공이며 아래 전체 200회 아카이브의 배포 상태와 구분한다.
+
 사람 100개+Mimic 1,000개 모델의 전체 200회 평가 영상과 상태·행동 기록은 `human100_mimic1000_evaluation.tar.gz`로 압축해 로컬에 보존한다. 이 파일은 아직 외부에 배포하지 않았으며, 아래 명령은 Release 게시 후 사용할 절차다. 이는 평가 근거 자료이며 학습 데이터에 포함하지 않는다. 파일 구성·크기·SHA256은 [평가 아카이브 manifest](../results/human100_mimic1000/evaluation_archive.json)에 있다.
 
 저장소 루트에서 내려받아 해시를 확인하고 별도 폴더에 압축을 푼다.

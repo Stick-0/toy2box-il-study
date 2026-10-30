@@ -1,0 +1,141 @@
+{
+  "scope": "30+500개 모델의 별도 진단 녹화에서 선별한 4개의 native 판정 발췌. 공식 100회 평가와 합산하지 않음.",
+  "records": [
+    {
+      "training_seed": 101,
+      "evaluation_seed": 42,
+      "trial": 0,
+      "diagnostic_rollouts_per_seed": 20,
+      "horizon": 800,
+      "checkpoint_sha256": "5609d8e2d1c19e44a6f28f3012badcb42356fb1860f6f241f05182648f1d9737",
+      "native_play_sha256": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+      "formal_evaluation_same_checkpoint": true,
+      "formal_evaluation_same_execution": false,
+      "formal_evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed101/summary.json",
+      "native_trial_record": {
+        "training_seed": 101,
+        "trial": 0,
+        "success": true,
+        "steps": 416,
+        "trajectory_sha256": "d4d8723b02c45fe4acb3669f0344271f63a4b9c77818f7766b5d41f5b86a725c"
+      },
+      "native_print_line": "[INFO] Trial 0: True",
+      "sources": [
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed101/run.json",
+          "sha256": "4896e608679db4d17df70b4b6c1ff5039b1cfb7bcc5027054c2870d6b61b8755"
+        },
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed101/trials.jsonl",
+          "sha256": "b3d8a8ee454261b30e6ed1849de368725d163d6c244fccfd8a9bedfa13fc1ab8"
+        },
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed101.log",
+          "sha256": "b3707adc5a6a6935223fc09d774c58231000c335d69e0dddb3df6e8eec38e9d8"
+        }
+      ]
+    },
+    {
+      "training_seed": 111,
+      "evaluation_seed": 42,
+      "trial": 4,
+      "diagnostic_rollouts_per_seed": 20,
+      "horizon": 800,
+      "checkpoint_sha256": "ea1882e7b7b7a1e3a27ff6acf8ba12926c6222ba9d6fbe9cd5ef5494c8fe9f1c",
+      "native_play_sha256": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+      "formal_evaluation_same_checkpoint": true,
+      "formal_evaluation_same_execution": false,
+      "formal_evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed111/summary.json",
+      "native_trial_record": {
+        "training_seed": 111,
+        "trial": 4,
+        "success": true,
+        "steps": 620,
+        "trajectory_sha256": "1d7380713348071ca627a071424c9918c4f4defd0e93bee5ca29a1d96da58f75"
+      },
+      "native_print_line": "[INFO] Trial 4: True",
+      "sources": [
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed111/run.json",
+          "sha256": "eec25143b9b8385ac20feea562c6eb7b2f8f52ac61d03f4443e4a3e29867970f"
+        },
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed111/trials.jsonl",
+          "sha256": "e33589efef38ed94945e3f9ced1d5e18e90bfab4d2cd7526ba1651f801d8f558"
+        },
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed111.log",
+          "sha256": "ce0527f80dbee12ebee1d7bc4d3e85bdb5680d0d15c47739ced1845030b0de36"
+        }
+      ]
+    },
+    {
+      "training_seed": 111,
+      "evaluation_seed": 42,
+      "trial": 0,
+      "diagnostic_rollouts_per_seed": 20,
+      "horizon": 800,
+      "checkpoint_sha256": "ea1882e7b7b7a1e3a27ff6acf8ba12926c6222ba9d6fbe9cd5ef5494c8fe9f1c",
+      "native_play_sha256": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+      "formal_evaluation_same_checkpoint": true,
+      "formal_evaluation_same_execution": false,
+      "formal_evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed111/summary.json",
+      "native_trial_record": {
+        "training_seed": 111,
+        "trial": 0,
+        "success": false,
+        "steps": 800,
+        "trajectory_sha256": "a1ed0d0c572fd9b978ade164e63999eb806500f823bbb49f2235f1265c6f6d47"
+      },
+      "native_print_line": "[INFO] Trial 0: False",
+      "sources": [
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed111/run.json",
+          "sha256": "eec25143b9b8385ac20feea562c6eb7b2f8f52ac61d03f4443e4a3e29867970f"
+        },
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed111/trials.jsonl",
+          "sha256": "e33589efef38ed94945e3f9ced1d5e18e90bfab4d2cd7526ba1651f801d8f558"
+        },
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed111.log",
+          "sha256": "ce0527f80dbee12ebee1d7bc4d3e85bdb5680d0d15c47739ced1845030b0de36"
+        }
+      ]
+    },
+    {
+      "training_seed": 101,
+      "evaluation_seed": 42,
+      "trial": 1,
+      "diagnostic_rollouts_per_seed": 20,
+      "horizon": 800,
+      "checkpoint_sha256": "5609d8e2d1c19e44a6f28f3012badcb42356fb1860f6f241f05182648f1d9737",
+      "native_play_sha256": "25b89aa2483d5d4379b5042c9b82996ce96e30a9084b18d1cc7f632958ab568f",
+      "formal_evaluation_same_checkpoint": true,
+      "formal_evaluation_same_execution": false,
+      "formal_evaluation_record": "human_study/results/mimic500_20261028/evaluation/mimic500_seed101/summary.json",
+      "native_trial_record": {
+        "training_seed": 101,
+        "trial": 1,
+        "success": false,
+        "steps": 800,
+        "trajectory_sha256": "2aa19460f67c999eb63ded3d95b87fd8c159c894330e6acf2279af18f15325fc"
+      },
+      "native_print_line": "[INFO] Trial 1: False",
+      "sources": [
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed101/run.json",
+          "sha256": "4896e608679db4d17df70b4b6c1ff5039b1cfb7bcc5027054c2870d6b61b8755"
+        },
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed101/trials.jsonl",
+          "sha256": "b3d8a8ee454261b30e6ed1849de368725d163d6c244fccfd8a9bedfa13fc1ab8"
+        },
+        {
+          "workspace_relative_path": "local_analysis/mimic_outcome_diagnosis/seed101.log",
+          "sha256": "b3707adc5a6a6935223fc09d774c58231000c335d69e0dddb3df6e8eec38e9d8"
+        }
+      ]
+    }
+  ]
+}

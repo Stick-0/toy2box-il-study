@@ -4,6 +4,9 @@ __pycache__/
 .DS_Store
 /*.pdf
 *.mp4
+!human_study/videos/human30_baseline/*.mp4
+!human_study/videos/human30_mimic500/*.mp4
+!human_study/videos/human100_mimic1000/*.mp4
 *.webm
 *.pth
 *.pt
